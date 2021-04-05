@@ -26,6 +26,8 @@ Será feito no final do projeto
 # Apresentação
 
 Nossa apresentação
+Regivaldo Sousa Ferreira
+Amanda Consulin Amorim
 
 
 # Descrição Resumida do Projeto
