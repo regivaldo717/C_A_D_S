@@ -26,8 +26,11 @@ Será feito no final do projeto
 # Apresentação
 
 Nossa apresentação
-Regivaldo Sousa Ferreira
+
 Amanda Consulin Amorim
+Louise Idalgo Vasques
+Regivaldo Sousa Ferreira
+Marcia Jacobina Andrade Martins
 
 
 # Descrição Resumida do Projeto
