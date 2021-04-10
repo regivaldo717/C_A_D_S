@@ -45,8 +45,14 @@ Marcia Jacobina Andrade Martins
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
 
 # Metodologia
-> Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
-
+>  A metodologia adotada será o Knowledge Database Discovery (KDD), passando pelas etapas seleção de dados, pré-processamento, transformação, mineração e 
+interpretação/avaliação. A técnica que iremos explorar é de aprendizagem de máquina com análise estatística. 
+>
+>  A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. 
+Para isso, testaremos alguns algoritmos de aprendizagem supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. 
+e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
+>
+>
 # Ferramentas
 
 Linguagem R
