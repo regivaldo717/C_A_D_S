@@ -1,7 +1,7 @@
 # C_A_D_S
 ## Ciência e Análise de Dados em Saúde
 
-# Projeto `Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)`
+# Projeto Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)
 # Project `A Predictive Approach to Potential Cases of Stroke`
 
 # Apresentação
@@ -22,7 +22,7 @@ Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas:
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
 > * Quais os parâmetros relacionados à possibilidade de se ter um AVC? Pesquisar artigos.
@@ -38,7 +38,13 @@ Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 
 # Bases de Dados
-> Elencar bases de dados candidatas a serem utilizadas no projeto.
+> 
+> 1. Kaggle
+> 2. DATASUS
+> 3. OMS (especificar)
+> 4. Pubmed
+> 5. IBGE
+> 6. Lilacs
 
 # Metodologia
 >  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
