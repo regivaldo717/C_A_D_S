@@ -30,7 +30,8 @@
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
 > * Quais os parâmetros relacionados à possibilidade de se ter um AVC? Pesquisar artigos.
 > * Quais os possíveis tratamentos preventivos para evitar um AVC? Exercícios? Baixo IMC? Taxa de glicose?
-> * O gênero possui alguma relação com a probabilidade de se ter um AVC? O fator idade possui relação com a probabilidade de se ter um AVC durante a vida?
+> * O gênero possui alguma relação com a probabilidade de se ter um AVC? 
+> * O fator idade possui relação com a probabilidade de se ter um AVC durante a vida?
 > * O fator “fumante” possui relação com a probabilidade de se ter um AVC durante a vida?
 > * A vida na cidade gera mais estresse que a vida no campo?
 > * O estresse aumenta a probabilidade de se ter um AVC durante a vida?
