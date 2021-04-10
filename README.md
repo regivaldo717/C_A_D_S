@@ -8,7 +8,6 @@
 >
 >O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação Ciência e Visualização de Dados em Saúde, oferecida no primeiro semestre de 2021, na Unicamp.
 >
->>>
         Nome                            | RA            | Especialização
         :------------------------------ | :-------------: |:----------------
         Amanda Consulin Amorim          | 234942        | Saúde (FCM)
