@@ -41,14 +41,16 @@ Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 
 # Bases de Dados
-> Bases de dados candidatas a serem utilizadas no projeto:
-> 1. Kaggle
-> 2. DATASUS
-> 3. OMS (especificar)
-> 4. Pubmed
-> 5. IBGE
-> 6. Lilacs
-
+>
+>  As bases de dados utilizadas no projeto provêm dos orgãos e sites listados abaixo que disponibilizam bases de dados públicas para consumo:
+> 
+> 1. Kaggle - Comunidade online de cientistas de dados e profissionais de aprendizado de máquina.
+> 2. DATASUS - Departamento de informática do Sistema Único de Saúde do Brasil.
+> 3. OMS  - Organização Mundial de Saúde
+> 4. Pubmed - Motor de busca de livre acesso à base de dados MEDLINE de citações e resumos de artigos de investigação em biomedicina.
+> 5. IBGE - Instituto Brasileiro de Geografia e Estatística.
+> 6. Lilacs - Mais importante e abrangente índice da literatura científica e técnica da América Latina e Caribe. 
+>
 # Metodologia
 >  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
 interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem de máquina e análise estatística**. 
