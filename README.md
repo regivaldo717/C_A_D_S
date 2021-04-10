@@ -53,7 +53,7 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >
 # Ferramentas
 >
-> As ferramentas destacadas em negrito serão utilizadas, as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
+> As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
 > 
 >- **Jupyter Notebook**
 >- **Linguagem Python**
