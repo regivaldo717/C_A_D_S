@@ -23,15 +23,17 @@ Será feito no final do projeto
 # Project `<A Predictive Approach to Potential Cases of Stroke>`
 
 # Apresentação
-
-Nossa apresentação
-
-Amanda Consulin Amorim
-Louise Idalgo Vasques
-Regivaldo Sousa Ferreira
-Marcia Jacobina Andrade Martins
-
-
+>
+>O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação Ciência e Visualização de Dados em Saúde, oferecida no primeiro semestre de 2021, na Unicamp.
+>
+>
+Nome                            | RA            | Especialização
+------------------------------- | ------------- |----------------
+Amanda Consulin Amorim          | 234942        | Saúde (FCM)
+Louise Idalgo Vasques           | 142399        | Saúde (FCM)
+Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
+Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
+>
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
 > 
