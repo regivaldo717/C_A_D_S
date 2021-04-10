@@ -55,10 +55,10 @@ e será escolhido aquele com melhor acurácia e performance para detecção do A
 >
 # Ferramentas
 
-Linguagem R
-Linguagem Python
-Knime
-
+- Linguagem R
+- Linguagem Python
+- Microsoft Power BI (desktop)
+- Knime
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
