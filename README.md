@@ -8,12 +8,12 @@
 >
 >O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação Ciência e Visualização de Dados em Saúde, oferecida no primeiro semestre de 2021, na Unicamp.
 >
-Nome                            | RA            | Especialização
-:------------------------------ | :-------------: |:----------------
-Amanda Consulin Amorim          | 234942        | Saúde (FCM)
-Louise Idalgo Vasques           | 142399        | Saúde (FCM)
-Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
-Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
+| Nome                            | RA            | Especialização
+| :------------------------------ | :-------------: |:----------------
+| Amanda Consulin Amorim          | 234942        | Saúde (FCM)
+| Louise Idalgo Vasques           | 142399        | Saúde (FCM)
+| Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
+| Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 # Descrição Resumida do Projeto
 > O Projeto tem por objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. <https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc>.
@@ -84,3 +84,6 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 | Resultados e discussões ||x|x
 | Resultado final|||x|x
 | Entrega final (EF) |||x|x
+
+# Referências
+> A duração do projeto está 
