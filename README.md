@@ -1,47 +1,53 @@
 # C_A_D_S
 ## Ciência e Análise de Dados em Saúde
 
-# Projeto -Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)
-O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
-
-Na primeira entrega do projeto, seu grupo deverá:
-
- - Criar um repositório GitHub ou GitLab **público** que será usado ao longo de todo o projeto (o link deverá ser submetido na atividade correspondente no Google Classroom da disciplina);
- - Organizar o repositório segundo a estrutura de diretórios proposta abaixo;
- - Editar arquivo README.md do repositório com a proposta inicial do projeto, segundo modelo descrito a seguir;
- - Disponibilizar vídeo de duração máxima de 3 minutos de apresentação da proposta do projeto. Não é necessário que todos os membros da equipe apareçam ou participem do vídeo.
-
-Após a primeira entrega, será agendada (em horário de aula) uma data de arguição da proposta de projeto. É obrigatória a participação de todos os membros durante o momento da arguição da proposta. Durante a arguição, os professores fornecerão feedbacks sobre a proposta e seu grupo poderá tirar dǘvidas sobre o encaminhamento do projeto. 
-
-# Estrutura do Repositório
-
-Será feito no final do projeto
-
-# Modelo para Apresentação do Projeto
-
-# Projeto `<Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)>`
-# Project `<A Predictive Approach to Potential Cases of Stroke>`
+# Projeto `Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)`
+# Project `A Predictive Approach to Potential Cases of Stroke`
 
 # Apresentação
-
-Nossa apresentação
-
-Amanda Consulin Amorim
-Louise Idalgo Vasques
-Regivaldo Sousa Ferreira
-Marcia Jacobina Andrade Martins
-
-
+>
+>O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação Ciência e Visualização de Dados em Saúde, oferecida no primeiro semestre de 2021, na Unicamp.
+>
+Nome                            | RA            | Especialização
+:------------------------------ | :-------------: |:----------------
+Amanda Consulin Amorim          | 234942        | Saúde (FCM)
+Louise Idalgo Vasques           | 142399        | Saúde (FCM)
+Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
+Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
+>
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> O Projeto tem por objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho <https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc>.
+>
+> Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. <http://www.sbdcv.org.br/publica_avc.asp>.
+>
+> Detectar previamente a doença AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença gera um enorme impacto econômico e social.
 > 
-> Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
+>  Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas:
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> * Quais os parâmetros relacionados à possibilidade de se ter um AVC? Pesquisar artigos.
+> * Quais os possíveis tratamentos preventivos para evitar um AVC? Exercícios? Baixo IMC? Taxa de glicose?
+> * O gênero possui alguma relação com a probabilidade de se ter um AVC? O fator idade possui relação com a probabilidade de se ter um AVC durante a vida?
+> * O fator “fumante” possui relação com a probabilidade de se ter um AVC durante a vida?
+> * A vida na cidade gera mais estresse que a vida no campo?
+> * O estresse aumenta a probabilidade de se ter um AVC durante a vida?
+> * Pessoas casadas têm maior ou menor probabilidade de ter um AVC durante a vida?
+> * O tipo de trabalho possui influência sobre a probabilidade de ter um AVC durante a vida? Quais trabalhos possuem algum risco à saúde?
+> * O etilismo possui alguma relação com a probabilidade de se ter AVC durante a vida?
+> * O alto índice de colesterol possui alguma relação com a probabilidade de se ter AVC durante a vida?
+>
 
 # Bases de Dados
-> Elencar bases de dados candidatas a serem utilizadas no projeto.
+> Bases de dados candidatas a serem utilizadas no projeto:
+> 1. Kaggle
+> 2. DATASUS
+> 3. OMS (especificar)
+> 4. Pubmed
+> 5. IBGE
+> 6. Lilacs
 
 # Metodologia
 >  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
@@ -54,25 +60,11 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >
 > As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
 > 
->- **Jupyter Notebook**
->- **Linguagem Python**
->- Microsoft Power BI (desktop)
->- Knime
->- Weka
+>* **Jupyter Notebook**
+>* **Linguagem Python**
+>* Microsoft Power BI (desktop)
+>* Knime
+>* Weka
 
 # Cronograma
->  A duração do projeto está prevista para quatro meses considerando etapas já executadas descritas no cronograma abaixo.
- 
-  
-|ATIVIDADE              |Abril|Maio|Junho| Julho |
-|----------------------   |---------------   |---------   |----------   |  ---------- |
-|Definição da pergunta de pesquisa bibliográfica | x|
-|Pesquisa bibliográfica e seleção dos dados|x
-|Entrega 1 (E1)|x
-|Avaliação das bases de dados|x
-|Tratamento dos dados||x
-|Entrega 2 (E2)   ||x
-|Interpretação e validação ||x
-| Resultados e discussões ||x|x
-| Resultado final|||x|x
-| Entrega final (EF) |||x|x
+> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
