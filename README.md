@@ -1,8 +1,8 @@
 # C_A_D_S
 ## Ciência e Análise de Dados em Saúde
 
-### Projeto `Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)`
-### Project `A Predictive Approach to Potential Cases of Stroke`
+# Projeto `Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)`
+# Project `A Predictive Approach to Potential Cases of Stroke`
 
 # Apresentação
 >
@@ -23,7 +23,19 @@ Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
-> 
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> * Quais os parâmetros relacionados à possibilidade de se ter um AVC? Pesquisar artigos.
+> * Quais os possíveis tratamentos preventivos para evitar um AVC? Exercícios? Baixo IMC? Taxa de glicose?
+> * O gênero possui alguma relação com a probabilidade de se ter um AVC? O fator idade possui relação com a probabilidade de se ter um AVC durante a vida?
+> * O fator “fumante” possui relação com a probabilidade de se ter um AVC durante a vida?
+> * A vida na cidade gera mais estresse que a vida no campo?
+> * O estresse aumenta a probabilidade de se ter um AVC durante a vida?
+> * Pessoas casadas têm maior ou menor probabilidade de ter um AVC durante a vida?
+> * O tipo de trabalho possui influência sobre a probabilidade de ter um AVC durante a vida? Quais trabalhos possuem algum risco à saúde?
+> * O etilismo possui alguma relação com a probabilidade de se ter AVC durante a vida?
+> * O alto índice de colesterol possui alguma relação com a probabilidade de se ter AVC durante a vida?
+>
 
 # Bases de Dados
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
