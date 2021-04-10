@@ -61,7 +61,7 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >- Weka
 
 # Cronograma
->  A duração do projeto está prevista para quatro meses considerando algumas etapas já executadas e descritar no cronograma abaixo.
+>  A duração do projeto está prevista para quatro meses considerando etapas já executadas descritas no cronograma abaixo.
  
   
 |ATIVIDADE              |Abril|Maio|Junho| Julho |
