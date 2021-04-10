@@ -20,7 +20,7 @@
 > 
 > Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020)
 > 
-> Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença gera um enorme impacto econômico e social.
+> Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
 > 
 >  Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
