@@ -55,11 +55,11 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >
 > As ferramentas destacadas em negrito serão utilizadas, as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
 > 
-- **Jupyter Notebook**
-- **Linguagem Python**
-- Microsoft Power BI (desktop)
-- Knime
-- Weka
+>- **Jupyter Notebook**
+>- **Linguagem Python**
+>- Microsoft Power BI (desktop)
+>- Knime
+>- Weka
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
