@@ -15,7 +15,7 @@
         Louise Idalgo Vasques           | 142399        | Saúde (FCM)
         Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
         Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
-```
+>
 # Descrição Resumida do Projeto
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
 > 
