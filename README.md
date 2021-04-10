@@ -23,6 +23,7 @@ Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> 
 
 # Bases de Dados
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
@@ -38,11 +39,11 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >
 > As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
 > 
->- **Jupyter Notebook**
->- **Linguagem Python**
->- Microsoft Power BI (desktop)
->- Knime
->- Weka
+>* **Jupyter Notebook**
+>* **Linguagem Python**
+>* Microsoft Power BI (desktop)
+>* Knime
+>* Weka
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
