@@ -16,11 +16,11 @@ Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
 Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 # Descrição Resumida do Projeto
-> O Projeto tem por objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho <https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc>.
+> O Projeto tem por objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. <https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc>.
 >
 > Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. <http://www.sbdcv.org.br/publica_avc.asp>.
 >
-> Detectar previamente a doença AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença gera um enorme impacto econômico e social.
+> Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença gera um enorme impacto econômico e social.
 > 
 >  Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
