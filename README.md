@@ -69,4 +69,18 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >* Weka
 
 # Cronograma
-> Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
+> A duração do projeto está prevista para quatro meses considerando etapas já executadas descritas no cronograma abaixo.
+ 
+
+|ATIVIDADE              |Abril|Maio|Junho| Julho |
+|----------------------   |---------------   |---------   |----------   |  ---------- |
+|Definição da pergunta de pesquisa bibliográfica | x|
+|Pesquisa bibliográfica e seleção dos dados|x
+|Entrega 1 (E1)|x
+|Avaliação das bases de dados|x
+|Tratamento dos dados||x
+|Entrega 2 (E2)   ||x
+|Interpretação e validação ||x
+| Resultados e discussões ||x|x
+| Resultado final|||x|x
+| Entrega final (EF) |||x|x
