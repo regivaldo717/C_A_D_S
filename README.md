@@ -1,8 +1,7 @@
 # C_A_D_S
 ## Ciência e Análise de Dados em Saúde
 
-# Projeto -xxxxxxxxxxxxxxxxxxx
-
+# Projeto - Uma Abordagem Preditiva para Potenciais Casos de Acidente Vascular Cerebral (AVC)
 O objetivo geral do projeto final desta disciplina é realizar a análise de dados relacionados à saúde, para usá-los em uma das seguintes possíveis tarefas: recomendação, estudo de associações, validação de hipóteses, análise exploratória, análise visual, análise comparativa e predição.
 
 Na primeira entrega do projeto, seu grupo deverá:
