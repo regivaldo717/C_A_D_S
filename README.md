@@ -45,12 +45,10 @@ Marcia Jacobina Andrade Martins
 > Elencar bases de dados candidatas a serem utilizadas no projeto.
 
 # Metodologia
->  A metodologia adotada será o Knowledge Database Discovery (KDD), passando pelas etapas seleção de dados, pré-processamento, transformação, mineração e 
-interpretação/avaliação. A técnica que iremos explorar é de aprendizagem de máquina com análise estatística. 
+>  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
+interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem de máquina e análise estatística**. 
 >
->  A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. 
-Para isso, testaremos alguns algoritmos de aprendizagem supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. 
-e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
+>  A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. Para isso, serão testados alguns algoritmos de aprendizagem supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
 >
 >
 # Ferramentas
