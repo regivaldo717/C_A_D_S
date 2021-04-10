@@ -54,11 +54,14 @@ e será escolhido aquele com melhor acurácia e performance para detecção do A
 >
 >
 # Ferramentas
-
-- Linguagem R
-- Linguagem Python
+>
+> As ferramentas destacadas em negrito serão utilizadas, as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
+> 
+- **Jupyter Notebook**
+- **Linguagem Python**
 - Microsoft Power BI (desktop)
 - Knime
+- Weka
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
