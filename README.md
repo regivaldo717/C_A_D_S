@@ -86,4 +86,7 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 | Entrega final (EF) |||x|x
 
 # Referências
-> A duração do projeto está 
+> SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES. Acidente Vascular Cerebral. Disponível em:  http://www.sbdcv.org.br/publica_avc.asp. Acesso em: 10 abr. 2021.
+
+> ACADEMIA BRASILEIRA DE NEUROLOGIA. Global Stroke Alliance: união e força contra o AVC. Disponível em: https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc. Acesso em: 10 abr. 2021.
+> 
