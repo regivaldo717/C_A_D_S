@@ -68,6 +68,7 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 >* Microsoft Power BI (desktop)
 >* Knime
 >* Weka
+>* R
 
 # Cronograma
 > A duração do projeto está prevista para quatro meses considerando etapas já executadas descritas no cronograma abaixo.
