@@ -22,7 +22,7 @@
 > 
 > Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
 > 
->  Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
+>  https://drive.google.com/file/d/1RXnp7sQo6Xi8VVCbJTfyz-Lvz0j5rqTB/view?usp=sharing
 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas:
