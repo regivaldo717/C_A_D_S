@@ -1,0 +1,9 @@
+﻿Gender,Age_in_Years,Systolic_Blood_Pressure_at_Randomization,Stroke_Subtype,Trial_Heparin_Allocated,Medium_Dose_Heparin_Given_For_14_Days,Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot,Time_In_Days_On_Trial_Treatment,Non_Trial_Antiplatelet_Drug*,Ischaemic_Stroke,Haemorrhagic_Stroke,Indeterminate_Stroke,Not_A_Stroke,Recurrent_Ischaemic_Stroke,Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke,Recurrent_Haemorrhagic_Stroke,Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke,Cause_of_Death_at_Six_Month_Follow_Up,Is_Death_Indicator,Is_Death_Indicator_at_14_Days,Six_Month_Outcome,Is_Initial_Stroke_Indicator,Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator,Is_Recurrent_Haemorrhagic_Stroke_Indicator,Is_Any_Stroke_Indicator_Within_14_Days
+Male,69,140,partial anterior circulation syndrome,avoid heparin,,FALSO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
+Male,76,150,lacunar syndrome,low in main trial,,FALSO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
+Female,71,170,lacunar syndrome,avoid heparin,,FALSO,11,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
+Male,81,170,partial anterior circulation syndrome,high in pilot,,VERDADEIRO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,recovered,FALSO,FALSO,FALSO,FALSO
+Male,78,170,lacunar syndrome,high in pilot,,VERDADEIRO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
+Male,54,135,lacunar syndrome,avoid heparin,,FALSO,7,no,yes,no,no,no,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
+Female,77,140,posterior circulation syndrome,avoid heparin,,FALSO,14,no,no,no,no,yes,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
+Male,23,120,other,low in main trial,,FALSO,11,no,yes,no,no,no,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
