@@ -1,8 +1,2 @@
-Male,69,140,partial anterior circulation syndrome,avoid heparin,,FALSO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
-Male,76,150,lacunar syndrome,low in main trial,,FALSO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
-Female,71,170,lacunar syndrome,avoid heparin,,FALSO,11,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
-Male,81,170,partial anterior circulation syndrome,high in pilot,,VERDADEIRO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,recovered,FALSO,FALSO,FALSO,FALSO
-Male,78,170,lacunar syndrome,high in pilot,,VERDADEIRO,14,no,yes,no,no,no,no,,no,,,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
-Male,54,135,lacunar syndrome,avoid heparin,,FALSO,7,no,yes,no,no,no,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
-Female,77,140,posterior circulation syndrome,avoid heparin,,FALSO,14,no,no,no,no,yes,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
-Male,23,120,other,low in main trial,,FALSO,11,no,yes,no,no,no,no,,no,,,FALSO,FALSO,not recovered,FALSO,FALSO,FALSO,FALSO
+Male,69,140,partial,"avoid heparin",no,FALSO,14,no,yes,no,no,no,no,no,no,no,no,FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
+Male,76,150,'lacunar syndrome','low in main trial',no,FALSO,14,no,yes,no,no,no,no,no,no,'','',FALSO,FALSO,dependent,FALSO,FALSO,FALSO,FALSO
