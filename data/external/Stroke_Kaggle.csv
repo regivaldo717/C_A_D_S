@@ -1,24 +1,24 @@
 ﻿id;gender;age;hypertension;heart_disease;ever_married;work_type;Residence_type;avg_glucose_level;bmi;smoking_status;stroke
 9046;Male;67;0;1;Yes;Private;Urban;22869;36.6;formerly smoked;1
-51676;Female;61;0;0;Yes;Self-employed;Rural;20221;N/A;never smoked;1
+51676;Female;61;0;0;Yes;Self-employed;Rural;20221;,NA;never smoked;1
 31112;Male;80;0;1;Yes;Private;Rural;10592;32.5;never smoked;1
 60182;Female;49;0;0;Yes;Private;Urban;17123;34.4;smokes;1
 1665;Female;79;1;0;Yes;Self-employed;Rural;17412;24;never smoked;1
 56669;Male;81;0;0;Yes;Private;Urban;18621;29;formerly smoked;1
 53882;Male;74;1;1;Yes;Private;Rural;7009;27.4;never smoked;1
 10434;Female;69;0;0;No;Private;Urban;9439;22.8;never smoked;1
-27419;Female;59;0;0;Yes;Private;Rural;7615;N/A;Unknown;1
+27419;Female;59;0;0;Yes;Private;Rural;7615;,NA;Unknown;1
 60491;Female;78;0;0;Yes;Private;Urban;5857;24.2;Unknown;1
 12109;Female;81;1;0;Yes;Private;Rural;8043;29.7;never smoked;1
 12095;Female;61;0;1;Yes;Govt_job;Rural;12046;36.8;smokes;1
 12175;Female;54;0;0;Yes;Private;Urban;10451;27.3;smokes;1
-8213;Male;78;0;1;Yes;Private;Urban;21984;N/A;Unknown;1
+8213;Male;78;0;1;Yes;Private;Urban;21984;,NA;Unknown;1
 5317;Female;79;0;1;Yes;Private;Urban;21409;28.2;never smoked;1
 58202;Female;50;1;0;Yes;Self-employed;Rural;16741;30.9;never smoked;1
 56112;Male;64;0;1;Yes;Private;Urban;19161;37.5;smokes;1
 34120;Male;75;1;0;Yes;Private;Urban;22129;25.8;smokes;1
 27458;Female;60;0;0;No;Private;Urban;8922;37.8;never smoked;1
-25226;Male;57;0;1;No;Govt_job;Urban;21708;N/A;Unknown;1
+25226;Male;57;0;1;No;Govt_job;Urban;21708;,NA;Unknown;1
 70630;Female;71;0;0;Yes;Govt_job;Rural;19394;22.4;smokes;1
 13861;Female;52;1;0;Yes;Self-employed;Urban;23329;48.9;never smoked;1
 68794;Female;79;0;0;Yes;Self-employed;Urban;2287;26.6;never smoked;1
@@ -26,9 +26,9 @@
 4219;Male;71;0;0;Yes;Private;Urban;10287;27.2;formerly smoked;1
 70822;Male;80;0;0;Yes;Self-employed;Rural;10412;23.5;never smoked;1
 38047;Female;65;0;0;Yes;Private;Rural;10098;28.2;formerly smoked;1
-61843;Male;58;0;0;Yes;Private;Rural;18984;N/A;Unknown;1
+61843;Male;58;0;0;Yes;Private;Rural;18984;,NA;Unknown;1
 54827;Male;69;0;1;Yes;Self-employed;Urban;19523;28.3;smokes;1
-69160;Male;59;0;0;Yes;Private;Rural;21178;N/A;formerly smoked;1
+69160;Male;59;0;0;Yes;Private;Rural;21178;,NA;formerly smoked;1
 43717;Male;57;1;0;Yes;Private;Urban;21208;44.2;smokes;1
 33879;Male;42;0;0;Yes;Private;Rural;8341;25.4;Unknown;1
 39373;Female;82;1;0;Yes;Self-employed;Urban;19692;22.2;never smoked;1
@@ -42,34 +42,34 @@
 4651;Male;78;0;0;Yes;Private;Rural;7803;23.9;formerly smoked;1
 1261;Male;54;0;0;Yes;Private;Urban;7122;28.5;never smoked;1
 61960;Male;82;0;1;Yes;Private;Urban;1449;26.4;smokes;1
-1845;Female;63;0;0;Yes;Private;Urban;909;N/A;formerly smoked;1
+1845;Female;63;0;0;Yes;Private;Urban;909;,NA;formerly smoked;1
 7937;Male;60;1;0;Yes;Govt_job;Urban;21303;20.2;smokes;1
 19824;Male;76;1;0;Yes;Private;Rural;24358;33.6;never smoked;1
-37937;Female;75;0;1;No;Self-employed;Urban;10978;N/A;Unknown;1
+37937;Female;75;0;1;No;Self-employed;Urban;10978;,NA;Unknown;1
 47472;Female;58;0;0;Yes;Private;Urban;10726;38.6;formerly smoked;1
 35626;Male;81;0;0;Yes;Self-employed;Urban;9933;33.7;never smoked;1
 36338;Female;39;1;0;Yes;Private;Rural;5809;39.2;smokes;1
-18587;Female;76;0;0;No;Private;Urban;8996;N/A;Unknown;1
-15102;Male;78;1;0;Yes;Private;Urban;7532;N/A;formerly smoked;1
+18587;Female;76;0;0;No;Private;Urban;8996;,NA;Unknown;1
+15102;Male;78;1;0;Yes;Private;Urban;7532;,NA;formerly smoked;1
 59190;Female;79;0;1;Yes;Private;Rural;12729;27.7;never smoked;1
 47167;Female;77;1;0;Yes;Self-employed;Urban;12413;31.4;never smoked;1
-8752;Female;63;0;0;Yes;Govt_job;Urban;19754;N/A;never smoked;1
+8752;Female;63;0;0;Yes;Govt_job;Urban;19754;,NA;never smoked;1
 25831;Male;63;0;1;Yes;Private;Rural;19671;36.5;formerly smoked;1
 38829;Female;82;0;0;Yes;Private;Rural;5932;33.2;never smoked;1
-66400;Male;78;0;0;Yes;Private;Urban;23775;N/A;formerly smoked;1
+66400;Male;78;0;0;Yes;Private;Urban;23775;,NA;formerly smoked;1
 58631;Male;73;1;0;Yes;Self-employed;Urban;19499;32.8;never smoked;1
 5111;Female;54;1;0;Yes;Govt_job;Urban;18093;27.7;never smoked;1
 10710;Female;56;0;0;Yes;Private;Urban;18517;40.4;formerly smoked;1
 55927;Female;80;1;0;Yes;Private;Rural;749;22.2;never smoked;1
 65842;Female;67;1;0;Yes;Self-employed;Rural;6194;25.3;smokes;1
 19557;Female;45;0;0;Yes;Private;Rural;9372;30.2;formerly smoked;1
-7356;Male;75;0;0;Yes;Private;Urban;10472;N/A;Unknown;1
+7356;Male;75;0;0;Yes;Private;Urban;10472;,NA;Unknown;1
 17013;Male;78;1;0;No;Private;Urban;11301;24;never smoked;1
 17004;Female;70;0;0;Yes;Private;Urban;22158;47.5;never smoked;1
 72366;Male;76;0;0;Yes;Private;Urban;10447;20.3;Unknown;1
 6118;Male;59;0;0;Yes;Private;Urban;8623;30;formerly smoked;1
 7371;Female;80;1;0;Yes;Self-employed;Rural;7267;28.9;never smoked;1
-70676;Female;76;0;0;Yes;Govt_job;Rural;6257;N/A;formerly smoked;1
+70676;Female;76;0;0;Yes;Govt_job;Rural;6257;,NA;formerly smoked;1
 2326;Female;67;1;0;Yes;Private;Rural;17912;28.1;formerly smoked;1
 27169;Female;66;1;0;Yes;Govt_job;Rural;11655;31.1;formerly smoked;1
 50784;Male;63;0;0;Yes;Private;Rural;22856;27.4;never smoked;1
@@ -77,13 +77,13 @@
 66159;Female;80;0;1;Yes;Self-employed;Rural;6672;21.7;formerly smoked;1
 36236;Male;80;1;0;Yes;Private;Urban;24009;27;never smoked;1
 71673;Female;79;0;0;Yes;Private;Urban;11085;24.1;formerly smoked;1
-45805;Female;51;0;0;Yes;Private;Urban;16531;N/A;never smoked;1
+45805;Female;51;0;0;Yes;Private;Urban;16531;,NA;never smoked;1
 42117;Male;43;0;0;Yes;Self-employed;Urban;14343;45.9;Unknown;1
 57419;Male;59;0;0;Yes;Private;Rural;9616;44.1;Unknown;1
-26015;Female;66;0;0;Yes;Self-employed;Urban;10145;N/A;Unknown;1
+26015;Female;66;0;0;Yes;Self-employed;Urban;10145;,NA;Unknown;1
 26727;Female;79;0;0;No;Private;Rural;8892;22.9;never smoked;1
 66638;Female;68;1;0;No;Self-employed;Urban;7979;29.7;never smoked;1
-70042;Male;58;0;0;Yes;Private;Urban;712;N/A;Unknown;1
+70042;Male;58;0;0;Yes;Private;Urban;712;,NA;Unknown;1
 32399;Male;54;0;0;Yes;Private;Rural;9697;29.1;smokes;1
 3253;Male;61;0;1;Yes;Private;Rural;11181;27.3;smokes;1
 71796;Female;70;0;1;Yes;Private;Rural;5935;32.3;formerly smoked;1
@@ -104,14 +104,14 @@
 45277;Female;74;0;0;Yes;Private;Rural;23161;34.6;formerly smoked;1
 4712;Female;81;0;1;Yes;Self-employed;Rural;787;19.4;Unknown;1
 33175;Female;57;0;0;Yes;Govt_job;Urban;11052;28.5;Unknown;1
-2346;Male;58;0;0;Yes;Private;Urban;823;N/A;smokes;1
+2346;Male;58;0;0;Yes;Private;Urban;823;,NA;smokes;1
 42072;Female;50;1;0;Yes;Private;Rural;7318;30.3;formerly smoked;1
 12062;Female;54;0;0;Yes;Self-employed;Rural;19182;40.4;smokes;1
 30456;Female;79;0;0;Yes;Private;Rural;9305;24.2;never smoked;1
 59125;Female;53;0;0;Yes;Govt_job;Urban;6417;41.5;never smoked;1
 56546;Male;79;0;1;Yes;Private;Rural;12998;22.6;formerly smoked;1
 48405;Male;80;0;1;Yes;Private;Urban;6853;24.2;smokes;1
-36706;Female;76;0;0;Yes;Self-employed;Urban;10641;N/A;formerly smoked;1
+36706;Female;76;0;0;Yes;Self-employed;Urban;10641;,NA;formerly smoked;1
 41069;Female;45;0;0;Yes;Private;Rural;2241;56.6;never smoked;1
 71639;Female;68;0;0;No;Govt_job;Urban;821;27.1;Unknown;1
 53401;Male;71;1;1;No;Govt_job;Rural;21694;30.9;never smoked;1
@@ -123,16 +123,16 @@
 72918;Female;53;1;0;Yes;Private;Urban;6255;30.3;Unknown;1
 13491;Male;80;0;0;Yes;Private;Rural;25963;31.7;smokes;1
 44033;Male;56;1;0;Yes;Private;Rural;24931;35.8;never smoked;1
-14164;Female;72;0;0;Yes;Private;Urban;21991;N/A;Unknown;1
+14164;Female;72;0;0;Yes;Private;Urban;21991;,NA;Unknown;1
 50522;Female;72;0;0;Yes;Govt_job;Urban;13141;28.4;never smoked;1
-3352;Male;78;1;0;Yes;Self-employed;Urban;9313;N/A;formerly smoked;1
+3352;Male;78;1;0;Yes;Self-employed;Urban;9313;,NA;formerly smoked;1
 70943;Female;80;0;0;Yes;Private;Urban;7354;24;Unknown;1
 37132;Male;82;0;0;Yes;Govt_job;Urban;20059;29;formerly smoked;1
-48796;Female;75;0;0;Yes;Govt_job;Urban;6248;N/A;Unknown;1
+48796;Female;75;0;0;Yes;Govt_job;Urban;6248;,NA;Unknown;1
 53440;Female;73;1;0;Yes;Private;Rural;19014;36.5;never smoked;1
 16817;Female;78;1;0;No;Private;Urban;13054;20.1;never smoked;1
 69551;Male;69;1;0;No;Private;Rural;18299;36.5;never smoked;1
-31563;Female;38;0;0;Yes;Private;Rural;10145;N/A;formerly smoked;1
+31563;Female;38;0;0;Yes;Private;Rural;10145;,NA;formerly smoked;1
 20387;Female;68;1;0;Yes;Self-employed;Rural;20609;26.7;never smoked;1
 71279;Female;71;0;0;Yes;Govt_job;Urban;26332;38.7;never smoked;1
 55824;Male;76;0;0;Yes;Private;Urban;1401;29.9;formerly smoked;1
@@ -145,11 +145,11 @@
 37651;Female;69;1;1;No;Self-employed;Urban;7217;36.8;never smoked;1
 17308;Female;72;1;0;Yes;Private;Urban;22179;30;never smoked;1
 67981;Male;66;0;0;Yes;Private;Urban;15116;27.5;formerly smoked;1
-41241;Male;65;0;0;Yes;Self-employed;Urban;6843;N/A;formerly smoked;1
+41241;Male;65;0;0;Yes;Self-employed;Urban;6843;,NA;formerly smoked;1
 62861;Female;78;0;0;Yes;Private;Urban;6729;24.6;never smoked;1
 72081;Female;57;1;0;Yes;Govt_job;Rural;6741;32.9;never smoked;1
 58978;Female;70;0;1;Yes;Private;Rural;23907;26.1;never smoked;1
-11933;Female;79;0;0;Yes;Private;Rural;16967;N/A;Unknown;1
+11933;Female;79;0;0;Yes;Private;Rural;16967;,NA;Unknown;1
 46703;Male;68;0;1;Yes;Private;Urban;22383;31.9;formerly smoked;1
 32503;Female;80;0;0;Yes;Self-employed;Urban;7657;34.1;never smoked;1
 12482;Male;68;0;0;Yes;Self-employed;Urban;7782;27.5;smokes;1
@@ -159,36 +159,36 @@
 59437;Female;57;0;0;Yes;Private;Urban;22189;37.3;smokes;1
 66258;Female;71;0;0;Yes;Self-employed;Urban;19571;34.1;formerly smoked;1
 34567;Female;81;1;0;Yes;Self-employed;Rural;7402;25;never smoked;1
-50931;Female;76;0;0;Yes;Private;Urban;5792;N/A;formerly smoked;1
-16590;Male;71;0;1;Yes;Private;Urban;8176;N/A;smokes;1
-69768;Female;132;0;0;No;children;Urban;7037;N/A;Unknown;1
+50931;Female;76;0;0;Yes;Private;Urban;5792;,NA;formerly smoked;1
+16590;Male;71;0;1;Yes;Private;Urban;8176;,NA;smokes;1
+69768;Female;132;0;0;No;children;Urban;7037;,NA;Unknown;1
 20426;Female;78;1;0;No;Private;Urban;20387;45.7;never smoked;1
 3512;Female;70;1;0;Yes;Self-employed;Urban;8913;34.2;formerly smoked;1
 42899;Male;78;0;0;Yes;Self-employed;Urban;13319;23.6;formerly smoked;1
 63453;Female;56;0;0;Yes;Govt_job;Rural;16223;27.3;Unknown;1
-43364;Male;79;1;0;Yes;Private;Rural;7502;N/A;never smoked;1
+43364;Male;79;1;0;Yes;Private;Rural;7502;,NA;never smoked;1
 44993;Female;79;1;0;No;Govt_job;Urban;9802;22.3;formerly smoked;1
 210;Male;81;0;0;Yes;Self-employed;Rural;9154;31.4;never smoked;1
-28939;Male;64;0;0;Yes;Self-employed;Rural;11198;N/A;formerly smoked;1
-60739;Female;79;1;1;No;Self-employed;Rural;6094;N/A;never smoked;1
+28939;Male;64;0;0;Yes;Self-employed;Rural;11198;,NA;formerly smoked;1
+60739;Female;79;1;1;No;Self-employed;Rural;6094;,NA;never smoked;1
 67432;Female;60;0;0;Yes;Private;Urban;9743;26.4;smokes;1
 2182;Female;80;1;0;Yes;Self-employed;Rural;9102;32.9;formerly smoked;1
-40899;Female;78;0;0;Yes;Self-employed;Rural;6067;N/A;formerly smoked;1
+40899;Female;78;0;0;Yes;Self-employed;Rural;6067;,NA;formerly smoked;1
 14431;Male;72;1;0;Yes;Self-employed;Rural;18549;37.1;never smoked;1
 62466;Female;80;0;0;Yes;Private;Urban;6444;45;never smoked;1
 36841;Male;78;1;0;Yes;Self-employed;Rural;5611;25.5;formerly smoked;1
-33486;Female;80;0;0;Yes;Govt_job;Urban;11066;N/A;Unknown;1
+33486;Female;80;0;0;Yes;Govt_job;Urban;11066;,NA;Unknown;1
 65105;Male;81;0;0;Yes;Private;Urban;21322;26.1;Unknown;1
 54567;Female;46;0;0;Yes;Private;Urban;7818;30.8;never smoked;1
 66204;Male;59;0;0;Yes;Private;Urban;11104;32;formerly smoked;1
 39912;Female;32;0;0;Yes;Private;Rural;7613;29.9;smokes;1
-8003;Female;77;0;0;No;Private;Urban;8132;N/A;Unknown;1
+8003;Female;77;0;0;No;Private;Urban;8132;,NA;Unknown;1
 28378;Male;61;1;1;Yes;Private;Urban;11224;37.4;smokes;1
 41081;Male;63;0;0;Yes;Private;Rural;1373;31.7;formerly smoked;1
 16077;Male;63;0;1;Yes;Self-employed;Urban;11669;34.5;formerly smoked;1
 67895;Female;82;1;1;Yes;Govt_job;Urban;21594;27.9;formerly smoked;1
 30184;Male;82;0;0;Yes;Private;Rural;8662;29.5;formerly smoked;1
-66955;Male;61;0;1;Yes;Private;Urban;20986;N/A;Unknown;1
+66955;Male;61;0;1;Yes;Private;Urban;20986;,NA;Unknown;1
 24905;Female;65;0;0;Yes;Private;Urban;20577;46;formerly smoked;1
 66071;Male;51;1;0;Yes;Private;Urban;11216;42.5;formerly smoked;1
 36255;Male;59;0;0;Yes;Self-employed;Rural;11803;35.5;smokes;1
@@ -197,9 +197,9 @@
 64373;Male;59;0;0;Yes;Private;Urban;20062;35.8;formerly smoked;1
 58267;Male;70;1;0;Yes;Private;Rural;24252;45.5;formerly smoked;1
 35684;Male;69;0;0;Yes;Private;Rural;9381;28.5;Unknown;1
-18937;Male;79;0;0;Yes;Private;Rural;11477;N/A;formerly smoked;1
+18937;Male;79;0;0;Yes;Private;Rural;11477;,NA;formerly smoked;1
 491;Female;74;0;0;Yes;Self-employed;Urban;7496;26.6;never smoked;1
-54695;Male;74;0;0;Yes;Private;Urban;16713;N/A;Unknown;1
+54695;Male;74;0;0;Yes;Private;Urban;16713;,NA;Unknown;1
 68627;Male;80;1;1;Yes;Private;Urban;17529;31.5;formerly smoked;1
 8580;Female;77;0;0;Yes;Self-employed;Rural;90;32;never smoked;1
 28484;Female;78;0;0;Yes;Self-employed;Rural;10947;30.8;never smoked;1
@@ -217,7 +217,7 @@
 68025;Female;79;0;1;No;Private;Urban;20533;31;smokes;1
 2390;Male;78;0;0;Yes;Self-employed;Urban;1161;27.1;never smoked;1
 29552;Female;55;1;1;Yes;Private;Urban;2104;40;smokes;1
-25904;Female;76;1;1;Yes;Self-employed;Urban;19986;N/A;smokes;1
+25904;Female;76;1;1;Yes;Self-employed;Urban;19986;,NA;smokes;1
 31421;Male;73;0;1;Yes;Govt_job;Rural;21973;28.6;never smoked;1
 20463;Male;81;1;1;Yes;Private;Urban;25089;28.1;smokes;1
 68023;Male;79;0;0;Yes;Private;Rural;7273;28.4;never smoked;1
@@ -226,7 +226,7 @@
 8899;Male;49;0;0;No;Private;Rural;10486;31.9;smokes;1
 39186;Female;57;0;1;Yes;Private;Urban;21658;31;Unknown;1
 32729;Female;81;0;0;Yes;Private;Rural;1844;27.5;never smoked;1
-39105;Male;74;0;0;Yes;Self-employed;Rural;6098;N/A;never smoked;1
+39105;Male;74;0;0;Yes;Self-employed;Rural;6098;,NA;never smoked;1
 31154;Female;39;0;0;Yes;Self-employed;Urban;9776;29.6;smokes;1
 69959;Female;80;1;0;No;Private;Urban;6603;35.4;never smoked;1
 10552;Female;81;0;0;Yes;Self-employed;Rural;8195;16.9;never smoked;1
@@ -246,7 +246,7 @@
 17739;Male;57;0;0;Yes;Private;Rural;8496;36.7;Unknown;1
 49669;Female;14;0;0;No;children;Rural;5793;30.9;Unknown;1
 27153;Female;75;0;0;Yes;Self-employed;Rural;788;29.3;formerly smoked;1
-34060;Male;71;1;0;Yes;Self-employed;Rural;878;N/A;Unknown;1
+34060;Male;71;1;0;Yes;Self-employed;Rural;878;,NA;Unknown;1
 43424;Female;78;0;0;Yes;Private;Rural;7881;19.6;Unknown;1
 30669;Male;3;0;0;No;children;Rural;9512;18;Unknown;0
 30468;Male;58;1;0;Yes;Private;Urban;8796;39.2;never smoked;0
@@ -341,7 +341,7 @@
 40840;Female;49;0;0;Yes;Private;Rural;13816;19.4;never smoked;0
 10449;Female;24;0;0;Yes;Private;Urban;7523;29;never smoked;0
 38805;Female;37;0;0;Yes;Private;Rural;7518;48.2;formerly smoked;0
-31091;Male;34;0;1;Yes;Private;Urban;10623;N/A;formerly smoked;0
+31091;Male;34;0;1;Yes;Private;Urban;10623;,NA;formerly smoked;0
 45053;Male;64;0;0;Yes;Govt_job;Urban;23964;34.6;formerly smoked;0
 61837;Female;66;0;0;Yes;Self-employed;Urban;5895;24.6;never smoked;0
 9487;Female;23;0;0;No;Private;Urban;9992;25.8;never smoked;0
@@ -359,7 +359,7 @@
 42996;Female;36;0;0;No;Govt_job;Rural;12682;23.3;never smoked;0
 66333;Male;52;0;0;Yes;Self-employed;Urban;784;64.8;never smoked;0
 46785;Female;29;0;0;Yes;Private;Urban;6369;28.1;smokes;0
-54312;Female;76;1;0;Yes;Self-employed;Urban;20958;N/A;never smoked;0
+54312;Female;76;1;0;Yes;Self-employed;Urban;20958;,NA;never smoked;0
 21408;Female;39;0;0;Yes;Self-employed;Rural;8986;24.4;never smoked;0
 49916;Male;76;0;0;Yes;Private;Rural;11099;29.8;formerly smoked;0
 7559;Female;64;0;0;No;children;Urban;8382;24.9;Unknown;0
@@ -431,7 +431,7 @@
 59729;Male;53;0;0;Yes;Private;Urban;21103;34.2;formerly smoked;0
 53144;Female;52;0;1;Yes;Private;Urban;7279;54.7;never smoked;0
 3655;Male;31;0;0;Yes;Govt_job;Rural;9165;24.6;formerly smoked;0
-11999;Female;63;0;0;Yes;Govt_job;Rural;7992;N/A;smokes;0
+11999;Female;63;0;0;Yes;Govt_job;Rural;7992;,NA;smokes;0
 12985;Female;69;0;0;Yes;Self-employed;Rural;22547;36.9;never smoked;0
 38119;Male;64;0;0;Yes;Govt_job;Urban;9448;31.1;never smoked;0
 3355;Female;64;0;0;Yes;Private;Urban;8234;31.9;never smoked;0
@@ -476,9 +476,9 @@
 9179;Female;32;0;0;No;Private;Urban;742;23;smokes;0
 38165;Female;81;0;0;No;Private;Rural;6901;32.6;never smoked;0
 63050;Male;25;0;0;No;Private;Rural;9617;22.1;Unknown;0
-22470;Male;61;0;0;Yes;Govt_job;Urban;18415;N/A;Unknown;0
+22470;Male;61;0;0;Yes;Govt_job;Urban;18415;,NA;Unknown;0
 71585;Female;66;0;0;Yes;Govt_job;Urban;8724;22.5;formerly smoked;0
-15649;Male;54;1;0;Yes;Private;Rural;19869;N/A;smokes;0
+15649;Male;54;1;0;Yes;Private;Rural;19869;,NA;smokes;0
 11974;Male;11;0;0;No;children;Urban;8258;25.5;Unknown;0
 3009;Female;53;0;0;Yes;Self-employed;Rural;9688;31.4;Unknown;0
 32361;Female;78;0;1;Yes;Self-employed;Urban;7332;26;Unknown;0
@@ -521,7 +521,7 @@
 22622;Male;10;0;0;No;children;Rural;10879;21;Unknown;0
 6726;Female;31;0;0;Yes;Private;Urban;7331;45;never smoked;0
 17242;Male;67;0;0;Yes;Self-employed;Urban;6852;26.2;never smoked;0
-16380;Male;40;0;0;Yes;Private;Rural;8977;N/A;smokes;0
+16380;Male;40;0;0;Yes;Private;Rural;8977;,NA;smokes;0
 9729;Male;70;0;0;Yes;Private;Urban;10264;28.3;never smoked;0
 56974;Female;38;0;0;Yes;Govt_job;Urban;7092;41.6;never smoked;0
 29933;Female;5;0;0;No;children;Rural;8611;19;Unknown;0
@@ -667,10 +667,10 @@
 57772;Female;75;0;0;Yes;Govt_job;Rural;5623;25.3;never smoked;0
 16615;Male;76;1;0;Yes;Self-employed;Rural;6961;35.3;never smoked;0
 62999;Male;10;0;0;No;children;Rural;5949;18.3;Unknown;0
-68995;Female;48;1;0;No;Private;Rural;11814;N/A;formerly smoked;0
+68995;Female;48;1;0;No;Private;Rural;11814;,NA;formerly smoked;0
 66184;Male;40;0;0;Yes;Govt_job;Rural;10026;26;Unknown;0
 53010;Male;82;0;0;Yes;Self-employed;Rural;5675;21;never smoked;0
-967;Male;61;0;1;Yes;Private;Urban;8827;N/A;never smoked;0
+967;Male;61;0;1;Yes;Private;Urban;8827;,NA;never smoked;0
 31145;Female;17;0;0;No;Private;Urban;6781;55.7;never smoked;0
 54338;Female;58;0;0;Yes;Govt_job;Rural;7746;27.6;never smoked;0
 22870;Male;12;0;0;No;children;Urban;7626;20.5;never smoked;0
@@ -679,7 +679,7 @@
 67932;Female;48;0;0;Yes;Private;Rural;7574;28.8;smokes;0
 10255;Male;25;0;0;Yes;Private;Rural;9214;36.2;Unknown;0
 68131;Female;27;0;0;No;Private;Rural;14995;25.9;never smoked;0
-29873;Male;31;1;0;Yes;Govt_job;Urban;9211;N/A;never smoked;0
+29873;Male;31;1;0;Yes;Govt_job;Urban;9211;,NA;never smoked;0
 54182;Female;16;0;0;No;Private;Rural;7498;21.4;never smoked;0
 61300;Male;20;0;0;No;Private;Urban;5525;20.4;never smoked;0
 15274;Female;2;0;0;No;children;Rural;7989;31.6;Unknown;0
@@ -728,7 +728,7 @@
 50277;Female;51;0;0;Yes;Self-employed;Rural;6797;29.4;smokes;0
 50811;Male;24;0;0;No;Private;Urban;11934;38.5;never smoked;0
 16575;Male;17;0;0;No;Private;Rural;9492;23.5;never smoked;0
-1246;Female;43;0;0;Yes;Govt_job;Rural;10742;N/A;never smoked;0
+1246;Female;43;0;0;Yes;Govt_job;Rural;10742;,NA;never smoked;0
 11176;Male;9;0;0;No;children;Rural;8502;16.3;Unknown;0
 30712;Male;50;0;0;Yes;Private;Urban;10351;35.9;never smoked;0
 31308;Female;49;0;0;Yes;Private;Urban;1145;35.9;formerly smoked;0
@@ -741,7 +741,7 @@
 56831;Female;55;0;0;Yes;Private;Urban;5534;27.1;smokes;0
 52580;Female;27;0;0;No;Private;Rural;7504;24.5;never smoked;0
 55592;Male;71;0;0;Yes;Private;Rural;10973;28.9;never smoked;0
-33723;Female;9;0;0;No;children;Urban;9581;N/A;Unknown;0
+33723;Female;9;0;0;No;children;Urban;9581;,NA;Unknown;0
 26235;Male;23;0;0;No;Private;Rural;9678;24.6;smokes;0
 16685;Female;71;1;0;Yes;Private;Urban;19462;31.6;never smoked;0
 44583;Female;56;0;1;Yes;Private;Rural;7002;32.3;never smoked;0
@@ -864,21 +864,21 @@
 37154;Female;31;0;0;Yes;Private;Urban;12538;24.4;smokes;0
 16809;Male;41;0;0;Yes;Private;Urban;11171;38.9;formerly smoked;0
 13907;Male;65;0;0;Yes;Self-employed;Rural;9464;28.6;never smoked;0
-2314;Male;52;0;0;Yes;Private;Urban;2267;N/A;smokes;0
+2314;Male;52;0;0;Yes;Private;Urban;2267;,NA;smokes;0
 70380;Female;20;0;0;No;Private;Urban;11296;27.5;never smoked;0
-63058;Female;77;0;1;Yes;Private;Rural;1831;N/A;never smoked;0
+63058;Female;77;0;1;Yes;Private;Rural;1831;,NA;never smoked;0
 54071;Female;51;0;0;Yes;Private;Urban;10536;43.7;Unknown;0
 67405;Female;37;0;0;Yes;Private;Urban;8413;27;never smoked;0
 28024;Male;49;0;0;Yes;Private;Rural;10247;29.3;formerly smoked;0
 11730;Female;62;1;0;Yes;Govt_job;Rural;7704;34.7;never smoked;0
-2549;Female;17;0;0;No;Private;Rural;8323;N/A;never smoked;0
+2549;Female;17;0;0;No;Private;Rural;8323;,NA;never smoked;0
 17245;Female;28;0;0;Yes;Private;Rural;8701;39.9;never smoked;0
 70852;Male;80;0;0;Yes;Private;Rural;5699;26.7;never smoked;0
 60957;Male;45;0;0;Yes;Private;Rural;7301;24.8;formerly smoked;0
 19742;Female;37;0;0;Yes;Private;Urban;10635;29.7;never smoked;0
 10782;Female;3;0;0;No;children;Rural;8063;15.9;Unknown;0
 61742;Male;26;0;0;No;Private;Urban;10361;31.4;never smoked;0
-4808;Female;71;0;0;Yes;Self-employed;Urban;9135;N/A;formerly smoked;0
+4808;Female;71;0;0;Yes;Self-employed;Urban;9135;,NA;formerly smoked;0
 13571;Male;58;0;0;Yes;Govt_job;Urban;19404;27.8;never smoked;0
 49928;Female;59;0;0;Yes;Govt_job;Rural;11199;35.5;formerly smoked;0
 52688;Male;74;1;0;Yes;Private;Rural;5751;31.7;smokes;0
@@ -902,7 +902,7 @@
 41148;Male;71;0;1;Yes;Private;Urban;7071;30.1;never smoked;0
 14924;Male;48;0;0;Yes;Private;Urban;7236;34.7;smokes;0
 47950;Female;49;0;0;Yes;Self-employed;Urban;5976;29.7;Unknown;0
-8008;Female;35;0;0;No;Govt_job;Urban;8376;N/A;smokes;0
+8008;Female;35;0;0;No;Govt_job;Urban;8376;,NA;smokes;0
 56089;Female;25;0;0;Yes;Private;Rural;6364;31.3;formerly smoked;0
 9262;Female;31;0;0;Yes;Private;Rural;7626;35.6;never smoked;0
 71896;Female;68;0;0;Yes;Private;Rural;8206;35.2;formerly smoked;0
@@ -935,7 +935,7 @@
 19681;Female;74;0;0;Yes;Self-employed;Urban;9921;22.1;never smoked;0
 6988;Female;52;0;0;Yes;Self-employed;Urban;11321;38.3;never smoked;0
 25287;Male;54;0;0;Yes;Private;Urban;9295;41;never smoked;0
-224;Female;23;0;0;No;Private;Urban;11016;N/A;never smoked;0
+224;Female;23;0;0;No;Private;Urban;11016;,NA;never smoked;0
 56679;Male;19;0;0;No;Private;Rural;14257;22.8;Unknown;0
 27146;Female;23;0;0;No;Private;Rural;9287;30.1;never smoked;0
 16556;Male;13;0;0;No;Never_worked;Rural;11148;20.8;Unknown;0
@@ -964,7 +964,7 @@
 40889;Male;33;0;0;No;Private;Rural;7742;26.1;Unknown;0
 4083;Female;30;0;0;No;Private;Rural;7369;17.3;never smoked;0
 59336;Male;66;1;0;Yes;Private;Rural;749;32.1;never smoked;0
-5684;Male;40;0;0;No;Private;Urban;8827;N/A;formerly smoked;0
+5684;Male;40;0;0;No;Private;Urban;8827;,NA;formerly smoked;0
 48843;Female;27;0;0;No;Private;Urban;5839;30.4;never smoked;0
 5694;Male;21;0;0;No;Private;Rural;10205;29.9;never smoked;0
 3673;Female;55;0;0;Yes;Private;Rural;11247;32.8;smokes;0
@@ -1101,11 +1101,11 @@
 23565;Male;34;0;0;Yes;Private;Urban;8557;26.8;Unknown;0
 27323;Female;67;0;0;Yes;Self-employed;Urban;6861;31.9;never smoked;0
 57854;Male;164;0;0;No;children;Urban;563;19.7;Unknown;0
-18414;Female;23;0;0;No;Private;Rural;19322;N/A;smokes;0
+18414;Female;23;0;0;No;Private;Rural;19322;,NA;smokes;0
 72836;Female;59;0;0;Yes;Private;Urban;6598;31.1;Unknown;0
 17708;Male;62;0;0;Yes;Govt_job;Rural;20457;34.4;Unknown;0
 66321;Male;47;0;0;Yes;Govt_job;Urban;6499;33.2;never smoked;0
-53817;Female;71;1;0;Yes;Self-employed;Rural;6612;N/A;never smoked;0
+53817;Female;71;1;0;Yes;Self-employed;Rural;6612;,NA;never smoked;0
 66678;Female;22;0;0;No;Private;Urban;734;21.6;never smoked;0
 56734;Male;33;0;0;Yes;Govt_job;Urban;8283;25.4;Unknown;0
 32240;Female;27;0;0;No;Private;Urban;9355;41.6;never smoked;0
@@ -1114,7 +1114,7 @@
 40824;Male;47;0;0;Yes;Private;Rural;14202;30;Unknown;0
 38678;Female;66;0;0;Yes;Self-employed;Rural;25146;35.2;smokes;0
 29380;Female;42;1;0;Yes;Private;Rural;8996;35.6;never smoked;0
-809;Male;13;0;0;No;children;Urban;7173;N/A;Unknown;0
+809;Male;13;0;0;No;children;Urban;7173;,NA;Unknown;0
 65453;Female;56;1;0;Yes;Govt_job;Urban;8244;27.8;smokes;0
 9415;Female;69;0;0;Yes;Self-employed;Urban;8085;29.3;formerly smoked;0
 30989;Female;65;0;0;Yes;Self-employed;Rural;22052;37.2;smokes;0
@@ -1182,7 +1182,7 @@
 46643;Female;62;0;0;Yes;Private;Rural;8257;36;formerly smoked;0
 782;Female;32;0;0;No;Private;Urban;7934;26.5;formerly smoked;0
 63565;Female;2;0;0;No;children;Rural;12568;20.1;Unknown;0
-13602;Male;73;1;0;Yes;Self-employed;Rural;10206;N/A;Unknown;0
+13602;Male;73;1;0;Yes;Self-employed;Rural;10206;,NA;Unknown;0
 28326;Female;79;0;0;Yes;Private;Urban;6559;28.1;never smoked;0
 26389;Female;2;0;0;No;children;Urban;12085;16.2;Unknown;0
 16906;Male;43;0;0;Yes;Govt_job;Urban;10165;30;never smoked;0
@@ -1193,7 +1193,7 @@
 37404;Male;42;0;0;Yes;Private;Urban;5522;27;never smoked;0
 39518;Female;20;0;0;No;Private;Rural;7894;20.7;never smoked;0
 70678;Female;55;0;1;No;Private;Rural;10969;22.2;smokes;0
-542;Female;3;0;0;No;children;Urban;7963;N/A;Unknown;0
+542;Female;3;0;0;No;children;Urban;7963;,NA;Unknown;0
 38649;Female;23;0;0;No;Private;Rural;7933;41.5;never smoked;0
 53266;Female;33;0;0;Yes;Private;Urban;7991;33.5;never smoked;0
 26031;Female;14;0;0;No;Private;Rural;8446;21.8;Unknown;0
@@ -1213,7 +1213,7 @@
 69177;Female;79;0;0;Yes;Private;Rural;9077;22.5;never smoked;0
 33162;Female;23;0;0;No;Private;Rural;9084;31.6;never smoked;0
 44764;Female;78;1;0;Yes;Self-employed;Rural;592;29.1;Unknown;0
-32157;Male;51;0;0;Yes;Private;Rural;21771;N/A;formerly smoked;0
+32157;Male;51;0;0;Yes;Private;Rural;21771;,NA;formerly smoked;0
 61983;Female;41;0;0;Yes;Private;Urban;13376;43.4;smokes;0
 72268;Male;68;0;0;Yes;Self-employed;Urban;6136;26.5;formerly smoked;0
 39467;Female;30;0;0;No;Private;Rural;11862;29.7;Unknown;0
@@ -1234,13 +1234,13 @@
 5858;Male;32;0;0;No;Private;Rural;9368;31.4;never smoked;0
 39823;Female;41;0;0;Yes;Govt_job;Rural;22986;35.2;smokes;0
 37053;Male;53;0;0;Yes;Govt_job;Rural;7873;23.3;never smoked;0
-2082;Male;35;0;0;Yes;Private;Rural;11592;N/A;formerly smoked;0
+2082;Male;35;0;0;Yes;Private;Rural;11592;,NA;formerly smoked;0
 48073;Male;67;0;0;Yes;Govt_job;Rural;9371;31.2;formerly smoked;0
 16449;Female;33;0;0;Yes;Govt_job;Rural;7666;24.8;never smoked;0
 5447;Female;21;0;0;No;Private;Rural;11238;25.8;Unknown;0
 27145;Female;26;0;0;No;Private;Rural;893;48.4;smokes;0
 30328;Female;69;1;0;Yes;Govt_job;Rural;10344;43.1;formerly smoked;0
-739;Female;73;0;0;Yes;Self-employed;Rural;7969;N/A;formerly smoked;0
+739;Female;73;0;0;Yes;Self-employed;Rural;7969;,NA;formerly smoked;0
 44224;Male;15;0;0;No;Private;Rural;6161;27.8;never smoked;0
 533;Female;3;0;0;No;children;Rural;9412;21.4;Unknown;0
 45554;Female;124;0;0;No;children;Urban;624;22.1;Unknown;0
@@ -1276,7 +1276,7 @@
 60399;Male;53;0;0;Yes;Self-employed;Rural;7679;33.9;Unknown;0
 59604;Female;28;0;0;Yes;Private;Rural;14115;28.6;never smoked;0
 22488;Female;62;0;0;Yes;Govt_job;Urban;8863;24.5;never smoked;0
-33187;Female;6;0;0;No;children;Urban;20125;N/A;Unknown;0
+33187;Female;6;0;0;No;children;Urban;20125;,NA;Unknown;0
 44192;Female;11;0;0;No;children;Urban;13015;17.2;Unknown;0
 16114;Male;66;0;0;No;Private;Urban;10803;27.2;never smoked;0
 35293;Female;80;0;0;Yes;Self-employed;Rural;10407;19.3;formerly smoked;0
@@ -1292,20 +1292,20 @@
 34772;Female;49;0;0;Yes;Private;Rural;8241;45.4;smokes;0
 43124;Female;50;0;0;Yes;Govt_job;Urban;7472;28.5;never smoked;0
 51916;Male;13;0;0;No;children;Rural;5737;17.6;Unknown;0
-68003;Male;46;1;0;Yes;Private;Rural;7372;N/A;smokes;0
+68003;Male;46;1;0;Yes;Private;Rural;7372;,NA;smokes;0
 59157;Male;73;1;0;Yes;Private;Urban;8834;27.5;never smoked;0
 54383;Male;60;0;0;Yes;Private;Rural;10134;32.8;never smoked;0
 6928;Male;44;0;0;Yes;Private;Rural;11901;29.5;never smoked;0
 321;Female;79;0;0;No;Self-employed;Rural;7198;36.4;never smoked;0
 21857;Female;5;0;0;No;children;Urban;8491;26.1;Unknown;0
 33526;Female;51;0;0;Yes;Self-employed;Rural;9163;35.3;Unknown;0
-37327;Female;71;0;0;Yes;Private;Urban;21477;N/A;Unknown;0
+37327;Female;71;0;0;Yes;Private;Urban;21477;,NA;Unknown;0
 55976;Male;5;0;0;No;children;Rural;14571;18.1;Unknown;0
 56090;Female;65;0;0;Yes;Self-employed;Rural;16731;27.1;never smoked;0
 38350;Female;81;0;0;Yes;Self-employed;Urban;6365;23;Unknown;0
 6040;Female;46;0;0;No;Private;Rural;7963;55;Unknown;0
 17639;Male;44;0;0;Yes;Govt_job;Rural;8749;26.6;never smoked;0
-1678;Female;54;1;0;Yes;Private;Rural;9874;N/A;never smoked;0
+1678;Female;54;1;0;Yes;Private;Rural;9874;,NA;never smoked;0
 27572;Female;25;0;0;No;Private;Rural;9282;24.1;never smoked;0
 57668;Male;49;0;0;Yes;Govt_job;Urban;722;30.3;formerly smoked;0
 22001;Male;80;0;1;Yes;Govt_job;Rural;18123;32.2;formerly smoked;0
@@ -1323,7 +1323,7 @@
 50650;Male;30;0;0;No;Private;Rural;8256;25.4;formerly smoked;0
 35913;Female;55;1;0;Yes;Private;Urban;2064;54.8;never smoked;0
 52306;Male;57;0;0;Yes;Self-employed;Urban;6797;27.9;never smoked;0
-132;Female;80;0;0;Yes;Govt_job;Urban;8486;N/A;Unknown;0
+132;Female;80;0;0;Yes;Govt_job;Urban;8486;,NA;Unknown;0
 8951;Female;77;1;0;Yes;Self-employed;Urban;717;32.8;never smoked;0
 64752;Female;29;0;0;No;Private;Urban;7202;34;formerly smoked;0
 51285;Female;46;0;0;Yes;Private;Urban;6181;25.5;Unknown;0
@@ -1341,7 +1341,7 @@
 45945;Male;46;0;1;Yes;Private;Urban;17876;24.1;never smoked;0
 65849;Female;47;0;0;Yes;Private;Rural;12143;25.3;never smoked;0
 31125;Female;50;0;0;Yes;Private;Rural;9422;24.8;never smoked;0
-5103;Female;49;0;0;Yes;Private;Rural;6727;N/A;formerly smoked;0
+5103;Female;49;0;0;Yes;Private;Rural;6727;,NA;formerly smoked;0
 54526;Male;76;1;0;Yes;Self-employed;Rural;19758;34.8;formerly smoked;0
 67309;Male;47;0;0;Yes;Private;Rural;8637;39.2;smokes;0
 2275;Female;47;0;0;Yes;Private;Urban;11209;24.7;smokes;0
@@ -1351,7 +1351,7 @@
 65388;Female;40;0;0;No;Private;Urban;8047;27.3;smokes;0
 60816;Female;82;1;0;Yes;Private;Urban;6246;20.3;formerly smoked;0
 67350;Female;64;0;0;Yes;Govt_job;Rural;7885;33.9;never smoked;0
-40124;Male;72;0;0;Yes;Self-employed;Rural;7209;N/A;smokes;0
+40124;Male;72;0;0;Yes;Self-employed;Rural;7209;,NA;smokes;0
 20370;Female;50;0;0;Yes;Self-employed;Rural;10381;28.3;never smoked;0
 35188;Female;40;0;0;No;Private;Urban;7804;32.4;smokes;0
 28716;Female;74;0;0;Yes;Self-employed;Rural;9467;19.7;Unknown;0
@@ -1426,7 +1426,7 @@
 65970;Female;5;0;0;No;children;Rural;7783;15.6;Unknown;0
 1577;Female;17;0;0;No;Private;Urban;7001;43;Unknown;0
 51109;Female;6;0;0;No;children;Rural;11988;17.8;Unknown;0
-5984;Male;25;0;0;Yes;Private;Rural;7829;N/A;smokes;0
+5984;Male;25;0;0;Yes;Private;Rural;7829;,NA;smokes;0
 46373;Female;57;0;0;Yes;Private;Rural;16997;25.8;never smoked;0
 13062;Male;18;0;0;No;Private;Rural;12379;20.5;Unknown;0
 47770;Male;2;0;0;No;children;Urban;8098;19.9;Unknown;0
@@ -1456,7 +1456,7 @@
 62460;Male;62;0;0;Yes;Private;Rural;11513;30;smokes;0
 72132;Male;16;0;0;No;children;Urban;1023;21.9;Unknown;0
 41402;Male;62;0;0;Yes;Self-employed;Urban;7899;45.5;never smoked;0
-40253;Male;27;0;0;No;Private;Rural;19179;N/A;smokes;0
+40253;Male;27;0;0;No;Private;Rural;19179;,NA;smokes;0
 63577;Female;50;1;0;Yes;Self-employed;Rural;688;34.9;never smoked;0
 11726;Female;49;0;0;Yes;Govt_job;Rural;8384;19.3;formerly smoked;0
 13736;Male;24;0;0;Yes;Private;Urban;9466;32.1;formerly smoked;0
@@ -1465,12 +1465,12 @@
 37907;Female;22;0;0;No;Private;Urban;13564;19.5;never smoked;0
 15987;Male;13;0;0;No;children;Urban;9265;31.7;never smoked;0
 57166;Female;21;0;0;No;Private;Rural;12111;21;Unknown;0
-44950;Male;51;1;0;Yes;Private;Rural;16356;N/A;formerly smoked;0
+44950;Male;51;1;0;Yes;Private;Rural;16356;,NA;formerly smoked;0
 47627;Male;8;0;0;No;children;Urban;10769;20.3;Unknown;0
-42460;Male;48;0;0;Yes;Self-employed;Rural;21688;N/A;smokes;0
+42460;Male;48;0;0;Yes;Self-employed;Rural;21688;,NA;smokes;0
 8723;Female;16;0;0;No;Private;Rural;7015;21.5;Unknown;0
 52559;Male;18;0;0;No;Private;Urban;8302;40.4;Unknown;0
-937;Male;7;0;0;No;children;Urban;8794;N/A;Unknown;0
+937;Male;7;0;0;No;children;Urban;8794;,NA;Unknown;0
 41271;Male;68;1;0;Yes;Govt_job;Urban;22229;30.1;never smoked;0
 66893;Male;49;1;0;Yes;Govt_job;Urban;13943;40.2;formerly smoked;0
 21491;Female;80;0;0;Yes;Private;Urban;21311;34.7;never smoked;0
@@ -1502,7 +1502,7 @@
 45257;Female;38;0;0;Yes;Private;Rural;8128;33.2;smokes;0
 34386;Female;43;0;0;Yes;Private;Rural;1025;50.2;never smoked;0
 15219;Female;27;0;0;No;Private;Rural;7805;22.3;never smoked;0
-39202;Female;61;1;1;Yes;Private;Urban;23758;N/A;formerly smoked;0
+39202;Female;61;1;1;Yes;Private;Urban;23758;,NA;formerly smoked;0
 9076;Male;42;0;0;Yes;Self-employed;Urban;8607;27.3;Unknown;0
 72824;Male;46;0;0;Yes;Private;Rural;5905;28.3;formerly smoked;0
 64132;Male;67;0;1;Yes;Self-employed;Rural;9588;31.9;Unknown;0
@@ -1527,7 +1527,7 @@
 9511;Male;27;0;0;No;Private;Urban;11967;36.9;Unknown;0
 19389;Female;42;0;1;Yes;Govt_job;Urban;22693;34.2;smokes;0
 25559;Female;66;0;1;Yes;Govt_job;Rural;7611;37;Unknown;0
-11770;Female;25;0;0;Yes;Govt_job;Urban;9323;N/A;smokes;0
+11770;Female;25;0;0;Yes;Govt_job;Urban;9323;,NA;smokes;0
 34496;Female;82;0;0;Yes;Private;Urban;25316;47.5;Unknown;0
 8096;Female;49;0;0;Yes;Private;Urban;10102;24.2;smokes;0
 49709;Female;77;1;0;Yes;Self-employed;Rural;23853;30.6;never smoked;0
@@ -1538,14 +1538,14 @@
 25454;Female;13;0;0;No;children;Rural;933;25.9;Unknown;0
 15310;Female;45;0;0;Yes;Private;Urban;11047;24.7;smokes;0
 10245;Female;54;0;0;Yes;Self-employed;Rural;7752;35.8;never smoked;0
-29224;Male;30;0;0;Yes;Private;Urban;9123;N/A;smokes;0
+29224;Male;30;0;0;Yes;Private;Urban;9123;,NA;smokes;0
 7550;Female;51;0;0;Yes;Private;Rural;21692;31.2;Unknown;0
 57917;Female;47;0;0;Yes;Private;Urban;15701;26.1;smokes;0
 24219;Male;25;0;0;Yes;Private;Urban;9351;30.8;never smoked;0
 49023;Male;61;1;0;Yes;Self-employed;Rural;10254;40.5;never smoked;0
 51020;Female;55;0;0;Yes;Private;Rural;8778;25.2;formerly smoked;0
 52089;Female;23;0;0;No;Private;Urban;12667;28.7;smokes;0
-29095;Male;71;1;0;Yes;Self-employed;Rural;936;N/A;never smoked;0
+29095;Male;71;1;0;Yes;Self-employed;Rural;936;,NA;never smoked;0
 41424;Male;59;0;1;Yes;Self-employed;Rural;19498;30.4;Unknown;0
 7297;Male;4;0;0;No;children;Rural;9996;15.2;Unknown;0
 68994;Male;65;0;0;Yes;Private;Urban;5887;36.6;never smoked;0
@@ -1595,7 +1595,7 @@
 52034;Male;31;0;0;Yes;Private;Urban;7131;25.8;never smoked;0
 35584;Male;61;0;0;Yes;Private;Rural;8975;25.4;never smoked;0
 2898;Male;46;0;0;Yes;Private;Urban;8766;57.3;never smoked;0
-16593;Male;47;0;0;No;Private;Rural;23717;N/A;Unknown;0
+16593;Male;47;0;0;No;Private;Rural;23717;,NA;Unknown;0
 17175;Female;15;0;0;No;children;Urban;8111;20.2;Unknown;0
 63663;Male;47;0;0;Yes;Private;Urban;17833;27.7;never smoked;0
 10603;Female;68;0;0;Yes;Private;Rural;8138;23.1;Unknown;0
@@ -1639,17 +1639,17 @@
 47037;Female;67;0;0;Yes;Private;Urban;10271;39.9;formerly smoked;0
 48614;Male;59;0;0;Yes;Govt_job;Urban;9969;28.8;smokes;0
 15969;Female;41;0;0;Yes;Self-employed;Rural;10289;37.2;formerly smoked;0
-17752;Male;76;0;1;Yes;Private;Urban;7905;N/A;Unknown;0
+17752;Male;76;0;1;Yes;Private;Urban;7905;,NA;Unknown;0
 50889;Female;21;0;0;No;Govt_job;Rural;5663;49.8;never smoked;0
 56459;Male;41;0;0;Yes;Private;Rural;8734;34.3;formerly smoked;0
 34163;Male;54;0;0;Yes;Private;Rural;10951;29;never smoked;0
-4538;Female;29;0;0;No;Private;Urban;8143;N/A;formerly smoked;0
+4538;Female;29;0;0;No;Private;Urban;8143;,NA;formerly smoked;0
 14222;Female;25;0;0;No;Private;Urban;7859;37.2;never smoked;0
-31461;Female;48;0;1;Yes;Self-employed;Urban;10122;N/A;formerly smoked;0
+31461;Female;48;0;1;Yes;Self-employed;Urban;10122;,NA;formerly smoked;0
 34001;Female;6;0;0;No;children;Urban;7826;19.4;Unknown;0
 48964;Male;21;0;0;No;Private;Rural;10547;26.2;never smoked;0
 40393;Female;32;0;0;No;Private;Urban;6819;21.1;never smoked;0
-16488;Female;57;1;0;Yes;Private;Urban;210;N/A;never smoked;0
+16488;Female;57;1;0;Yes;Private;Urban;210;,NA;never smoked;0
 47947;Female;64;0;0;Yes;Self-employed;Rural;11447;31.6;smokes;0
 51149;Male;70;0;0;Yes;Private;Urban;6685;29.3;Unknown;0
 17079;Male;44;0;0;Yes;Private;Rural;9471;28.4;smokes;0
@@ -1668,8 +1668,8 @@
 44010;Female;3;0;0;No;children;Urban;5733;16.8;Unknown;0
 50841;Female;40;0;0;Yes;Private;Rural;19148;27.9;smokes;0
 71044;Female;8;0;0;No;children;Rural;7163;16.3;Unknown;0
-1842;Male;58;0;0;Yes;Private;Urban;94;N/A;Unknown;0
-34720;Male;45;0;1;Yes;Private;Rural;9377;N/A;Unknown;0
+1842;Male;58;0;0;Yes;Private;Urban;94;,NA;Unknown;0
+34720;Male;45;0;1;Yes;Private;Rural;9377;,NA;Unknown;0
 9489;Female;65;0;0;Yes;Private;Urban;8475;21.4;Unknown;0
 28725;Female;28;0;0;No;Private;Rural;8924;32.7;formerly smoked;0
 30290;Female;40;0;0;Yes;Private;Urban;7013;23.6;never smoked;0
@@ -1680,7 +1680,7 @@
 14481;Female;79;0;0;Yes;Self-employed;Urban;8057;23.8;never smoked;0
 67963;Female;62;1;0;No;Private;Rural;7704;33.8;formerly smoked;0
 70752;Male;37;0;0;Yes;Private;Urban;14526;26.7;Unknown;0
-52419;Male;66;0;0;Yes;Private;Urban;1904;N/A;formerly smoked;0
+52419;Male;66;0;0;Yes;Private;Urban;1904;,NA;formerly smoked;0
 14711;Male;63;0;0;Yes;Self-employed;Urban;8208;32.2;formerly smoked;0
 26366;Female;27;0;0;No;Private;Rural;10335;28.1;formerly smoked;0
 12436;Male;6;0;0;No;children;Urban;9746;21.3;Unknown;0
@@ -1717,8 +1717,8 @@
 35143;Female;35;0;0;Yes;Private;Urban;8687;43.2;Unknown;0
 1486;Female;33;0;0;Yes;Private;Rural;12401;22.7;Unknown;0
 5043;Female;53;0;0;Yes;Private;Urban;8341;29.9;never smoked;0
-2513;Male;59;0;1;Yes;Govt_job;Urban;18869;N/A;formerly smoked;0
-5451;Male;34;0;0;Yes;Private;Rural;8651;N/A;formerly smoked;0
+2513;Male;59;0;1;Yes;Govt_job;Urban;18869;,NA;formerly smoked;0
+5451;Male;34;0;0;Yes;Private;Rural;8651;,NA;formerly smoked;0
 3640;Female;31;0;0;No;Self-employed;Rural;7065;29.9;Unknown;0
 17835;Female;43;0;0;No;Self-employed;Rural;924;22.7;Unknown;0
 26826;Female;61;0;0;Yes;Self-employed;Urban;7336;16.1;never smoked;0
@@ -1729,7 +1729,7 @@
 16953;Female;60;0;0;Yes;Govt_job;Rural;6194;27.9;formerly smoked;0
 42082;Male;13;0;0;No;children;Rural;9971;23.5;Unknown;0
 51660;Female;69;0;0;Yes;Self-employed;Rural;6319;32.2;never smoked;0
-27135;Male;69;1;0;Yes;Private;Rural;10711;N/A;smokes;0
+27135;Male;69;1;0;Yes;Private;Rural;10711;,NA;smokes;0
 54058;Female;22;0;0;No;Private;Urban;5684;29.9;smokes;0
 24272;Male;63;0;0;Yes;Govt_job;Rural;21766;28.7;formerly smoked;0
 16028;Female;45;0;0;Yes;Private;Rural;7719;37.2;smokes;0
@@ -1752,10 +1752,10 @@
 7222;Female;73;0;0;Yes;Self-employed;Urban;8852;20.8;formerly smoked;0
 13561;Female;65;0;0;Yes;Private;Urban;8882;28.2;formerly smoked;0
 29179;Female;76;1;1;Yes;Private;Rural;10208;31;smokes;0
-5511;Male;66;0;0;Yes;Self-employed;Urban;7138;N/A;formerly smoked;0
+5511;Male;66;0;0;Yes;Self-employed;Urban;7138;,NA;formerly smoked;0
 20825;Female;53;0;0;Yes;Govt_job;Rural;849;21.6;never smoked;0
 67144;Female;65;0;0;Yes;Self-employed;Urban;8221;26.2;Unknown;0
-15515;Female;48;0;0;Yes;Self-employed;Rural;2099;N/A;smokes;0
+15515;Female;48;0;0;Yes;Self-employed;Rural;2099;,NA;smokes;0
 3753;Male;31;0;0;Yes;Private;Urban;7405;26;Unknown;0
 27279;Male;172;0;0;No;children;Urban;9046;22.5;Unknown;0
 48759;Female;45;0;0;Yes;Private;Rural;17648;24;formerly smoked;0
@@ -1778,7 +1778,7 @@
 25138;Female;78;1;0;Yes;Private;Rural;9163;33.5;smokes;0
 17277;Male;4;0;0;No;children;Urban;9751;22;Unknown;0
 35333;Male;76;1;0;Yes;Private;Rural;2256;29;never smoked;0
-18861;Male;32;0;0;No;Private;Rural;9558;N/A;smokes;0
+18861;Male;32;0;0;No;Private;Rural;9558;,NA;smokes;0
 15120;Female;81;1;0;Yes;Self-employed;Rural;21023;30.7;never smoked;0
 29221;Female;39;0;0;Yes;Private;Urban;9282;37.4;never smoked;0
 11412;Female;59;0;0;Yes;Private;Rural;23482;51.8;never smoked;0
@@ -1815,7 +1815,7 @@
 42465;Female;78;1;0;Yes;Private;Rural;5866;16.4;never smoked;0
 24638;Male;50;0;0;Yes;Govt_job;Urban;8824;32.6;Unknown;0
 58587;Male;61;0;0;Yes;Private;Urban;6132;23.7;smokes;0
-9170;Male;60;0;0;Yes;Self-employed;Urban;18571;N/A;Unknown;0
+9170;Male;60;0;0;Yes;Self-employed;Urban;18571;,NA;Unknown;0
 36545;Male;43;0;0;Yes;Private;Rural;6299;27;formerly smoked;0
 19467;Male;60;1;0;Yes;Private;Urban;8604;25.6;smokes;0
 16868;Female;51;0;0;Yes;Private;Rural;833;34;formerly smoked;0
@@ -1835,8 +1835,8 @@
 34958;Male;14;0;0;No;children;Urban;9286;20.7;formerly smoked;0
 30620;Male;37;0;0;No;Private;Urban;9095;24.6;smokes;0
 31811;Female;52;0;1;Yes;Private;Urban;8566;39.4;never smoked;0
-1818;Female;30;0;0;No;Govt_job;Urban;882;N/A;smokes;0
-5478;Female;60;0;0;Yes;Self-employed;Urban;20304;N/A;smokes;0
+1818;Female;30;0;0;No;Govt_job;Urban;882;,NA;smokes;0
+5478;Female;60;0;0;Yes;Self-employed;Urban;20304;,NA;smokes;0
 26830;Female;47;0;0;Yes;Self-employed;Rural;6837;29.4;smokes;0
 25883;Female;82;1;0;Yes;Self-employed;Urban;7732;24.8;Unknown;0
 43657;Male;64;0;0;Yes;Govt_job;Rural;18787;32.3;never smoked;0
@@ -1865,7 +1865,7 @@
 33692;Female;12;0;0;No;children;Rural;8597;35.7;Unknown;0
 29232;Female;56;0;0;Yes;Private;Urban;11433;30.7;smokes;0
 70122;Female;29;0;0;Yes;Private;Rural;7252;33.9;never smoked;0
-25305;Male;10;0;0;No;children;Rural;9987;N/A;formerly smoked;0
+25305;Male;10;0;0;No;children;Rural;9987;,NA;formerly smoked;0
 66110;Female;55;0;0;Yes;Private;Rural;6347;27.8;Unknown;0
 69461;Female;49;0;0;Yes;Govt_job;Urban;9058;23.2;Unknown;0
 7885;Female;23;0;0;No;Private;Rural;9226;17.1;Unknown;0
@@ -1893,7 +1893,7 @@
 12376;Male;63;0;0;Yes;Govt_job;Urban;9516;37.8;formerly smoked;0
 72435;Female;37;0;0;Yes;Private;Urban;21711;29.1;never smoked;0
 46864;Male;54;0;1;Yes;Govt_job;Urban;22246;35.7;never smoked;0
-2019;Male;20;0;0;No;Private;Rural;7096;N/A;Unknown;0
+2019;Male;20;0;0;No;Private;Rural;7096;,NA;Unknown;0
 26154;Male;56;0;0;Yes;Private;Rural;8244;34.5;never smoked;0
 47972;Female;25;0;0;No;Govt_job;Rural;7411;34.1;smokes;0
 47751;Female;19;0;0;No;Private;Urban;13123;21.1;Unknown;0
@@ -1905,13 +1905,13 @@
 43806;Male;44;0;0;Yes;Private;Urban;14231;29.1;smokes;0
 39849;Male;39;1;0;No;Private;Urban;8099;39.8;Unknown;0
 7344;Male;38;0;0;Yes;Govt_job;Rural;23774;21.2;never smoked;0
-1741;Male;77;0;0;Yes;Private;Urban;7426;N/A;formerly smoked;0
+1741;Male;77;0;0;Yes;Private;Urban;7426;,NA;formerly smoked;0
 52220;Female;26;0;0;No;Private;Rural;15408;20.2;formerly smoked;0
 20129;Male;51;0;0;Yes;Private;Rural;7829;30.8;never smoked;0
 61178;Male;39;0;0;Yes;Private;Urban;16467;33.8;Unknown;0
 48226;Female;5;0;0;No;children;Rural;5961;17.1;Unknown;0
 1151;Female;59;0;0;Yes;Self-employed;Urban;6775;21.3;formerly smoked;0
-6672;Male;67;0;0;Yes;Private;Urban;9273;N/A;never smoked;0
+6672;Male;67;0;0;Yes;Private;Urban;9273;,NA;never smoked;0
 10333;Female;45;0;0;Yes;Private;Urban;9035;22.3;never smoked;0
 11134;Male;43;0;0;Yes;Private;Rural;7786;28.9;never smoked;0
 25199;Female;80;0;0;Yes;Private;Rural;7188;26.7;never smoked;0
@@ -1980,7 +1980,7 @@
 21724;Female;42;0;0;Yes;Self-employed;Urban;12434;34.7;formerly smoked;0
 29863;Male;44;0;0;No;Private;Urban;10344;28;never smoked;0
 69249;Female;3;0;0;No;children;Urban;1245;16.4;Unknown;0
-8968;Female;42;0;0;Yes;Private;Urban;20806;N/A;smokes;0
+8968;Female;42;0;0;Yes;Private;Urban;20806;,NA;smokes;0
 20310;Male;25;0;0;No;Govt_job;Urban;755;24.6;never smoked;0
 11450;Female;41;0;0;Yes;Self-employed;Urban;9885;24.6;never smoked;0
 31999;Male;51;0;1;Yes;Private;Rural;9606;30.3;Unknown;0
@@ -1992,7 +1992,7 @@
 35651;Male;2;0;0;No;children;Urban;11292;18.4;Unknown;0
 13749;Female;38;0;0;Yes;Private;Rural;8479;24.2;formerly smoked;0
 21521;Male;64;0;1;Yes;Private;Urban;10328;34.3;smokes;0
-27163;Female;60;1;0;Yes;Private;Urban;109;N/A;Unknown;0
+27163;Female;60;1;0;Yes;Private;Urban;109;,NA;Unknown;0
 8882;Male;22;0;0;No;Govt_job;Rural;9618;25.1;never smoked;0
 32016;Male;71;1;0;Yes;Private;Rural;18695;33.3;never smoked;0
 14287;Female;32;0;0;Yes;Private;Urban;6866;22.6;Unknown;0
@@ -2029,7 +2029,7 @@
 31689;Female;58;0;0;Yes;Private;Rural;10717;27.7;Unknown;0
 23240;Female;41;0;0;Yes;Private;Rural;9146;29.5;never smoked;0
 30850;Male;72;0;0;Yes;Private;Urban;8105;30.3;Unknown;0
-38920;Male;48;0;0;No;children;Urban;7302;N/A;Unknown;0
+38920;Male;48;0;0;No;children;Urban;7302;,NA;Unknown;0
 66080;Female;32;0;0;No;Private;Urban;11437;37.8;Unknown;0
 57263;Female;54;0;0;Yes;Private;Urban;10029;30.2;never smoked;0
 60126;Female;79;0;0;Yes;Private;Urban;6837;24.2;smokes;0
@@ -2102,13 +2102,13 @@
 42624;Female;52;0;0;Yes;Private;Urban;9314;32.5;never smoked;0
 24735;Female;21;0;0;No;Private;Rural;8084;30.7;Unknown;0
 50671;Male;78;1;1;Yes;Self-employed;Rural;19988;29.6;formerly smoked;0
-1679;Male;35;0;0;Yes;Private;Rural;7748;N/A;formerly smoked;0
+1679;Male;35;0;0;Yes;Private;Rural;7748;,NA;formerly smoked;0
 66680;Female;49;1;0;Yes;Private;Rural;6534;39.4;never smoked;0
-34248;Male;50;1;0;No;Private;Urban;8196;N/A;formerly smoked;0
+34248;Male;50;1;0;No;Private;Urban;8196;,NA;formerly smoked;0
 65336;Female;27;0;0;Yes;Private;Urban;9871;26.1;formerly smoked;0
 68333;Female;52;1;0;No;Private;Rural;17022;27.2;formerly smoked;0
 60210;Female;22;0;0;No;Private;Urban;735;41.3;smokes;0
-11573;Female;19;0;0;No;Private;Rural;7239;N/A;smokes;0
+11573;Female;19;0;0;No;Private;Rural;7239;,NA;smokes;0
 67890;Male;77;0;1;Yes;Private;Urban;10296;20.9;formerly smoked;0
 49254;Male;57;1;0;Yes;Private;Urban;8072;41.5;formerly smoked;0
 9199;Male;13;0;0;No;Self-employed;Urban;7419;31.1;formerly smoked;0
@@ -2191,7 +2191,7 @@
 34721;Female;62;1;0;Yes;Govt_job;Urban;9213;33.7;never smoked;0
 5157;Male;79;1;0;Yes;Self-employed;Urban;8307;26.5;smokes;0
 48851;Female;9;0;0;No;children;Rural;7767;17.6;Unknown;0
-26084;Female;77;1;0;Yes;Self-employed;Urban;10951;N/A;never smoked;0
+26084;Female;77;1;0;Yes;Self-employed;Urban;10951;,NA;never smoked;0
 23413;Female;26;0;0;No;Private;Urban;9724;22.5;never smoked;0
 49970;Male;172;0;0;No;children;Rural;12729;18.5;Unknown;0
 72414;Male;16;0;0;No;Private;Urban;1348;22.4;never smoked;0
@@ -2214,7 +2214,7 @@
 62289;Female;34;0;0;Yes;Private;Urban;9723;27.5;Unknown;0
 59464;Female;18;0;0;No;Private;Rural;13519;23.4;never smoked;0
 18680;Male;69;0;0;Yes;Self-employed;Urban;7848;25.8;formerly smoked;0
-19439;Male;67;0;1;Yes;Private;Rural;9724;N/A;Unknown;0
+19439;Male;67;0;1;Yes;Private;Rural;9724;,NA;Unknown;0
 27017;Male;28;0;0;No;Private;Urban;7592;22.8;never smoked;0
 8277;Female;3;0;0;No;children;Urban;933;19.5;Unknown;0
 14099;Female;57;0;0;Yes;Govt_job;Urban;9739;38;Unknown;0
@@ -2262,7 +2262,7 @@
 47600;Female;47;0;0;Yes;Private;Urban;9604;29.2;Unknown;0
 48246;Male;59;0;0;Yes;Private;Urban;6035;25.9;formerly smoked;0
 61743;Male;28;0;0;No;Govt_job;Urban;11866;32.3;never smoked;0
-3879;Female;20;0;0;No;Private;Urban;8903;N/A;smokes;0
+3879;Female;20;0;0;No;Private;Urban;8903;,NA;smokes;0
 58086;Male;67;0;0;Yes;Private;Urban;5851;30.4;formerly smoked;0
 53957;Male;71;0;0;Yes;Self-employed;Urban;9604;45.1;formerly smoked;0
 40137;Female;56;0;0;Yes;Self-employed;Rural;11092;25.9;Unknown;0
@@ -2284,7 +2284,7 @@
 55566;Female;34;0;0;Yes;Private;Rural;2315;45.4;never smoked;0
 46923;Male;64;0;1;Yes;Private;Rural;8289;29.5;never smoked;0
 63990;Male;52;1;0;Yes;Self-employed;Rural;19237;49.2;never smoked;0
-2265;Male;49;0;0;Yes;Private;Rural;7964;N/A;smokes;0
+2265;Male;49;0;0;Yes;Private;Rural;7964;,NA;smokes;0
 2860;Male;55;0;0;Yes;Private;Rural;8288;29.4;Unknown;0
 15964;Female;64;1;0;Yes;Private;Rural;994;29.1;never smoked;0
 46483;Male;23;0;0;No;Private;Urban;7775;38.8;smokes;0
@@ -2320,8 +2320,8 @@
 23176;Female;51;1;0;Yes;Private;Urban;17396;31.2;formerly smoked;0
 3045;Male;68;1;0;Yes;Private;Urban;9606;37.6;never smoked;0
 22386;Female;56;0;0;Yes;Private;Urban;1132;38.7;smokes;0
-1077;Male;77;0;1;Yes;Govt_job;Rural;10603;N/A;Unknown;0
-57903;Female;52;1;0;Yes;Self-employed;Rural;11138;N/A;smokes;0
+1077;Male;77;0;1;Yes;Govt_job;Rural;10603;,NA;Unknown;0
+57903;Female;52;1;0;Yes;Self-employed;Rural;11138;,NA;smokes;0
 22108;Female;18;0;0;No;Private;Rural;7329;28.1;smokes;0
 55982;Female;63;0;0;Yes;Self-employed;Urban;6571;29.2;smokes;0
 55465;Female;31;0;0;Yes;Private;Rural;6041;31.1;Unknown;0
@@ -2338,11 +2338,11 @@
 9026;Female;78;1;0;Yes;Self-employed;Urban;19133;24.5;never smoked;0
 54590;Female;21;0;0;No;Private;Rural;5952;33.7;never smoked;0
 54301;Male;54;0;0;Yes;Private;Rural;20652;35.4;smokes;0
-170;Male;43;0;0;Yes;Govt_job;Rural;8007;N/A;never smoked;0
+170;Male;43;0;0;Yes;Govt_job;Rural;8007;,NA;never smoked;0
 52554;Male;19;0;0;No;Private;Rural;6492;22.5;Unknown;0
 10649;Female;82;0;0;Yes;Private;Urban;80;33.6;never smoked;0
 28258;Female;80;0;0;Yes;Self-employed;Urban;7506;29.7;Unknown;0
-22269;Female;69;1;0;Yes;Govt_job;Urban;1122;N/A;never smoked;0
+22269;Female;69;1;0;Yes;Govt_job;Urban;1122;,NA;never smoked;0
 12557;Female;21;0;0;No;Self-employed;Urban;9118;25.7;never smoked;0
 2846;Female;46;0;0;Yes;Private;Rural;8581;20.2;formerly smoked;0
 61219;Female;14;0;0;No;Never_worked;Urban;14837;22.7;never smoked;0
@@ -2476,7 +2476,7 @@
 13728;Male;8;0;0;No;children;Rural;9026;18.1;Unknown;0
 4400;Female;36;0;0;Yes;Private;Urban;6848;24.3;never smoked;0
 68524;Female;38;0;0;Yes;Private;Urban;10002;28;never smoked;0
-24096;Female;34;1;0;Yes;Self-employed;Urban;10061;N/A;Unknown;0
+24096;Female;34;1;0;Yes;Self-employed;Urban;10061;,NA;Unknown;0
 65643;Female;7;0;0;No;children;Urban;15682;17.3;Unknown;0
 30186;Female;5;0;0;No;children;Urban;8166;17.2;Unknown;0
 11904;Male;14;0;0;No;children;Rural;11222;26.9;Unknown;0
@@ -2493,7 +2493,7 @@
 3761;Female;50;0;0;Yes;Self-employed;Rural;9525;24.3;never smoked;0
 65324;Female;48;0;0;Yes;Govt_job;Rural;7591;27.8;Unknown;0
 7658;Male;66;0;0;Yes;Govt_job;Rural;20344;30.5;formerly smoked;0
-35997;Male;78;0;1;Yes;Self-employed;Urban;24373;N/A;smokes;0
+35997;Male;78;0;1;Yes;Self-employed;Urban;24373;,NA;smokes;0
 34383;Male;46;0;0;Yes;Private;Urban;8823;25.8;Unknown;0
 8646;Female;54;0;0;Yes;Private;Rural;9747;26.7;never smoked;0
 46653;Female;81;1;1;Yes;Private;Rural;5928;28.1;never smoked;0
@@ -2501,7 +2501,7 @@
 61676;Male;77;0;0;Yes;Self-employed;Urban;6838;25.1;Unknown;0
 38131;Female;59;0;0;Yes;Self-employed;Rural;5546;20.9;never smoked;0
 61848;Female;48;0;0;Yes;Private;Urban;11387;28.9;never smoked;0
-56228;Male;76;0;1;Yes;Self-employed;Urban;6703;N/A;never smoked;0
+56228;Male;76;0;1;Yes;Self-employed;Urban;6703;,NA;never smoked;0
 4949;Male;49;0;0;Yes;Private;Rural;9635;35.9;never smoked;0
 46688;Female;44;0;0;No;Private;Urban;12721;29.8;smokes;0
 30491;Female;39;0;0;Yes;Private;Urban;789;26.7;never smoked;0
@@ -2514,7 +2514,7 @@
 58568;Female;58;0;0;Yes;Private;Rural;12732;33.1;smokes;0
 63303;Male;28;0;0;No;Private;Urban;755;27;smokes;0
 70625;Male;18;0;0;No;Private;Urban;7935;23.6;Unknown;0
-54807;Male;62;1;1;Yes;Private;Rural;17625;N/A;never smoked;0
+54807;Male;62;1;1;Yes;Private;Rural;17625;,NA;never smoked;0
 18820;Male;31;0;0;No;Private;Rural;10856;21.8;never smoked;0
 64029;Male;55;1;0;Yes;Private;Urban;16806;23.5;smokes;0
 72703;Female;54;0;0;Yes;Private;Urban;7552;28.7;formerly smoked;0
@@ -2528,10 +2528,10 @@
 62454;Female;12;0;0;No;children;Urban;6398;21.2;formerly smoked;0
 52593;Male;78;0;1;Yes;Private;Urban;14503;26.8;formerly smoked;0
 91;Female;42;0;0;No;Private;Urban;9853;18.5;never smoked;0
-22056;Female;71;1;0;Yes;Private;Urban;10555;N/A;smokes;0
+22056;Female;71;1;0;Yes;Private;Urban;10555;,NA;smokes;0
 45469;Male;16;0;0;No;children;Rural;13423;30.6;Unknown;0
 41284;Male;4;0;0;No;children;Rural;6248;19.9;Unknown;0
-20112;Male;79;0;1;Yes;Private;Urban;21338;N/A;Unknown;0
+20112;Male;79;0;1;Yes;Private;Urban;21338;,NA;Unknown;0
 45627;Male;60;0;0;Yes;Private;Rural;7052;26.5;formerly smoked;0
 4174;Female;45;1;0;Yes;Private;Urban;9321;43.8;never smoked;0
 31660;Male;23;0;0;No;Private;Rural;8239;31.8;Unknown;0
@@ -2540,7 +2540,7 @@
 8341;Male;10;0;0;No;children;Rural;8402;18.7;never smoked;0
 42172;Female;24;0;0;Yes;Self-employed;Rural;6972;29.6;never smoked;0
 14372;Male;50;0;0;Yes;Self-employed;Urban;19216;43.6;never smoked;0
-61252;Male;79;0;1;Yes;Private;Rural;8227;N/A;never smoked;0
+61252;Male;79;0;1;Yes;Private;Rural;8227;,NA;never smoked;0
 15251;Male;14;0;0;No;children;Urban;10187;20.3;never smoked;0
 67800;Female;13;0;0;No;children;Rural;7755;21.3;Unknown;0
 10416;Male;71;0;1;Yes;Private;Urban;21572;39.2;smokes;0
@@ -2581,7 +2581,7 @@
 68382;Male;32;0;0;No;children;Urban;12778;20.8;Unknown;0
 69510;Male;39;0;0;Yes;Private;Rural;12132;26.8;never smoked;0
 29872;Female;35;0;0;Yes;Private;Urban;8389;25.5;never smoked;0
-1924;Male;54;0;0;Yes;Private;Rural;7406;N/A;never smoked;0
+1924;Male;54;0;0;Yes;Private;Rural;7406;,NA;never smoked;0
 67243;Female;75;0;1;Yes;Private;Urban;20615;25.4;never smoked;0
 3494;Female;80;0;0;Yes;Private;Rural;1029;26.7;Unknown;0
 37307;Female;35;0;0;Yes;Private;Urban;6548;50.5;never smoked;0
@@ -2696,7 +2696,7 @@
 41730;Female;46;0;0;No;Govt_job;Rural;11229;23.5;Unknown;0
 38761;Female;50;0;0;Yes;Private;Urban;6598;21.7;never smoked;0
 4797;Female;52;0;0;Yes;Private;Urban;991;29.1;Unknown;0
-19199;Female;73;1;0;Yes;Private;Rural;21784;N/A;never smoked;0
+19199;Female;73;1;0;Yes;Private;Rural;21784;,NA;never smoked;0
 30402;Male;41;0;0;Yes;Private;Urban;10434;30.3;Unknown;0
 25088;Female;40;0;0;No;Private;Rural;217;29.4;formerly smoked;0
 54756;Female;59;0;0;Yes;Private;Rural;5747;30.1;formerly smoked;0
@@ -2738,7 +2738,7 @@
 42305;Female;41;0;0;No;Private;Rural;10075;27.2;never smoked;0
 9442;Male;55;0;0;Yes;Self-employed;Rural;16382;27.5;never smoked;0
 57047;Female;43;0;0;Yes;Private;Urban;11042;32.6;smokes;0
-2538;Female;5;0;0;No;children;Rural;10518;N/A;Unknown;0
+2538;Female;5;0;0;No;children;Rural;10518;,NA;Unknown;0
 28461;Male;15;0;0;No;Never_worked;Rural;7959;28.4;Unknown;0
 16433;Female;36;0;0;Yes;Private;Rural;10799;25.5;never smoked;0
 50681;Female;36;0;0;Yes;Private;Rural;9022;28.7;formerly smoked;0
@@ -2751,7 +2751,7 @@
 29789;Female;46;0;0;Yes;Private;Rural;11684;28.2;never smoked;0
 52207;Female;59;0;0;Yes;Self-employed;Urban;9004;28.7;formerly smoked;0
 19209;Female;48;0;0;Yes;Govt_job;Rural;25517;38.1;formerly smoked;0
-42041;Female;38;0;0;Yes;Private;Rural;21755;N/A;smokes;0
+42041;Female;38;0;0;Yes;Private;Rural;21755;,NA;smokes;0
 58153;Female;18;0;0;No;Private;Urban;12366;22.2;never smoked;0
 27717;Female;56;0;0;Yes;Self-employed;Urban;11216;25.7;Unknown;0
 35106;Male;3;0;0;No;children;Urban;8843;17.7;Unknown;0
@@ -2767,7 +2767,7 @@
 31201;Female;79;0;0;No;Self-employed;Urban;792;32.6;never smoked;0
 59359;Male;79;0;0;Yes;Self-employed;Urban;10593;25.2;never smoked;0
 57985;Female;27;0;0;Yes;Private;Urban;9419;27.4;formerly smoked;0
-2885;Male;72;1;0;Yes;Private;Rural;23171;N/A;Unknown;0
+2885;Male;72;1;0;Yes;Private;Rural;23171;,NA;Unknown;0
 59743;Male;64;0;1;Yes;Self-employed;Rural;6928;38.6;formerly smoked;0
 11544;Female;34;0;0;Yes;Private;Urban;7137;32.9;never smoked;0
 11969;Female;50;0;0;Yes;Self-employed;Urban;11018;26;formerly smoked;0
@@ -2787,7 +2787,7 @@
 12449;Female;34;0;0;Yes;Private;Rural;11961;26.4;Unknown;0
 54371;Male;78;0;0;Yes;Govt_job;Urban;14347;27.6;formerly smoked;0
 8106;Female;42;0;0;Yes;Private;Rural;846;27;smokes;0
-2013;Male;14;0;0;No;Private;Rural;11072;N/A;never smoked;0
+2013;Male;14;0;0;No;Private;Rural;11072;,NA;never smoked;0
 61785;Female;40;0;0;No;Private;Rural;15893;31.3;smokes;0
 2707;Male;10;0;0;No;children;Rural;6894;18;Unknown;0
 49120;Female;39;0;0;Yes;Govt_job;Rural;6938;22.1;Unknown;0
@@ -2815,7 +2815,7 @@
 10973;Male;43;0;0;Yes;Private;Urban;9113;33.9;never smoked;0
 3816;Male;62;0;0;Yes;Private;Rural;8072;26;formerly smoked;0
 50215;Male;42;0;0;No;Govt_job;Rural;5983;52.8;never smoked;0
-10351;Male;50;0;0;Yes;Private;Urban;6702;N/A;formerly smoked;0
+10351;Male;50;0;0;Yes;Private;Urban;6702;,NA;formerly smoked;0
 69665;Female;63;0;0;Yes;Private;Rural;6022;29.2;never smoked;0
 14976;Male;80;0;1;Yes;Private;Rural;8241;26.3;smokes;0
 28183;Female;13;0;0;No;children;Urban;7578;23.6;Unknown;0
@@ -2827,7 +2827,7 @@
 58235;Male;76;0;0;Yes;Private;Urban;5865;25.6;smokes;0
 21162;Female;78;0;0;Yes;Self-employed;Rural;8168;23;Unknown;0
 67880;Male;5;0;0;No;children;Urban;14852;20.6;Unknown;0
-42545;Male;29;1;0;Yes;Private;Urban;7755;N/A;formerly smoked;0
+42545;Male;29;1;0;Yes;Private;Urban;7755;,NA;formerly smoked;0
 48359;Female;43;0;0;Yes;Private;Rural;14212;28.4;smokes;0
 54815;Female;49;0;0;Yes;Private;Urban;1253;29.7;formerly smoked;0
 6233;Male;70;1;0;Yes;Self-employed;Rural;11881;26;smokes;0
@@ -2854,7 +2854,7 @@
 54805;Female;27;0;0;No;Self-employed;Urban;7365;24.8;Unknown;0
 53195;Male;30;0;0;No;Private;Urban;1418;31.9;never smoked;0
 9107;Female;8;0;0;No;children;Rural;9265;17.5;Unknown;0
-65196;Male;75;1;0;Yes;Private;Rural;19879;N/A;smokes;0
+65196;Male;75;1;0;Yes;Private;Rural;19879;,NA;smokes;0
 58833;Male;14;0;0;No;Private;Rural;6104;17.6;Unknown;0
 4309;Female;23;0;0;Yes;Private;Rural;10288;38.9;Unknown;0
 55462;Male;6;0;0;No;children;Urban;12339;15.2;Unknown;0
@@ -2866,7 +2866,7 @@
 33697;Male;57;0;0;Yes;Private;Rural;9054;33.7;never smoked;0
 51963;Male;58;0;0;Yes;Private;Urban;6924;27.6;never smoked;0
 13375;Male;76;0;0;Yes;Private;Urban;19239;31;never smoked;0
-37526;Female;68;1;1;Yes;Private;Rural;2333;N/A;Unknown;0
+37526;Female;68;1;1;Yes;Private;Rural;2333;,NA;Unknown;0
 59454;Female;79;0;0;Yes;Self-employed;Urban;7435;28.5;formerly smoked;0
 23600;Male;34;0;0;Yes;Private;Rural;7194;31.4;smokes;0
 61245;Male;75;0;0;Yes;Self-employed;Rural;8235;25.3;never smoked;0
@@ -2878,7 +2878,7 @@
 11327;Female;82;0;0;Yes;Self-employed;Urban;7996;27;formerly smoked;0
 5464;Male;32;0;0;Yes;Private;Rural;7096;33.1;Unknown;0
 56995;Female;81;0;0;Yes;Private;Urban;8286;25;never smoked;0
-53646;Female;33;1;0;No;Private;Rural;9787;N/A;smokes;0
+53646;Female;33;1;0;No;Private;Rural;9787;,NA;smokes;0
 45139;Female;79;0;1;Yes;Private;Rural;20138;31.1;never smoked;0
 38354;Female;62;0;0;Yes;Self-employed;Urban;9182;19.6;Unknown;0
 15566;Male;39;0;0;Yes;Private;Rural;9185;24.7;smokes;0
@@ -2896,7 +2896,7 @@
 32446;Female;44;0;0;Yes;Private;Rural;9727;26;never smoked;0
 56855;Male;46;0;0;Yes;Private;Urban;13777;29.3;never smoked;0
 43837;Male;33;0;0;Yes;Private;Urban;10519;50.1;smokes;0
-5477;Male;63;0;1;Yes;Self-employed;Urban;8272;N/A;never smoked;0
+5477;Male;63;0;1;Yes;Self-employed;Urban;8272;,NA;never smoked;0
 64974;Male;24;0;0;No;children;Urban;5835;18.6;Unknown;0
 33976;Male;55;0;0;Yes;Private;Urban;6879;27;never smoked;0
 31019;Female;56;0;0;Yes;Private;Urban;9419;25.7;never smoked;0
@@ -2913,7 +2913,7 @@
 16587;Female;16;0;0;No;Private;Urban;12226;34.2;never smoked;0
 3477;Female;26;0;0;No;Private;Rural;7816;20.1;never smoked;0
 23890;Female;44;1;0;Yes;Govt_job;Rural;10577;36.8;never smoked;0
-3803;Female;56;0;0;Yes;Private;Urban;10297;N/A;smokes;0
+3803;Female;56;0;0;Yes;Private;Urban;10297;,NA;smokes;0
 34068;Female;23;0;0;Yes;Govt_job;Urban;7753;33.9;formerly smoked;0
 60145;Female;38;0;0;Yes;Private;Urban;7735;27.7;never smoked;0
 11702;Female;18;0;0;No;Never_worked;Urban;8236;22.7;Unknown;0
@@ -2959,7 +2959,7 @@
 259;Male;79;0;0;Yes;Private;Urban;19879;24.9;never smoked;0
 12092;Male;16;0;0;No;Private;Rural;9039;26.5;never smoked;0
 38263;Female;32;0;0;Yes;Private;Rural;14704;35.7;Unknown;0
-1666;Male;70;0;0;Yes;Govt_job;Urban;20255;N/A;formerly smoked;0
+1666;Male;70;0;0;Yes;Govt_job;Urban;20255;,NA;formerly smoked;0
 48922;Male;55;1;1;Yes;Private;Rural;6492;32.1;smokes;0
 58061;Female;70;1;0;Yes;Self-employed;Rural;1546;28.5;formerly smoked;0
 50283;Female;51;0;0;Yes;Private;Urban;9598;40.1;smokes;0
@@ -2996,7 +2996,7 @@
 47005;Female;47;0;0;Yes;Private;Urban;6848;21.3;never smoked;0
 4750;Male;78;0;0;Yes;Private;Urban;8503;26.1;formerly smoked;0
 65127;Female;35;0;0;Yes;Private;Urban;8076;28.8;smokes;0
-4498;Male;71;0;1;Yes;Private;Urban;20498;N/A;formerly smoked;0
+4498;Male;71;0;1;Yes;Private;Urban;20498;,NA;formerly smoked;0
 32203;Female;57;0;0;Yes;Self-employed;Rural;9536;32.4;formerly smoked;0
 27436;Male;12;0;0;No;children;Urban;11033;20.4;Unknown;0
 34999;Male;26;0;0;Yes;Private;Urban;8918;25.9;formerly smoked;0
@@ -3006,7 +3006,7 @@
 17725;Female;10;0;0;No;children;Rural;9329;20.6;Unknown;0
 57983;Male;50;0;0;Yes;Govt_job;Urban;22789;38.8;formerly smoked;0
 68089;Female;44;0;0;Yes;Private;Urban;12146;40.4;Unknown;0
-3135;Female;73;0;0;No;Self-employed;Rural;6935;N/A;never smoked;0
+3135;Female;73;0;0;No;Self-employed;Rural;6935;,NA;never smoked;0
 563;Female;41;0;0;Yes;Private;Rural;21671;36.2;never smoked;0
 19364;Female;7;0;0;No;children;Rural;7496;18.8;Unknown;0
 34590;Male;45;0;0;Yes;Self-employed;Rural;7525;27.6;smokes;0
@@ -3027,7 +3027,7 @@
 56311;Female;16;0;0;No;Private;Rural;8192;22.7;Unknown;0
 13439;Male;40;1;0;Yes;Private;Urban;9091;39.1;Unknown;0
 36366;Male;77;0;0;Yes;Govt_job;Urban;644;27.8;never smoked;0
-13111;Female;67;1;0;Yes;Private;Rural;8548;N/A;smokes;0
+13111;Female;67;1;0;Yes;Private;Rural;8548;,NA;smokes;0
 28932;Female;36;0;0;Yes;Private;Rural;6729;36.7;formerly smoked;0
 67521;Female;40;1;0;Yes;Private;Urban;12448;38.5;Unknown;0
 65688;Male;2;0;1;No;children;Urban;6289;29.4;Unknown;0
@@ -3047,7 +3047,7 @@
 70884;Female;34;0;0;Yes;Private;Urban;798;37.4;smokes;0
 51809;Female;60;0;0;Yes;Self-employed;Rural;10317;32.1;formerly smoked;0
 40602;Female;22;0;0;No;Private;Urban;6252;38.2;never smoked;0
-65116;Female;62;1;0;Yes;Self-employed;Urban;7578;N/A;smokes;0
+65116;Female;62;1;0;Yes;Self-employed;Urban;7578;,NA;smokes;0
 70455;Female;52;0;0;Yes;Govt_job;Urban;11036;39.1;formerly smoked;0
 41618;Male;61;0;0;No;Private;Rural;14007;29.5;never smoked;0
 21209;Female;10;0;0;No;children;Rural;8486;28.6;never smoked;0
@@ -3058,7 +3058,7 @@
 10744;Male;62;0;1;Yes;Govt_job;Rural;737;26.2;never smoked;0
 7799;Female;79;0;0;No;Self-employed;Urban;7759;33;never smoked;0
 57183;Male;13;0;0;No;children;Rural;6916;22.3;Unknown;0
-121;Female;38;0;0;Yes;Private;Urban;9144;N/A;Unknown;0
+121;Female;38;0;0;Yes;Private;Urban;9144;,NA;Unknown;0
 32604;Male;49;0;0;Yes;Self-employed;Rural;21581;58.1;never smoked;0
 49883;Female;41;0;0;Yes;Private;Rural;654;36.9;formerly smoked;0
 68242;Male;56;0;0;Yes;Private;Urban;13972;43.9;never smoked;0
@@ -3073,7 +3073,7 @@
 50805;Female;55;0;0;Yes;Private;Urban;10236;24.2;never smoked;0
 10826;Female;39;0;0;Yes;Self-employed;Urban;8285;22.9;smokes;0
 60358;Female;51;0;0;Yes;Private;Urban;10211;23.1;never smoked;0
-72231;Female;47;0;0;Yes;Self-employed;Rural;19561;N/A;never smoked;0
+72231;Female;47;0;0;Yes;Self-employed;Rural;19561;,NA;never smoked;0
 58586;Male;77;1;1;Yes;Self-employed;Urban;8092;28.9;smokes;0
 50499;Female;32;0;0;Yes;Private;Rural;718;26.5;never smoked;0
 18986;Female;45;0;0;No;Self-employed;Urban;8847;29.3;never smoked;0
@@ -3103,14 +3103,14 @@
 31156;Female;49;0;0;Yes;Private;Urban;10599;29.8;never smoked;0
 69643;Male;81;0;0;Yes;Private;Rural;5993;28.9;formerly smoked;0
 23171;Male;66;0;0;Yes;Private;Rural;8883;29.1;Unknown;0
-42309;Female;42;0;0;Yes;Private;Urban;7337;N/A;smokes;0
+42309;Female;42;0;0;Yes;Private;Urban;7337;,NA;smokes;0
 2877;Female;61;0;0;Yes;Private;Urban;11542;16.7;smokes;0
 37011;Female;52;0;0;Yes;Private;Rural;7193;34.1;Unknown;0
 355;Male;8;0;0;No;children;Rural;9643;25.7;Unknown;0
 53252;Male;82;0;0;No;Self-employed;Urban;16195;30.8;never smoked;0
 3553;Female;43;0;0;Yes;Govt_job;Urban;10455;23.9;smokes;0
 72178;Female;4;0;0;No;children;Urban;7125;18.8;Unknown;0
-11817;Male;58;0;0;Yes;Govt_job;Urban;16087;N/A;formerly smoked;0
+11817;Male;58;0;0;Yes;Govt_job;Urban;16087;,NA;formerly smoked;0
 26468;Female;45;0;0;Yes;Govt_job;Urban;8202;41.8;smokes;0
 13176;Female;62;1;0;Yes;Private;Urban;7802;36.4;never smoked;0
 67032;Male;42;0;0;No;Govt_job;Urban;11521;28.7;Unknown;0
@@ -3134,7 +3134,7 @@
 71192;Male;11;0;0;No;children;Rural;5633;18.1;Unknown;0
 26997;Female;16;0;0;No;Private;Urban;8716;28.2;never smoked;0
 33532;Female;73;0;1;Yes;Private;Rural;10246;29.7;never smoked;0
-33704;Male;44;1;0;Yes;Private;Rural;841;N/A;Unknown;0
+33704;Male;44;1;0;Yes;Private;Rural;841;,NA;Unknown;0
 51897;Male;36;0;0;Yes;Private;Rural;161;29;smokes;0
 43016;Male;10;0;0;No;children;Urban;707;25.4;Unknown;0
 3370;Female;54;0;0;Yes;Private;Rural;8126;26.5;Unknown;0
@@ -3160,10 +3160,10 @@
 11803;Female;16;0;0;No;Private;Rural;9538;34.3;formerly smoked;0
 34356;Female;75;0;0;Yes;Private;Rural;10872;29.2;formerly smoked;0
 26528;Female;17;0;0;No;Private;Rural;8865;30.3;never smoked;0
-51554;Male;42;0;0;Yes;Private;Urban;17791;N/A;Unknown;0
-2296;Male;78;1;0;Yes;Self-employed;Urban;9019;N/A;Unknown;0
+51554;Male;42;0;0;Yes;Private;Urban;17791;,NA;Unknown;0
+2296;Male;78;1;0;Yes;Self-employed;Urban;9019;,NA;Unknown;0
 10624;Male;24;0;0;Yes;Private;Rural;7378;21.4;smokes;0
-1681;Female;68;0;0;No;Private;Urban;8285;N/A;smokes;0
+1681;Female;68;0;0;No;Private;Urban;8285;,NA;smokes;0
 36375;Male;50;0;0;Yes;Private;Rural;5948;26.6;Unknown;0
 8117;Male;52;0;0;Yes;Private;Rural;7577;30;formerly smoked;0
 49849;Female;82;0;0;Yes;Private;Rural;8096;33.7;formerly smoked;0
@@ -3175,7 +3175,7 @@
 66841;Male;30;0;0;No;Private;Rural;6187;23.9;Unknown;0
 38900;Female;52;0;0;Yes;Private;Urban;6888;26.1;Unknown;0
 18180;Female;3;0;0;No;children;Urban;6625;15.8;Unknown;0
-1183;Male;39;0;0;Yes;Private;Rural;8418;N/A;smokes;0
+1183;Male;39;0;0;Yes;Private;Rural;8418;,NA;smokes;0
 22964;Male;44;0;0;Yes;Govt_job;Rural;6923;28.7;smokes;0
 64597;Female;33;0;0;Yes;Private;Rural;732;28.9;Unknown;0
 23893;Male;24;0;0;Yes;Private;Urban;10345;25.1;smokes;0
@@ -3196,7 +3196,7 @@
 63864;Male;62;0;0;Yes;Private;Rural;10761;31.3;Unknown;0
 24177;Female;57;1;0;Yes;Private;Urban;9077;43.9;formerly smoked;0
 57274;Male;14;0;0;No;Never_worked;Urban;13791;41.8;never smoked;0
-37213;Male;60;0;0;Yes;Self-employed;Rural;21202;N/A;Unknown;0
+37213;Male;60;0;0;Yes;Self-employed;Rural;21202;,NA;Unknown;0
 59992;Female;63;1;0;Yes;Self-employed;Urban;2282;37.7;never smoked;0
 27382;Female;50;0;0;Yes;Govt_job;Urban;9215;20.8;never smoked;0
 61017;Female;12;0;0;No;children;Urban;12632;21.6;Unknown;0
@@ -3213,9 +3213,9 @@
 28027;Female;42;0;0;Yes;Govt_job;Urban;837;20.6;never smoked;0
 54177;Female;49;1;0;Yes;Govt_job;Rural;6316;23.3;formerly smoked;0
 32602;Male;78;0;1;Yes;Self-employed;Urban;8777;30.8;Unknown;0
-1213;Female;31;0;0;Yes;Self-employed;Urban;8723;N/A;formerly smoked;0
-21534;Male;67;0;0;Yes;Private;Urban;26085;N/A;Unknown;0
-6852;Female;52;1;0;Yes;Self-employed;Rural;10445;N/A;never smoked;0
+1213;Female;31;0;0;Yes;Self-employed;Urban;8723;,NA;formerly smoked;0
+21534;Male;67;0;0;Yes;Private;Urban;26085;,NA;Unknown;0
+6852;Female;52;1;0;Yes;Self-employed;Rural;10445;,NA;never smoked;0
 3379;Female;61;0;0;Yes;Private;Urban;8752;23.7;Unknown;0
 41146;Male;41;0;0;Yes;Private;Rural;11365;49.3;never smoked;0
 20391;Female;73;0;0;Yes;Govt_job;Rural;6593;30.3;never smoked;0
@@ -3374,14 +3374,14 @@
 16109;Male;63;0;0;Yes;Private;Urban;10552;37.9;formerly smoked;0
 47499;Female;48;0;0;Yes;Govt_job;Rural;7755;26.2;Unknown;0
 8790;Female;17;0;0;No;Private;Urban;12742;22.4;Unknown;0
-11259;Female;53;0;0;Yes;Private;Urban;22768;N/A;never smoked;0
+11259;Female;53;0;0;Yes;Private;Urban;22768;,NA;never smoked;0
 12003;Female;75;0;0;Yes;Private;Rural;22673;43.7;never smoked;0
 71099;Female;51;0;0;Yes;Self-employed;Urban;8974;28.4;never smoked;0
 62090;Male;51;0;0;No;Self-employed;Rural;21917;29.8;never smoked;0
 10138;Female;41;0;0;Yes;Private;Urban;7485;24.8;formerly smoked;0
 71424;Female;75;1;0;Yes;Self-employed;Urban;5596;34.8;never smoked;0
 44759;Male;57;0;0;Yes;Private;Urban;21592;27.4;smokes;0
-21953;Female;33;0;0;No;Private;Urban;844;N/A;smokes;0
+21953;Female;33;0;0;No;Private;Urban;844;,NA;smokes;0
 52234;Female;72;0;0;Yes;Govt_job;Urban;10405;33.5;never smoked;0
 46461;Female;52;0;0;Yes;Private;Urban;6254;35;smokes;0
 6973;Male;11;0;0;No;children;Rural;8754;24.4;Unknown;0
@@ -3424,13 +3424,13 @@
 34543;Female;82;0;0;Yes;Self-employed;Rural;8442;25.7;Unknown;0
 21762;Male;5;0;0;No;children;Rural;10098;19;Unknown;0
 22003;Male;66;0;0;Yes;Private;Rural;8111;28.8;formerly smoked;0
-6731;Female;53;0;0;No;Private;Rural;23545;N/A;formerly smoked;0
+6731;Female;53;0;0;No;Private;Rural;23545;,NA;formerly smoked;0
 19032;Female;15;0;0;No;Private;Rural;792;22.4;never smoked;0
 55370;Female;53;0;0;Yes;Private;Urban;20771;32.4;Unknown;0
 57288;Female;78;0;0;Yes;Private;Rural;9984;36.6;never smoked;0
 31925;Female;62;0;0;Yes;Private;Rural;9805;27.9;never smoked;0
 8264;Male;41;0;0;Yes;Self-employed;Rural;1059;27.7;Unknown;0
-448;Female;49;0;0;Yes;Private;Rural;10755;N/A;Unknown;0
+448;Female;49;0;0;Yes;Private;Rural;10755;,NA;Unknown;0
 38783;Female;41;0;0;Yes;Self-employed;Urban;14621;34.3;Unknown;0
 45961;Female;78;0;0;Yes;Private;Urban;7994;26.7;never smoked;0
 27518;Male;14;0;0;No;Self-employed;Rural;7228;19;Unknown;0
@@ -3502,7 +3502,7 @@
 50216;Male;44;1;0;Yes;Self-employed;Rural;18813;44.7;formerly smoked;0
 59506;Male;14;0;0;No;Private;Rural;1647;26.3;Unknown;0
 43397;Male;81;0;1;Yes;Self-employed;Rural;6827;25;Unknown;0
-62384;Male;52;0;1;No;Self-employed;Rural;7981;N/A;formerly smoked;0
+62384;Male;52;0;1;No;Self-employed;Rural;7981;,NA;formerly smoked;0
 10651;Male;54;1;0;Yes;Govt_job;Rural;10012;32.3;formerly smoked;0
 69750;Female;77;0;0;Yes;Self-employed;Urban;15123;24.9;never smoked;0
 55455;Male;27;0;0;No;Private;Rural;11241;33.7;never smoked;0
@@ -3561,7 +3561,7 @@
 32103;Male;59;0;0;Yes;Self-employed;Urban;7651;29.8;never smoked;0
 18205;Female;132;0;0;No;children;Rural;11017;20.3;Unknown;0
 71420;Male;27;0;0;No;Govt_job;Rural;6512;41.1;smokes;0
-298;Female;41;0;0;Yes;Self-employed;Rural;7666;N/A;Unknown;0
+298;Female;41;0;0;Yes;Self-employed;Rural;7666;,NA;Unknown;0
 15136;Male;64;0;1;Yes;Private;Rural;10988;33.9;Unknown;0
 9879;Female;55;0;1;Yes;Private;Urban;19938;39;Unknown;0
 68302;Female;40;0;0;Yes;Private;Urban;6577;31.2;never smoked;0
@@ -3604,7 +3604,7 @@
 1116;Female;49;0;0;No;Govt_job;Rural;10408;26.6;never smoked;0
 28247;Male;82;0;0;No;Self-employed;Urban;10157;24.3;smokes;0
 39563;Female;36;0;0;Yes;Private;Rural;7132;43.9;smokes;0
-49553;Male;188;0;0;No;children;Rural;14397;N/A;Unknown;0
+49553;Male;188;0;0;No;children;Rural;14397;,NA;Unknown;0
 14872;Male;45;1;0;Yes;Self-employed;Rural;23919;52.5;Unknown;0
 57598;Female;64;0;0;Yes;Private;Rural;7845;27;formerly smoked;0
 70022;Male;32;0;0;No;Private;Rural;6111;32.7;never smoked;0
@@ -3628,7 +3628,7 @@
 23360;Male;8;0;0;No;children;Rural;11454;15.1;Unknown;0
 28447;Female;53;1;0;Yes;Private;Rural;21688;31.4;smokes;0
 72398;Female;73;1;0;Yes;Private;Urban;11038;26.3;never smoked;0
-7859;Male;34;0;0;Yes;Private;Urban;9923;N/A;smokes;0
+7859;Male;34;0;0;Yes;Private;Urban;9923;,NA;smokes;0
 20140;Male;58;0;0;Yes;Govt_job;Rural;20492;39.6;never smoked;0
 46903;Female;62;0;0;Yes;Private;Urban;5674;28.9;never smoked;0
 61333;Female;78;0;0;No;Self-employed;Rural;6835;31.4;Unknown;0
@@ -3680,7 +3680,7 @@
 47784;Female;5;0;0;No;children;Rural;12349;19.5;Unknown;0
 18181;Male;44;0;0;Yes;Private;Rural;10549;31.5;smokes;0
 8614;Male;78;0;1;Yes;Self-employed;Urban;10153;24.1;formerly smoked;0
-347;Female;16;0;0;No;Private;Urban;8945;N/A;Unknown;0
+347;Female;16;0;0;No;Private;Urban;8945;,NA;Unknown;0
 61336;Female;69;0;0;Yes;Self-employed;Urban;12604;35.9;never smoked;0
 27647;Male;80;0;1;Yes;Self-employed;Rural;9549;31.6;Unknown;0
 25676;Female;7;0;0;No;children;Rural;8938;19;Unknown;0
@@ -3698,13 +3698,13 @@
 53476;Female;31;0;0;Yes;Private;Urban;90;38.6;never smoked;0
 479;Female;59;1;0;Yes;Private;Rural;7828;31;formerly smoked;0
 37237;Female;31;0;0;No;Private;Rural;8781;26.4;smokes;0
-5496;Female;45;0;0;Yes;Private;Urban;20266;N/A;never smoked;0
+5496;Female;45;0;0;Yes;Private;Urban;20266;,NA;never smoked;0
 56075;Female;58;0;0;Yes;Private;Rural;1965;37.7;never smoked;0
 46130;Female;57;0;0;Yes;Self-employed;Urban;14231;35.2;smokes;0
 7730;Male;31;0;0;No;Private;Rural;9496;54.7;smokes;0
 12380;Male;43;0;0;Yes;Govt_job;Rural;8378;21.6;never smoked;0
 15324;Female;40;0;0;No;Private;Urban;861;23.9;Unknown;0
-11658;Male;108;0;0;No;children;Rural;745;N/A;Unknown;0
+11658;Male;108;0;0;No;children;Rural;745;,NA;Unknown;0
 22778;Male;34;0;0;Yes;Private;Urban;6696;26.1;never smoked;0
 4128;Female;55;0;0;Yes;Private;Rural;767;39.7;formerly smoked;0
 36825;Female;39;0;0;Yes;Private;Rural;10312;29.9;formerly smoked;0
@@ -3725,7 +3725,7 @@
 17740;Male;65;0;0;Yes;Private;Rural;9912;29;formerly smoked;0
 64189;Male;61;0;0;Yes;Self-employed;Rural;15284;28.6;Unknown;0
 24202;Male;63;0;0;Yes;Private;Rural;7823;34.8;never smoked;0
-32514;Male;18;0;0;No;children;Urban;688;N/A;Unknown;0
+32514;Male;18;0;0;No;children;Urban;688;,NA;Unknown;0
 9866;Female;54;0;0;Yes;Private;Urban;7605;42;Unknown;0
 54816;Female;14;0;0;No;children;Rural;11649;30.3;never smoked;0
 59880;Male;45;0;0;Yes;Private;Rural;9991;30.9;Unknown;0
@@ -3733,7 +3733,7 @@
 65969;Male;8;0;0;No;children;Rural;12199;19.6;Unknown;0
 56923;Male;52;1;0;Yes;Private;Rural;11621;32.8;smokes;0
 44001;Female;39;0;0;Yes;Private;Urban;5528;31.5;Unknown;0
-51852;Female;13;0;0;No;children;Rural;21981;N/A;Unknown;0
+51852;Female;13;0;0;No;children;Rural;21981;,NA;Unknown;0
 27176;Female;69;0;0;Yes;Private;Rural;10373;34.7;never smoked;0
 70874;Male;71;1;0;Yes;Govt_job;Urban;15308;21.5;Unknown;0
 34287;Female;73;0;0;Yes;Self-employed;Rural;9869;27.6;Unknown;0
@@ -3801,13 +3801,13 @@
 2029;Female;40;0;0;Yes;Private;Rural;9235;38;never smoked;0
 13993;Female;19;0;0;No;Private;Urban;7657;26.6;Unknown;0
 18876;Female;28;0;0;Yes;Private;Urban;695;24.5;never smoked;0
-22865;Female;61;0;0;Yes;Private;Rural;21938;N/A;never smoked;0
+22865;Female;61;0;0;Yes;Private;Rural;21938;,NA;never smoked;0
 365;Female;44;1;0;Yes;Private;Rural;6948;41.3;never smoked;0
 37631;Male;50;0;0;Yes;Govt_job;Urban;8918;34.8;smokes;0
 5500;Female;50;0;1;Yes;Govt_job;Urban;6809;35.5;smokes;0
 53217;Female;18;0;0;No;Private;Rural;9271;24.1;Unknown;0
 56712;Male;164;0;0;No;children;Rural;5621;19;Unknown;0
-10055;Female;37;0;0;No;Govt_job;Rural;7208;N/A;formerly smoked;0
+10055;Female;37;0;0;No;Govt_job;Rural;7208;,NA;formerly smoked;0
 4959;Female;5;0;0;No;children;Urban;8256;16.6;Unknown;0
 22155;Female;39;0;0;Yes;Private;Urban;7824;28.6;Unknown;0
 22860;Female;65;0;0;Yes;Govt_job;Rural;8466;22.4;never smoked;0
@@ -3871,7 +3871,7 @@
 14019;Female;58;0;0;Yes;Private;Urban;9621;23.5;never smoked;0
 65888;Male;12;0;0;No;children;Rural;11704;18.1;Unknown;0
 62986;Female;60;1;0;Yes;Private;Rural;7826;41.7;formerly smoked;0
-61409;Male;32;1;0;No;Govt_job;Urban;5824;N/A;formerly smoked;0
+61409;Male;32;1;0;No;Govt_job;Urban;5824;,NA;formerly smoked;0
 72041;Male;23;0;0;No;Private;Urban;8253;20.7;smokes;0
 51584;Male;26;0;0;No;Private;Urban;7125;30.3;smokes;0
 56476;Male;36;0;0;Yes;Private;Rural;12973;27.8;never smoked;0
@@ -3912,7 +3912,7 @@
 36548;Male;31;0;0;Yes;Govt_job;Urban;657;30.4;formerly smoked;0
 71596;Female;47;0;0;Yes;Private;Urban;6708;22.3;Unknown;0
 61050;Male;37;0;0;Yes;Govt_job;Rural;10758;25.3;never smoked;0
-6172;Female;79;0;0;Yes;Private;Rural;20805;N/A;smokes;0
+6172;Female;79;0;0;Yes;Private;Rural;20805;,NA;smokes;0
 15098;Female;65;0;0;Yes;Private;Rural;9587;29.8;never smoked;0
 34895;Male;61;0;0;Yes;Private;Urban;6817;43.8;formerly smoked;0
 6443;Female;66;0;0;Yes;Private;Urban;9537;34.5;smokes;0
@@ -3939,18 +3939,18 @@
 27675;Female;7;0;0;No;children;Urban;10311;18.3;Unknown;0
 6903;Female;15;0;0;No;children;Rural;7757;18.3;Unknown;0
 35463;Male;67;0;0;Yes;Private;Urban;9734;28.9;never smoked;0
-172;Male;8;0;0;No;children;Urban;7876;N/A;Unknown;0
+172;Male;8;0;0;No;children;Urban;7876;,NA;Unknown;0
 16876;Female;32;0;0;Yes;Private;Rural;671;27.1;Unknown;0
 60926;Male;5;0;0;No;children;Urban;7989;13.8;Unknown;0
 21333;Male;56;1;0;Yes;Private;Rural;20666;21.9;smokes;0
 69183;Male;49;0;0;No;Private;Urban;9579;24;Unknown;0
-2313;Female;75;0;1;Yes;Self-employed;Urban;8388;N/A;smokes;0
+2313;Female;75;0;1;Yes;Self-employed;Urban;8388;,NA;smokes;0
 8041;Female;11;0;0;No;children;Rural;9351;20.8;Unknown;0
 68171;Male;61;0;0;Yes;Self-employed;Urban;11678;39.8;formerly smoked;0
 27948;Male;76;0;0;Yes;Self-employed;Rural;11763;26.2;never smoked;0
 45673;Female;34;0;0;Yes;Private;Rural;6001;43.9;Unknown;0
 50810;Male;20;0;0;No;Private;Rural;646;27.3;Unknown;0
-2467;Female;79;1;0;Yes;Self-employed;Rural;9243;N/A;never smoked;0
+2467;Female;79;1;0;Yes;Self-employed;Rural;9243;,NA;never smoked;0
 64165;Female;24;0;0;No;Private;Urban;7163;22;formerly smoked;0
 22352;Female;39;0;0;Yes;Self-employed;Urban;8779;40;formerly smoked;0
 62990;Female;55;0;0;Yes;Govt_job;Rural;9964;20.1;formerly smoked;0
@@ -4045,7 +4045,7 @@
 22554;Female;13;0;0;No;children;Rural;8851;27.7;Unknown;0
 72512;Female;48;0;0;Yes;Self-employed;Urban;9038;38;smokes;0
 56195;Male;37;0;0;Yes;Govt_job;Urban;15669;35.2;never smoked;0
-7524;Female;69;0;1;Yes;Private;Urban;2076;N/A;never smoked;0
+7524;Female;69;0;1;Yes;Private;Urban;2076;,NA;never smoked;0
 45795;Female;74;0;0;Yes;Private;Urban;1589;32.4;formerly smoked;0
 64433;Male;54;0;0;Yes;Private;Urban;24797;36.1;formerly smoked;0
 70106;Female;64;0;1;Yes;Private;Rural;11471;30.6;never smoked;0
@@ -4068,7 +4068,7 @@
 53694;Male;79;0;0;No;Self-employed;Urban;12872;31;Unknown;0
 11280;Female;28;0;0;Yes;Private;Urban;9805;24.7;never smoked;0
 28734;Female;16;0;0;No;Never_worked;Urban;1021;27.1;never smoked;0
-12693;Male;31;0;0;Yes;Private;Urban;10862;N/A;smokes;0
+12693;Male;31;0;0;Yes;Private;Urban;10862;,NA;smokes;0
 17683;Male;66;0;0;Yes;Self-employed;Urban;9619;38.3;smokes;0
 36155;Female;57;1;0;Yes;Private;Urban;9807;50.9;formerly smoked;0
 31390;Female;61;0;0;Yes;Private;Rural;714;29.2;formerly smoked;0
@@ -4163,7 +4163,7 @@
 59272;Male;38;0;0;Yes;Private;Rural;7922;34.8;smokes;0
 45563;Female;72;0;1;Yes;Self-employed;Urban;14263;32.9;smokes;0
 19907;Female;52;0;0;Yes;Private;Rural;9705;28;Unknown;0
-40163;Female;82;1;0;Yes;Private;Urban;22252;N/A;formerly smoked;0
+40163;Female;82;1;0;Yes;Private;Urban;22252;,NA;formerly smoked;0
 62738;Male;71;0;1;Yes;Private;Rural;7038;25;smokes;0
 51651;Male;46;0;0;Yes;Private;Rural;11446;24.7;formerly smoked;0
 39940;Female;33;0;0;Yes;Private;Urban;6462;27.3;never smoked;0
@@ -4201,7 +4201,7 @@
 63404;Female;44;0;0;Yes;Private;Rural;8771;34;formerly smoked;0
 13540;Female;59;0;0;Yes;Self-employed;Rural;11568;27.1;Unknown;0
 44288;Male;43;0;0;Yes;Private;Rural;20737;29.5;formerly smoked;0
-23194;Male;32;1;0;No;Private;Rural;7443;N/A;Unknown;0
+23194;Male;32;1;0;No;Private;Rural;7443;,NA;Unknown;0
 751;Female;5;0;0;No;children;Rural;751;20.7;Unknown;0
 7047;Female;31;0;0;Yes;Private;Rural;6972;39.5;smokes;0
 68020;Male;47;0;0;Yes;Private;Urban;11184;33.7;Unknown;0
@@ -4229,7 +4229,7 @@
 52092;Female;2;0;0;No;children;Rural;7772;19.8;Unknown;0
 45372;Male;68;0;0;Yes;Self-employed;Rural;7609;26;smokes;0
 63043;Female;27;0;0;No;Private;Urban;618;26.8;formerly smoked;0
-67;Female;17;0;0;No;Private;Urban;9297;N/A;formerly smoked;0
+67;Female;17;0;0;No;Private;Urban;9297;,NA;formerly smoked;0
 68034;Female;53;1;0;Yes;Govt_job;Urban;8373;32.5;never smoked;0
 63026;Male;5;0;0;No;children;Rural;7933;15;Unknown;0
 18352;Female;3;0;0;No;children;Rural;10832;14.2;Unknown;0
@@ -4254,7 +4254,7 @@
 14553;Male;7;0;0;No;children;Urban;7663;17.3;Unknown;0
 40998;Female;81;0;0;Yes;Self-employed;Rural;5801;27.8;never smoked;0
 71900;Female;10;0;0;No;children;Urban;7743;16.2;Unknown;0
-3318;Female;18;0;0;No;Private;Rural;10112;N/A;smokes;0
+3318;Female;18;0;0;No;Private;Rural;10112;,NA;smokes;0
 41481;Female;5;0;0;No;children;Rural;6445;21.7;Unknown;0
 24854;Female;24;0;0;No;Self-employed;Urban;7942;21.4;never smoked;0
 22330;Female;45;0;0;Yes;Self-employed;Urban;8294;29.3;Unknown;0
@@ -4282,10 +4282,10 @@
 67711;Female;18;0;0;No;Private;Rural;8885;36.2;Unknown;0
 53105;Female;29;0;0;Yes;Private;Urban;639;45.4;smokes;0
 10696;Female;52;0;0;Yes;Private;Urban;8132;27.6;formerly smoked;0
-43656;Male;59;1;0;Yes;Govt_job;Rural;25393;N/A;formerly smoked;0
+43656;Male;59;1;0;Yes;Govt_job;Rural;25393;,NA;formerly smoked;0
 52361;Male;69;1;1;Yes;Private;Urban;7811;34.7;formerly smoked;0
 57343;Female;71;0;0;Yes;Private;Urban;13465;32.4;Unknown;0
-23339;Male;3;0;0;No;children;Rural;19475;N/A;Unknown;0
+23339;Male;3;0;0;No;children;Rural;19475;,NA;Unknown;0
 51408;Male;33;0;0;Yes;Govt_job;Rural;7794;28.7;never smoked;0
 47886;Female;43;1;0;Yes;Govt_job;Rural;5694;45.3;Unknown;0
 21407;Male;39;0;0;Yes;Private;Rural;11703;40.3;formerly smoked;0
@@ -4421,7 +4421,7 @@
 31703;Male;66;0;0;Yes;Self-employed;Urban;8582;27.8;never smoked;0
 33439;Female;27;0;0;No;Private;Rural;8621;21.4;Unknown;0
 5647;Female;18;0;0;No;Private;Urban;9901;25.5;formerly smoked;0
-1847;Female;20;0;0;No;Govt_job;Rural;7953;N/A;never smoked;0
+1847;Female;20;0;0;No;Govt_job;Rural;7953;,NA;never smoked;0
 12900;Male;11;0;0;No;children;Rural;8008;21.8;never smoked;0
 28367;Female;7;0;0;No;children;Rural;6947;18.9;Unknown;0
 71551;Female;54;0;0;No;Private;Urban;8507;21.9;Unknown;0
@@ -4450,7 +4450,7 @@
 69010;Male;78;0;0;Yes;Private;Rural;832;21.2;formerly smoked;0
 47144;Female;74;0;0;Yes;Self-employed;Urban;8862;28.5;formerly smoked;0
 65103;Female;59;0;0;Yes;Private;Urban;8151;25.6;formerly smoked;0
-6472;Female;78;0;0;Yes;Govt_job;Urban;10176;N/A;smokes;0
+6472;Female;78;0;0;Yes;Govt_job;Urban;10176;,NA;smokes;0
 27596;Female;82;1;0;Yes;Private;Urban;11571;31.1;formerly smoked;0
 59522;Male;71;1;0;Yes;Private;Rural;22973;30.4;never smoked;0
 51512;Female;19;0;0;No;Private;Rural;574;22.9;Unknown;0
@@ -4521,7 +4521,7 @@
 17478;Male;44;0;0;Yes;Govt_job;Urban;10166;35.4;never smoked;0
 59908;Female;11;0;0;No;children;Rural;12115;26.1;Unknown;0
 34130;Male;54;1;0;Yes;Private;Rural;11644;24.5;never smoked;0
-22282;Male;52;1;0;Yes;Govt_job;Rural;11662;N/A;smokes;0
+22282;Male;52;1;0;Yes;Govt_job;Rural;11662;,NA;smokes;0
 21110;Female;43;0;0;Yes;Private;Urban;933;32.7;never smoked;0
 71622;Female;56;0;0;Yes;Private;Urban;14433;29.2;never smoked;0
 10056;Female;37;0;0;Yes;Private;Urban;9802;20.4;never smoked;0
@@ -4560,7 +4560,7 @@
 22614;Male;64;0;0;No;Self-employed;Rural;8262;25.3;smokes;0
 61997;Female;50;0;0;Yes;Private;Urban;10203;28.3;Unknown;0
 6605;Male;52;1;0;Yes;Govt_job;Urban;23506;39.9;formerly smoked;0
-46987;Female;65;0;1;Yes;Private;Rural;5752;N/A;formerly smoked;0
+46987;Female;65;0;1;Yes;Private;Rural;5752;,NA;formerly smoked;0
 70428;Female;37;0;0;Yes;Govt_job;Urban;7698;34.7;never smoked;0
 2267;Female;31;0;0;Yes;Self-employed;Urban;8231;31.9;never smoked;0
 25476;Female;52;0;0;Yes;Private;Urban;8384;35;Unknown;0
@@ -4615,7 +4615,7 @@
 45530;Female;19;0;0;No;Private;Urban;893;22.1;never smoked;0
 56425;Female;78;0;0;Yes;Govt_job;Rural;6138;24.3;Unknown;0
 69972;Female;55;0;0;Yes;Private;Rural;5611;32.4;formerly smoked;0
-5774;Male;59;0;0;Yes;Private;Urban;22316;N/A;Unknown;0
+5774;Male;59;0;0;Yes;Private;Urban;22316;,NA;Unknown;0
 13307;Male;57;0;0;Yes;Govt_job;Urban;7553;33.1;formerly smoked;0
 72188;Male;33;0;0;No;Private;Urban;10747;26.7;never smoked;0
 60226;Female;35;0;0;Yes;Private;Urban;76;37.9;Unknown;0
@@ -4683,7 +4683,7 @@
 11843;Female;65;0;0;Yes;Self-employed;Rural;8042;29.4;formerly smoked;0
 3609;Male;78;0;0;Yes;Private;Urban;8044;29;never smoked;0
 29172;Female;68;0;0;Yes;Self-employed;Rural;8063;20.2;never smoked;0
-49894;Female;78;1;1;Yes;Private;Rural;20653;N/A;never smoked;0
+49894;Female;78;1;1;Yes;Private;Rural;20653;,NA;never smoked;0
 6048;Female;65;0;0;Yes;Private;Urban;10412;27.4;never smoked;0
 16029;Female;70;0;0;Yes;Self-employed;Rural;9682;25;never smoked;0
 63022;Female;59;0;0;Yes;Self-employed;Urban;881;30.7;never smoked;0
@@ -4712,7 +4712,7 @@
 45922;Female;23;0;0;No;Private;Urban;5881;25.4;never smoked;0
 52934;Male;79;0;0;Yes;Self-employed;Urban;24262;25.5;never smoked;0
 18020;Male;57;0;0;Yes;Private;Urban;9304;29.2;never smoked;0
-2044;Female;70;0;1;Yes;Self-employed;Rural;6568;N/A;Unknown;0
+2044;Female;70;0;1;Yes;Self-employed;Rural;6568;,NA;Unknown;0
 63467;Male;9;0;0;No;children;Urban;150;17.4;Unknown;0
 38642;Male;55;0;0;Yes;Private;Urban;6356;29.9;Unknown;0
 5387;Female;82;0;0;No;Private;Rural;9698;21.5;never smoked;0
@@ -4749,7 +4749,7 @@
 54344;Female;12;0;0;No;children;Rural;8089;20.1;Unknown;0
 2550;Female;28;0;0;Yes;Govt_job;Rural;8691;21.1;formerly smoked;0
 58610;Female;55;0;0;Yes;Private;Urban;5936;34.1;smokes;0
-16902;Female;70;0;1;Yes;Self-employed;Urban;24069;N/A;smokes;0
+16902;Female;70;0;1;Yes;Self-employed;Urban;24069;,NA;smokes;0
 60603;Female;51;0;0;No;Private;Rural;6667;29.5;never smoked;0
 808;Female;16;0;0;No;Private;Rural;8754;37.8;never smoked;0
 61881;Male;56;0;0;No;Self-employed;Urban;13987;31.2;smokes;0
@@ -4789,7 +4789,7 @@
 26305;Male;29;0;0;No;Self-employed;Rural;9677;30.3;formerly smoked;0
 31227;Male;8;0;0;No;children;Rural;8924;16.7;Unknown;0
 5581;Female;39;0;0;Yes;Private;Rural;8932;31;formerly smoked;0
-1989;Male;37;0;0;Yes;Private;Rural;10706;N/A;smokes;0
+1989;Male;37;0;0;Yes;Private;Rural;10706;,NA;smokes;0
 43803;Female;64;0;0;Yes;Private;Urban;6563;33.5;smokes;0
 41395;Male;9;0;0;No;children;Urban;12366;17;Unknown;0
 71784;Male;17;0;0;No;Private;Rural;6382;19.4;smokes;0
@@ -4920,7 +4920,7 @@
 41842;Male;75;0;0;Yes;Govt_job;Rural;7949;28.9;Unknown;0
 11962;Male;36;0;0;Yes;Private;Urban;8933;30.7;never smoked;0
 45404;Female;75;0;0;Yes;Private;Rural;6838;33.8;Unknown;0
-4062;Male;72;0;1;Yes;Private;Rural;23827;N/A;smokes;0
+4062;Male;72;0;1;Yes;Private;Rural;23827;,NA;smokes;0
 63650;Female;47;0;0;Yes;Govt_job;Urban;13579;32.1;formerly smoked;0
 72186;Female;15;0;0;No;Private;Rural;8219;40.5;never smoked;0
 40240;Male;40;1;0;Yes;Self-employed;Urban;932;24.8;smokes;0
@@ -4933,7 +4933,7 @@
 30457;Female;53;1;0;Yes;Govt_job;Rural;9861;38.8;smokes;0
 5951;Male;28;1;0;No;Private;Urban;8661;38.6;smokes;0
 8690;Female;81;0;0;Yes;Private;Urban;8044;32.2;never smoked;0
-32147;Male;132;0;0;No;children;Rural;10702;N/A;Unknown;0
+32147;Male;132;0;0;No;children;Rural;10702;,NA;Unknown;0
 47691;Male;16;0;0;No;Private;Rural;9723;30.6;never smoked;0
 25982;Male;24;0;0;No;Private;Rural;9121;28.1;formerly smoked;0
 70058;Female;62;1;0;Yes;Self-employed;Urban;10369;35.2;smokes;0
@@ -4948,7 +4948,7 @@
 61694;Male;55;0;0;Yes;Self-employed;Rural;11136;33.6;never smoked;0
 7453;Female;44;0;0;Yes;Private;Urban;8407;21.2;smokes;0
 66405;Female;31;0;0;Yes;Private;Urban;11731;28.4;never smoked;0
-2138;Male;58;0;0;Yes;Govt_job;Urban;8494;N/A;never smoked;0
+2138;Male;58;0;0;Yes;Govt_job;Urban;8494;,NA;never smoked;0
 66650;Female;17;0;0;No;Private;Urban;6886;41.1;never smoked;0
 59945;Female;23;0;0;No;Private;Urban;13288;24.9;never smoked;0
 16245;Male;51;1;0;Yes;Self-employed;Rural;21183;56.6;never smoked;0
@@ -4983,7 +4983,7 @@
 61801;Male;15;0;0;No;Private;Urban;6505;24.6;Unknown;0
 949;Male;20;0;0;No;Private;Rural;759;32.2;never smoked;0
 10995;Male;76;1;0;Yes;Private;Rural;2676;30.5;never smoked;0
-1503;Male;31;0;0;No;Private;Urban;21507;N/A;smokes;0
+1503;Male;31;0;0;No;Private;Urban;21507;,NA;smokes;0
 37431;Female;39;0;0;Yes;Govt_job;Urban;10903;24.9;Unknown;0
 53697;Male;58;0;1;Yes;Private;Rural;22535;26.5;smokes;0
 67012;Male;64;1;0;Yes;Private;Rural;19626;34.5;Unknown;0
@@ -5038,7 +5038,7 @@
 57159;Male;56;0;0;Yes;Self-employed;Rural;12587;24.6;never smoked;0
 69710;Female;46;0;0;No;Self-employed;Rural;6409;25.3;never smoked;0
 58834;Male;55;0;0;Yes;Govt_job;Urban;6533;29.7;Unknown;0
-42007;Male;41;0;0;No;Private;Rural;7015;N/A;formerly smoked;0
+42007;Male;41;0;0;No;Private;Rural;7015;,NA;formerly smoked;0
 5121;Male;30;0;0;Yes;Private;Urban;9684;21.1;Unknown;0
 44878;Male;53;0;0;Yes;Private;Rural;17592;26.9;smokes;0
 40220;Male;32;0;0;No;Private;Rural;10065;26.2;formerly smoked;0
@@ -5047,7 +5047,7 @@
 19801;Female;44;0;0;Yes;Private;Rural;983;25;never smoked;0
 21467;Male;44;0;0;Yes;Private;Urban;8968;34.6;Unknown;0
 25102;Female;51;0;0;Yes;Govt_job;Urban;9516;42.7;formerly smoked;0
-28788;Male;40;0;0;Yes;Private;Urban;19115;N/A;smokes;0
+28788;Male;40;0;0;Yes;Private;Urban;19115;,NA;smokes;0
 29028;Female;41;0;0;Yes;Private;Rural;9104;24.5;never smoked;0
 15581;Male;5;0;0;No;children;Urban;10187;19.3;Unknown;0
 16738;Female;42;0;0;Yes;Private;Rural;9686;29.3;never smoked;0
@@ -5092,19 +5092,19 @@
 4211;Male;26;0;0;No;Govt_job;Rural;10085;21;smokes;0
 6369;Male;59;1;0;Yes;Private;Rural;9505;30.9;never smoked;0
 56799;Male;76;0;0;Yes;Govt_job;Urban;8235;38.9;never smoked;0
-32235;Female;45;1;0;Yes;Govt_job;Rural;9502;N/A;smokes;0
+32235;Female;45;1;0;Yes;Govt_job;Rural;9502;,NA;smokes;0
 28048;Male;13;0;0;No;children;Urban;8238;24.3;Unknown;0
 68598;Male;108;0;0;No;children;Rural;7915;17.4;Unknown;0
 41512;Male;57;0;0;Yes;Govt_job;Rural;7662;28.2;never smoked;0
 64520;Male;68;0;0;Yes;Self-employed;Urban;9168;40.8;Unknown;0
 579;Male;9;0;0;No;children;Urban;7188;17.5;Unknown;0
-7293;Male;40;0;0;Yes;Private;Rural;8394;N/A;smokes;0
+7293;Male;40;0;0;Yes;Private;Rural;8394;,NA;smokes;0
 68398;Male;82;1;0;Yes;Self-employed;Rural;7197;28.3;never smoked;0
 36901;Female;45;0;0;Yes;Private;Urban;9795;24.5;Unknown;0
 45010;Female;57;0;0;Yes;Private;Rural;7793;21.7;never smoked;0
 22127;Female;18;0;0;No;Private;Urban;8285;46.9;Unknown;0
 14180;Female;13;0;0;No;children;Rural;10308;18.6;Unknown;0
-18234;Female;80;1;0;Yes;Private;Urban;8375;N/A;never smoked;0
+18234;Female;80;1;0;Yes;Private;Urban;8375;,NA;never smoked;0
 44873;Female;81;0;0;Yes;Self-employed;Urban;1252;40;never smoked;0
 19723;Female;35;0;0;Yes;Self-employed;Rural;8299;30.6;never smoked;0
 37544;Male;51;0;0;Yes;Private;Rural;16629;25.6;formerly smoked;0
