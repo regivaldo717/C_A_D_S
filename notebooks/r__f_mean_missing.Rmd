@@ -1,0 +1,136 @@
+
+```{r}
+install.packages('randomForest')
+install.packages('caTools')
+install.packages('e1071')
+install.packages('caret')
+install.packages('xlsx')
+install.packages('rpart')
+install.packages('ggplot2')
+#install.packages('devtools')
+install.packages('esquisse')
+```
+
+
+```{r}
+library(readxl)
+library(caret)
+library(forcats)
+library(e1071)
+library(caTools)
+library(randomForest)
+library(readxl)
+library(rpart)
+library(ggplot2)
+library(esquisse)
+```
+
+
+```{r}
+Stroke_avc <- read_excel("Stroke_avc.xlsx")
+View(Stroke_avc)
+```
+
+
+```{r} 
+NStroke_avc<- Stroke_avc # construção de variável temporária para comparação dos arquivos após modificação
+```
+
+
+```{r}
+Stroke_avc$id = NULL
+summary(Stroke_avc$age)
+linhas_absurd<- Stroke_avc[Stroke_avc$age>100,] #separação de iddades maiores que 100 anos
+Stroke_avc[ is.na(Stroke_avc$age),]
+```
+
+
+```{r}
+Stroke_avc$age<- as.numeric(Stroke_avc$age)
+
+```
+
+
+```{r}
+Stroke_avc$ever_married<- factor(Stroke_avc$ever_married, levels = c('Yes', 'No'), labels = c(0,1))
+```
+
+```{r}
+Stroke_avc$work_type<- factor(Stroke_avc$work_type, levels = c('Private', 'Self-employed','Govt_job','children','Never_worked'),labels = c(0,1,2,3,4) )
+```
+
+```{r}
+Stroke_avc$Residence_type<- factor(Stroke_avc$Residence_type,  levels = c('Urban', 'Rural'), labels = c(0,1))
+
+```
+
+
+```{r}
+Stroke_avc$smoking_status<- factor(Stroke_avc$smoking_status, levels = c('formerly smoked','never smoked','smokes','Unknown'), labels = c(0,1,2,3))
+Stroke_avc$smoking_status<- as.integer(Stroke_avc$smoking_status)
+```
+
+
+```{r}
+Stroke_avc$gender<- factor(Stroke_avc$gender, levels = c( "Male","Female","Other" ), labels =  c(0,1,2))
+Stroke_avc$gender<- as.integer(Stroke_avc$gender)
+
+```
+
+
+```{r}
+Stroke_avc$stroke<- factor(Stroke_avc$stroke, levels = c(0,1))
+Stroke_avc$stroke<- as.factor(Stroke_avc$stroke)
+```
+
+
+```{r}
+Stroke_avc$bmi<-  as.factor(Stroke_avc$ bmi)
+Stroke_avc$bmi<-ifelse(is.na(Stroke_avc$bmi), mean(Stroke_avc$bmi,na.rm = TRUE),Stroke_avc$bmi)
+#View(Stroke_avc$bmi)
+```
+
+```{r}
+set.seed(1)
+```
+
+```{r}
+separador<- sample.split(Stroke_avc$stroke, SplitRatio = 0.70)
+
+```
+
+
+```{r}
+treinamento<- subset(Stroke_avc, separador == TRUE)
+teste<- subset(Stroke_avc, separador == FALSE)
+
+```
+
+
+```{r}
+set.seed(1) #repetição dos resultados
+classificador<- randomForest(x = treinamento[-11], y = treinamento$stroke, ntree = 10)
+previsoes<- predict(classificador, newdata = teste[-11])
+```
+
+
+```{r}
+matriz_confusao = table(teste$stroke,previsoes) 
+confusionMatrix(matriz_confusao)
+```
+
+
+```{r}
+confusionMatrix(matriz_confusao)
+plot (matriz_confusao)
+print(classificador)
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
