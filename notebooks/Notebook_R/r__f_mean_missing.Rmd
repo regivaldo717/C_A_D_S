@@ -127,10 +127,7 @@ print(classificador)
 ```
 
 
-```{r}
-```
 
 
-```{r}
-```
+
 
