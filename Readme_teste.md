@@ -138,7 +138,8 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >   E, finalmente, foi analisada a base apenas com os pacientes que tiveram AVC para um melhor entendimento do perfil desses pacientes.
 >  
 >   **ANÁLISE BASE TODOS PACIENTES**
->    ![Visão Geral da Base](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Geral_Base.PNG)
+>   
+>    ![Visão Geral da Base](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Geral_Base.png)
 >    
 >    Vários gráficos foram apresentados e feita uma análise geral da base:
 >  
@@ -185,7 +186,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >   
 >    **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
 >
->    ![Visão Base AVC ](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Base_AVC.PNG)
+>    ![Visão Base AVC ](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Base_AVC.png)
 >    Análise dos gráficos pacientes que tiveram AVC:
 >
 > 	* O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
