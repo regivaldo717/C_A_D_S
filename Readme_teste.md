@@ -131,37 +131,36 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >  
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
 >
->  Toda a análise exploratória foi realizada usando a linguagem python no jupyter notebook do google colab. 
+>   Toda a análise exploratória foi realizada usando a linguagem python no jupyter notebook do google colab. 
 >  
->  Inicialmente foram extraídas as estatísticas descritivas e feita uma análise preliminar do conteúdo da base.
->  Após entendimento, tratamento e limpeza da base, foi verificada a correlação entre as variáveis utilizando Pearson e Spearman.
->  E, finalmente, foi analisada a base apenas com os pacientes que tiveram AVC para um melhor entendimento do perfil desses pacientes.
+>   Inicialmente foram extraídas as estatísticas descritivas e feita uma análise preliminar do conteúdo da base.
+>   Após entendimento, tratamento e limpeza da base, foi verificada a correlação entre as variáveis utilizando Pearson e Spearman.
+>   E, finalmente, foi analisada a base apenas com os pacientes que tiveram AVC para um melhor entendimento do perfil desses pacientes.
 >  
->  **ANÁLISE BASE TODOS PACIENTES**
+>   **ANÁLISE BASE TODOS PACIENTES**
 >  
 >    Vários gráficos foram apresentados e feita uma análise geral da base:
 >  
-> * O total da base de dados é de 5110 registros.
-> * Em relação ao gênero, 41,4% é do gênero masculino e 58,6% é do gênero feminino. Existe um outlier que não tem o gênero identificado e será removido na etapa de tratamento
+>	* O total da base de dados é de 5110 registros.
+>  	* Em relação ao gênero, 41,4% é do gênero masculino e 58,6% é do gênero feminino. Existe um outlier que não tem o gênero identificado e será removido na etapa de tratamento
 >  de dados. 
-> * A partir do bmi, idade e das outras features, tentou-se inferir o gênero, mas não houve um indicativo do sexo, optando-se por removê-lo.
-> * Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem 498 hipertensos.
-> * A distribuição das idades não é uma distribuição normal. Percebe-se que a concentração da idade dos pacientes fica na faixa etária entre 40 e 60 anos.
-> * Existe uma grande quantidade de pacientes que nunca fumaram (1892), dados desconhecidos (1544) e fumantes e ex-fumantes que totalizam 1674. Os dados desconhecidos não serão
->   preenchidos e como o volume é muito alto, também não poderão ser removidos.
-> * Em torno de 65% dos pacientes são ou foram casados contra 35% dos pacientes solteiros.
-> * A maior parte dos pacientes possuem o nível de glicose abaixo de 120.
-> * Existem 698 pacientes que são crianças (idade até 16 anos). Em relação aos adultos, 2925 trabalham em empregos privados, 819 são autônomos, 657 trabalham para o governo e 
->  apenas 22 nunca trabalharam.
-> * O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
-> * Apenas 5,4% possuem doença do coração.
-> * O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui esse índice entre 25 e 35.
-> * E, finalmente, o percentual de pessoas predispostas ao AVC mostra-se baixo entre os pacientes, apenas 4,9%.
+>  	* A partir do bmi, idade e das outras features, tentou-se inferir o gênero, mas não houve um indicativo do sexo, optando-se por removê-lo.
+>  	* Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem 498 hipertensos.
+>  	* A distribuição das idades não é uma distribuição normal. Percebe-se que a concentração da idade dos pacientes fica na faixa etária entre 40 e 60 anos.
+>  	* Existe uma grande quantidade de pacientes que nunca fumaram (1892), dados desconhecidos (1544) e fumantes e ex-fumantes que totalizam 1674. Os dados desconhecidos não serão
+>  	 preenchidos e como o volume é muito alto, também não poderão ser removidos.
+>  	* Em torno de 65% dos pacientes são ou foram casados contra 35% dos pacientes solteiros.
+>  	* A maior parte dos pacientes possuem o nível de glicose abaixo de 120.
+>  	* Existem 698 pacientes que são crianças (idade até 16 anos). Em relação aos adultos, 2925 trabalham em empregos privados, 819 são autônomos, 657 trabalham para o 	governo e apenas 22 nunca trabalharam.
+>  	* O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+>  	* Apenas 5,4% possuem doença do coração.
+>  	* O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui esse índice entre 25 e 35.
+>  	* E, finalmente, o percentual de pessoas predispostas ao AVC mostra-se baixo entre os pacientes, apenas 4,9%.
 >
->   **ANÁLISE DAS CORRELAÇÕES**
+>    **ANÁLISE DAS CORRELAÇÕES**
 >
->   Com base na correlação de Pearson e Spearman, foi encontrada uma correlação moderada entre as variáveis *age* e *ever_married*.
->   Algumas correlações fracas foram encontradas: 
+>    Com base na correlação de Pearson e Spearman, foi encontrada uma correlação moderada entre as variáveis *age* e *ever_married*.
+>    Algumas correlações fracas foram encontradas: 
 >   * *age x stroke*
 >   * *age x bmi*
 >   * *age x heart_disease*
@@ -177,26 +176,24 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >    Na análise da massa corporal com a idade, verificou-se que existe uma variação nesse índice, porém há uma tendência a uma massa corporal mais elevada. Além disso, 
 >    o que pode ser destacado é que a faixa etária de quem teve o AVC é acima de 40 anos.
 >   
->   **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
+>    **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
 >
->     Análise dos gráficos pacientes que tiveram AVC:
+>    Análise dos gráficos pacientes que tiveram AVC:
 >
-> * O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
-> * Em relação ao gênero, 43,4% é do gênero masculino e 56,6% é do gênero feminino. Ou seja, percebe-se que não há uma correlação forte do gênero em relação a quem teve o AVC 
-> * e o percentual dos gêneros se aproxima ao da base original.
-> * Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem apenas 66 hipertensos.
-> * A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 
-> e 80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
-> * 90 pacientes nunca fumaram e 70 são ex-fumantes. Apenas 42 fumam e 47 não tem essa informação.
-> * Em torno de 88% dos pacientes são ou foram casados contra 11% dos pacientes solteiros. Ou seja, a maior parte dos pacientes que sofreram AVC eram casados.
-> * A maior parte dos pacientes possuem o nível de glicose abaixo de 120, embora tenham alguns que sofreram o AVC com um nível de glicose mais elevado, na entre 160 e 220, 
-> em torno de 84 pacientes.
-> * Foi identificado apenas 2 pacientes crianças que tiveram AVC. Em relação aos adultos, a maior parte trabalha em empregos privados, 149 pacientes, 65 são autônomos e 33 
-> trabalham no governo.
-> * O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
-> * 18% possuem doença do coração, esse percentual é bem superior ao observado na base origina.
-> * O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui "bmi" entre 25 e 35. É a mesma tendência 
-> encontrada na base completa.
+> 	* O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
+> 	* Em relação ao gênero, 43,4% é do gênero masculino e 56,6% é do gênero feminino. Ou seja, percebe-se que não há uma correlação forte do gênero em relação a quem teve o AVC 
+> 	* e o percentual dos gêneros se aproxima ao da base original.
+> 	* Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem apenas 66 hipertensos.
+> 	* A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 e 80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
+> 	* 90 pacientes nunca fumaram e 70 são ex-fumantes. Apenas 42 fumam e 47 não tem essa informação.
+> 	* Em torno de 88% dos pacientes são ou foram casados contra 11% dos pacientes solteiros. Ou seja, a maior parte dos pacientes que sofreram AVC eram casados.
+> 	* A maior parte dos pacientes possuem o nível de glicose abaixo de 120, embora tenham alguns que sofreram o AVC com um nível de glicose mais elevado, na entre 160 e 220, 
+> 	em torno de 84 pacientes.
+> 	* Foi identificado apenas 2 pacientes crianças que tiveram AVC. Em relação aos adultos, a maior parte trabalha em empregos privados, 149 pacientes, 65 são autônomos e 33 
+> 	trabalham no governo.
+> 	* O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+> 	* 18% possuem doença do coração, esse percentual é bem superior ao observado na base origina.
+> 	* O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui "bmi" entre 25 e 35. É a mesma tendência encontrada na base completa.
 >
 
 ### Integração entre Bases e Análise Exploratória
