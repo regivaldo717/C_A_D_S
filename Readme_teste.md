@@ -80,7 +80,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 gender | Gênero do paciente | char | Male/Female/Other |
 >
 | Coluna                          | Descrição       | Tipo | Conteúdo
-| :------------------------------ | :-------------: |:----------------|:--------------
+| :------------------------------- | :--------------- |:----------------|:--------------
 | Id                              | Identificador único do paciente | int | 
 | gender                          | Gênero do paciente | char | Male/Female/Other
 | age                             | Idade do paciente | int | 
@@ -104,7 +104,7 @@ gender | Gênero do paciente | char | Male/Female/Other |
 >  Variáveis categóricas da base são: *gender, ever_married, work_type, residence_type, smoking_status*
 >
 | Coluna                          | Quantitativos      
-| :------------------------------ | :-------------: 
+| :------------------------------ | :------------- 
 | gender                          | Female: 2994 Male: 2115 Other:1
 | age                             | Crianças: 698 Adultos: 4412 
 | hypertension                    | Não hipertensos: 4612 hipertensos: 498
