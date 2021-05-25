@@ -11,7 +11,6 @@
 | Nome                            | RA            | Especialização
 | :------------------------------ | :-------------: |:----------------
 | Amanda Consulin Amorim          | 234942        | Saúde (FCM)
-| Louise Idalgo Vasques           | 142399        | Saúde (FCM)
 | Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
 | Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
@@ -105,6 +104,20 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    * Is_Recurrent_Haemorrhagic_Stroke_Indicator
 >    * Is_Any_Stroke_Indicator_Within_14_Days
 >    
+>    As colunas removidas foram:
+>    * "Trial_Heparin_Allocated", 
+>    * "Medium_Dose_Heparin_Given_For_14_Days",
+>    * "Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot",
+>    * "Ischaemic_Stroke", "Haemorrhagic_Stroke", 
+>    * "Indeterminate_Stroke", "Not_A_Stroke",
+>    * "Recurrent_Ischaemic_Stroke",
+>    * "Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke",
+>    * "Recurrent_Haemorrhagic_Stroke",
+>    * "Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke",
+>    * "Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator",
+>    * "Is_Recurrent_Haemorrhagic_Stroke_Indicator
+
+>
 > * Por que este banco não foi adotado?
 >   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
 > foram:
@@ -141,9 +154,37 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >   		
 > * Análise Exploratória (inicial) sobre esta base.
 > 
-> 	Testando a identação:
-> 	* x
->	* y
+> 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder a questão do próprio artigo.
+> 	
+> 	Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, 332 mortes foram por AVC. Sendo assim, do total do número de mortos, apenas 651 morreram de AVC e eles morreram em até 14 dias depois pela doença. Já os 2.238 restantes morreram em até 6 meses por outras causas.
+> 	Pelos resultados obtidos pode-se perceber que metade dessa amostra fez tratamento com heparina e a outra metade não fez. Além disso, das 1.501 pessoas que fizeram tratamento, 22,11% morreu de AVC e, das 1.388 que não fizeram só 22,98% morreram de AVC, mostrando que em ambos os conjuntos o percentil de AVC foi semelhante. Ademais, 22,5% da amostra total de fato morreu pelo AVC sendo o restante por diversas causas. Isso pode mostrar que as causas de mortes estão mais correlacionadas a outras doenças do que ao próprio AVC, e que o tratamento com heparina não tenha alguma implicancia na redução do número de mortos.
+> 	Porém, fazendo uma análise em “feature statistic” do Orange 3.0 e no próprio notebook foi possível notar que em “type recurrent stroke” - ischaemic estão faltando 16.868 dados (93%), em “cause of death” - pneumonia estão faltando 15.071 dados (83%) e em “type stroke” - ischaemic estão faltando 438 dados (2%), assim como mostra a tabela abaixo:
+
+Categoria | Dados Faltantes 
+----- | ----- 
+ID | 0
+Gender | 0
+Age | 0
+Blood_pressure | 0
+Stroke_subtype | 0
+Days_treatment | 0
+Non_trial_antiplatelet_drug | 17
+Cause_of_death | 15071
+Is_death_indicator | 0
+Is_death_indicator_14days | 0
+Six_months_outcome | 0
+Is_initial_stroke_indicator | 0
+Is_any_stroke_indicator_14days | 0
+Dose_heparin | 0
+Is_stroke | 0
+Type_stroke | 438
+Is_recurrent_stroke_indicator | 0
+Type_recurrent_stroke | 16868
+Days_to_recurrent_stroke | 0
+
+>    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico e isso relaciona-se a causa de algumas mortes, confirmando que o tratamento com heparina não interfere na redução do número de mortes, assim classificando-o os faltantes relacionados à “type recurrent stroke” como MCAR e “cause of death” como MAR, pois a observação que está faltando não tem nada a ver com os valores faltantes, mas sim com os valores das variáveis ​​observadas. Isso é visto na faixa de idade dos 20 à 60 anos, onde faltam dados para cause of death.
+
+>	
 ### Bases Estudadas e Adotadas
 
 > Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
