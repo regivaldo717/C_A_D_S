@@ -195,9 +195,9 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 > 	* 18% possuem doença do coração, esse percentual é bem superior ao observado na base origina.
 > 	* O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui "bmi" entre 25 e 35. É a mesma tendência encontrada na base completa.
 >
-
+>
 ### Integração entre Bases e Análise Exploratória
-
+>
 > Embora tenhamos trabalhado com duas bases de dados, optamos por apenas uma delas para a continuidade do projeto. Não foi possível integrá-las porque os dados eram individualizados por pacientes e os objetivos finais eram diferentes.
 > 
 > Na base estudada e adotada, o objetivo era prever se o paciente tem predisposição para o AVC. 
@@ -218,7 +218,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 
 # Cronograma
 > A duração do projeto está prevista para quatro meses considerando etapas já executadas descritas no cronograma abaixo.
- 
+> 
 
 |ATIVIDADE              |Abril|Maio|Junho| Julho |
 |----------------------   |---------------   |---------   |----------   |  ---------- |
