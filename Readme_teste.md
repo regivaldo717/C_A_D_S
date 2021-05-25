@@ -64,50 +64,44 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > estudo. Os cuidados básicos com o AVC foram limitados e nenhum dos pacientes recebeu terapia trombolítica. Esse conjunto de dados fornece uma fonte de dados primários que 
 > podem ser usados para o planejamento de novos ensaios, para cálculos de tamanho de amostra e para novas análises secundárias.
 >  
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
-> 
->   Começamos com a base do laboratório John Snow Labs dos EUA, que foi feita em parceria com diversos hospitais do mundo todo. Nessa base 19.435 pacientes participaram fazendo 
-> acompanhamento médico, e os dados obtidos desse acompanhamento foram atribuídos em 112 questões, distribuídas nas colunas. Esses dados seriam utilizados para complementar a
-> questão primária se é possível predizer se a pessoa terá AVC, entretanto, analisando os dados foi possível verificar que ele responde melhor a pergunta de se os pacientes que
-> foram tratados com heparina e AAS continuaram vivos ou morreram em seis meses. Para iniciar a análise foram feitos tratamentos dessa base como: alteração e renomeação de 
-> colunas, remoção de colunas, intercepção de colunas e media. 
-> 
->    ALTERAÇÃO E RENOMEAÇÃO DO NOME DA COLUNA 
-> 
->    Nas categorias "gênero”, “idade”, “pressão” foi reduzido o nome da coluna. 
->    Na categoria “Age_In_Years” foi renomeado para “Age”. “Systolic_Blood_Pressure_at_Randomization” foi nomeado para “blood_pressure”.
-> 
->    REMOÇÃO DE COLUNAS:
-> 
->    Das 112 colunas, que podem ser observadas na categoria raw do repositório,  foram removidas 97 colunas. Ao final obteve-se 25 atributos, como demonstrado abaixo:
->    * Gender
->    * Age_In_Years  
->    
-> * Por que este banco não foi adotado?
->   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
-> foram:
->	1) “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
-> 2) “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
-> 3) “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
-> 4)	”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”
-> 5)	“Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”
-6)	 “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”
-
-e ao final do tratamento obteve-se 19 atributos assim como mostra as tabelas a seguir: 
-
-
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
-
+>
 ### Bases Estudadas e Adotadas
 
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+> A base de dados adotada foi a do site Kaggle sobre Predição do AVC.
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction-dataset | Este conjunto de dados é usado para prever se um paciente tem probabilidade de desenvolver AVC com base nos parâmetros de entrada como sexo, idade, várias doenças e tabagismo. Cada linha dos dados fornece informações relevantes sobre o paciente.
 
 > Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
+> 
+
+
+gender | Gênero do paciente | char | Male/Female/Other |
+>
+| Coluna                          | Descrição       | Tipo | Conteúdo
+| :------------------------------ | :-------------: |:----------------|:--------------
+| Id                              | Identificador único do paciente | int | 
+| gender                          | Gênero do paciente | char | Male/Female/Other
+| Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
+| Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
+>
+
+id: Identificador único do paciente
+gender: Gênero do paciente (Male/Female/Other)
+age: idade do paciente
+hypertension: Se o paciente é hipertenso ou não (0: não hipertenso, 1: hipertenso)
+heart_disease: Se paciente possui doença do coração ou não (0: não possui, 1: possui)
+ever_married: Se o paciente casou-se uma ou mais vezes (0: foi ou é casado, 1: não foi casado)
+work_type: Tipo do trabalho exercido pelo paciente, por esse campo é possível identificar se é uma criança (children/Govt_jov/Never_worked/Private)
+Residence_type: Tipo de residência, se rural ou urbana (Rural/Urban)
+avg_glucose_level: taxa média de glicose no sangue
+bmi: índice de massa muscular
+smoking_status: Se o paciente fuma, já foi fumante ou não fuma (formely smoked/never_smoked/smokes/Unknown)
+stroke: 1 se o paciente teve um AVC e 0 se nunca teve um AVC OBS: "Unknown" na variável smoking_status significa que não se tem essa informação do paciente
+
+
 > * O que descobriu sobre esse banco?
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
