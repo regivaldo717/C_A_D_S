@@ -176,17 +176,20 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >    Percebe-se que **não há uma correlação forte** entre a **variável target *stroke* e outros atributos** numéricos do conjunto de dados.
 >
 >    ![Distribuição AVC](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_AVC.PNG)
+>    
 >    Na sequência, foi realizada uma análise da "Distribuição AVC baseado no índice massa corporal e nível de glicose" e, também, da "Distribuição AVC baseado no índice 
 >    massa corporal e idade". Conclui-se que para as pessoas que tiveram AVC, o nível médio de glicose no sangue é superior a 150, tendo uma tendência, nesses casos, para uma
 >    massa corporal mais elevada. Embora não seja um indicativo tão forte.
 >
 >    ![Distribuição Idade](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_Idade.PNG)
+>    
 >    Na análise da massa corporal com a idade, verificou-se que existe uma variação nesse índice, porém há uma tendência a uma massa corporal mais elevada. Além disso, 
 >    o que pode ser destacado é que a faixa etária de quem teve o AVC é acima de 40 anos.
 >   
 >    **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
 >
 >    ![Visão Base AVC ](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Base_AVC.png)
+>    
 >    Análise dos gráficos pacientes que tiveram AVC:
 >
 > 	* O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
