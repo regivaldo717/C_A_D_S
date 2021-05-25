@@ -29,7 +29,6 @@ View(AVC)
 
 
 
-nAVC<- AVC
 #View(Dados_Resumidos_AVC)
 #pre-processamento
 # pre-procecssamento Idade
