@@ -73,7 +73,8 @@ Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction-dataset | Este conjunto de dados é usado para prever se um paciente tem probabilidade de desenvolver AVC com base nos parâmetros de entrada como sexo, idade, várias doenças e tabagismo. Cada linha dos dados fornece informações relevantes sobre o paciente.
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> Abaixo serão respondidas questões sobre a base de dados adotada, permitindo uma melhor compreensão dos dados.
+> 
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
 >
@@ -93,13 +94,19 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 | stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | int | 0: Não teve AVC 1: Teve AVC
 
 > * O que descobriu sobre esse banco?
->  Existem 5110 pacientes nesta base. 
->  Analisando as estatísticas, percebe-se que existem 209 dados missing na columa bmi (indicador de massa corporal). A média da idade é em torno de 43 anos, a maioria não é 
->  hipertenso (média próxima de 0), a maioria não tem doença do coração (média próxima de 0), a média do nível de glicose fica em torno de 106, o percentual da massa muscular é
->  de 28.8 e poucos pacientes tiveram AVC, pois a média é próxima de 0.
->  Em relação às variáveis categóricas, a maior parte dos pacientes são do sexo feminino, já foram casados e o tipo de trabalho que exercem é privado. A maior parte deles,
->  também, nunca fumou. Aproximadamente, metade dos pacientes possuem residência urbana.
->  Variáveis categóricas da base são: *gender, ever_married, work_type, residence_type, smoking_status*
+> 
+>   Existem 5110 pacientes nesta base e 12 atributos desses pacientes.
+>   
+>   Analisando as estatísticas, percebe-se que existem 209 dados missing na columa bmi (indicador de massa corporal). A média da idade é em torno de 43 anos, a maioria não é 
+>   hipertenso (média próxima de 0), a maioria não tem doença do coração (média próxima de 0), a média do nível de glicose fica em torno de 106, o percentual da massa muscular é
+>   de 28.8 e poucos pacientes tiveram AVC, pois a média é próxima de 0.
+>  
+>   Em relação às variáveis categóricas, a maior parte dos pacientes são do sexo feminino, já foram casados e o tipo de trabalho que exercem é privado. A maior parte deles,
+>   também, nunca fumou. Aproximadamente, metade dos pacientes possuem residência urbana.
+>  
+>   Variáveis categóricas da base são: *gender, ever_married, work_type, residence_type, smoking_status*.
+>  
+>   Abaixo são listadas as variáveis numéricas e categóricas da base com seus quantitativos:
 >
 | Coluna                          | Quantitativos      
 | :------------------------------ | :------------- 
@@ -113,15 +120,95 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 | stroke                          | Não teve AVC: 4861 Teve AVC: 249
 >
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> 
+>   Foi modificado o nome da coluna *Residence_type* para *residence_type*, para que todas ficassem padronizadas com letra minúscula. Os dados "missing" da variável bmi (índice 
+>   de massa corporal) foram substituídos pela média do gênero em questão. 
+>  
+>   Embora haja dados "Unknown" na variável *smoking_status*, não foi feita nenhuma substituição, pois a quantidade de dados "Unknown" é um percentual grande da base, 1544
+>   registros. Outra alteração efetuada foi a remoção de um registro em que a variável *gender* está como "Other". 
+>   
+>   Após as transformações efetuadas, a base resultante ficou com 5109 pacientes para serem analisados.
+>  
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+>
+>  Toda a análise exploratória foi realizada usando a linguagem python no jupyter notebook do google colab. 
+>  
+>  Inicialmente foram extraídas as estatísticas descritivas e feita uma análise preliminar do conteúdo da base.
+>  Após entendimento, tratamento e limpeza da base, foi verificada a correlação entre as variáveis utilizando Pearson e Spearman.
+>  E, finalmente, foi analisada a base apenas com os pacientes que tiveram AVC para um melhor entendimento do perfil desses pacientes.
+>  
+>  **ANÁLISE BASE TODOS PACIENTES**
+>  
+>    Vários gráficos foram apresentados e feita uma análise geral da base:
+>  
+> * O total da base de dados é de 5110 registros.
+> * Em relação ao gênero, 41,4% é do gênero masculino e 58,6% é do gênero feminino. Existe um outlier que não tem o gênero identificado e será removido na etapa de tratamento
+>  de dados. 
+> * A partir do bmi, idade e das outras features, tentou-se inferir o gênero, mas não houve um indicativo do sexo, optando-se por removê-lo.
+> * Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem 498 hipertensos.
+> * A distribuição das idades não é uma distribuição normal. Percebe-se que a concentração da idade dos pacientes fica na faixa etária entre 40 e 60 anos.
+> * Existe uma grande quantidade de pacientes que nunca fumaram (1892), dados desconhecidos (1544) e fumantes e ex-fumantes que totalizam 1674. Os dados desconhecidos não serão
+>   preenchidos e como o volume é muito alto, também não poderão ser removidos.
+> * Em torno de 65% dos pacientes são ou foram casados contra 35% dos pacientes solteiros.
+> * A maior parte dos pacientes possuem o nível de glicose abaixo de 120.
+> * Existem 698 pacientes que são crianças (idade até 16 anos). Em relação aos adultos, 2925 trabalham em empregos privados, 819 são autônomos, 657 trabalham para o governo e 
+>  apenas 22 nunca trabalharam.
+> * O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+> * Apenas 5,4% possuem doença do coração.
+> * O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui esse índice entre 25 e 35.
+> * E, finalmente, o percentual de pessoas predispostas ao AVC mostra-se baixo entre os pacientes, apenas 4,9%.
+>
+>   **ANÁLISE DAS CORRELAÇÕES**
+>
+>   Com base na correlação de Pearson e Spearman, foi encontrada uma correlação moderada entre as variáveis *age* e *ever_married*.
+>   Algumas correlações fracas foram encontradas: 
+>   * *age x stroke*
+>   * *age x bmi*
+>   * *age x heart_disease*
+>   * *age x hypertension* 
+>   * *bmi x ever_married*
+>
+>    Percebe-se que **não há uma correlação forte** entre a **variável target *stroke* e outros atributos** numéricos do conjunto de dados.
+>
+>    Na sequência, foi realizada uma análise da "Distribuição AVC baseado no índice massa corporal e nível de glicose" e, também, da "Distribuição AVC baseado no índice 
+>    massa corporal e idade". Conclui-se que para as pessoas que tiveram AVC, o nível médio de glicose no sangue é superior a 150, tendo uma tendência, nesses casos, para uma
+>    massa corporal mais elevada. Embora não seja um indicativo tão forte.
+>
+>    Na análise da massa corporal com a idade, verificou-se que existe uma variação nesse índice, porém há uma tendência a uma massa corporal mais elevada. Além disso, 
+>    o que pode ser destacado é que a faixa etária de quem teve o AVC é acima de 40 anos.
+>   
+>   **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
+>
+>     Análise dos gráficos pacientes que tiveram AVC:
+>
+> * O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
+> * Em relação ao gênero, 43,4% é do gênero masculino e 56,6% é do gênero feminino. Ou seja, percebe-se que não há uma correlação forte do gênero em relação a quem teve o AVC 
+> * e o percentual dos gêneros se aproxima ao da base original.
+> * Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem apenas 66 hipertensos.
+> * A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 
+> e 80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
+> * 90 pacientes nunca fumaram e 70 são ex-fumantes. Apenas 42 fumam e 47 não tem essa informação.
+> * Em torno de 88% dos pacientes são ou foram casados contra 11% dos pacientes solteiros. Ou seja, a maior parte dos pacientes que sofreram AVC eram casados.
+> * A maior parte dos pacientes possuem o nível de glicose abaixo de 120, embora tenham alguns que sofreram o AVC com um nível de glicose mais elevado, na entre 160 e 220, 
+> em torno de 84 pacientes.
+> * Foi identificado apenas 2 pacientes crianças que tiveram AVC. Em relação aos adultos, a maior parte trabalha em empregos privados, 149 pacientes, 65 são autônomos e 33 
+> trabalham no governo.
+> * O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+> * 18% possuem doença do coração, esse percentual é bem superior ao observado na base origina.
+> * O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui "bmi" entre 25 e 35. É a mesma tendência 
+> encontrada na base completa.
+>
 
 ### Integração entre Bases e Análise Exploratória
 
-> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
-
+> Embora tenhamos trabalhado com duas bases de dados, optamos por apenas uma delas para a continuidade do projeto. Não foi possível integrá-las porque os dados eram individualizados por pacientes e os objetivos finais eram diferentes.
+> Na base estudada e adotada, o objetivo era prever se o paciente tem predisposição para o AVC. 
+> Na base estudada, mas não adotada, o objetivo era prever se o uso da heparina para pacientes que tiveram o AVC levaria a uma melhora do paciente em relação a não ter um infarto recorrente e, consequentemente, não morrer.
+> Sendo assim, não havia sentido nessa integração.
+> 
 # Ferramentas
 >
-> As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
+> As ferramentas destacadas em negrito são as utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e servirão de suporte durante o projeto:
 > 
 >* **Jupyter Notebook**
 >* **Linguagem Python**
