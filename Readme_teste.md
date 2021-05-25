@@ -175,7 +175,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >
 >    Percebe-se que **não há uma correlação forte** entre a **variável target *stroke* e outros atributos** numéricos do conjunto de dados.
 >
->    ![Distribuição AVC](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_AVC.PNG)
+>    ![Distribuição AVC](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_AVC.png)
 >    
 >    Na sequência, foi realizada uma análise da "Distribuição AVC baseado no índice massa corporal e nível de glicose" e, também, da "Distribuição AVC baseado no índice 
 >    massa corporal e idade". Conclui-se que para as pessoas que tiveram AVC, o nível médio de glicose no sangue é superior a 150, tendo uma tendência, nesses casos, para uma
