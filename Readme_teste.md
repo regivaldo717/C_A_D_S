@@ -90,11 +90,30 @@ gender | Gênero do paciente | char | Male/Female/Other |
 | work_type                       | Tipo do trabalho exercido pelo paciente, caso seja criança, aparece como "children" | char | children/Govt_job/Never_worked/Private
 | Residence_type                  | Tipo de residência, se rural ou urbana  | int | Rural/Urban
 | avg_glucose_level               | Taxa média de glicose no sangue  | float | 
-| bmi                             | Tipo de residência, se rural ou urbana  | int | Rural/Urban
-| smoking_status                  | Se o paciente fuma, já foi fumante ou não fuma | char | formely smoked/never_smoked/smokes/Unknown
-| stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | 0: Não teve AVC 1: Teve AVC
+| bmi                             | Índice de Massa Muscular  | float | 
+| smoking_status                  | Identifica se o paciente fuma, já foi fumante ou não fuma | char | formely smoked/never_smoked/smokes/Unknown
+| stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | int | 0: Não teve AVC 1: Teve AVC
 
 > * O que descobriu sobre esse banco?
+>  Existem 5110 pacientes nesta base. 
+>  Analisando as estatísticas, percebe-se que existem 209 dados missing na columa bmi (indicador de massa corporal). A média da idade é em torno de 43 anos, a maioria não é 
+>  hipertenso (média próxima de 0), a maioria não tem doença do coração (média próxima de 0), a média do nível de glicose fica em torno de 106, o percentual da massa muscular é
+>  de 28.8 e poucos pacientes tiveram AVC, pois a média é próxima de 0.
+>  Em relação às variáveis categóricas, a maior parte dos pacientes são do sexo feminino, já foram casados e o tipo de trabalho que exercem é privado. A maior parte deles,
+>  também, nunca fumou. Aproximadamente, metade dos pacientes possuem residência urbana.
+>  Variáveis categóricas da base são: *gender, ever_married, work_type, residence_type, smoking_status*
+>
+| Coluna                          | Quantitativos      
+| :------------------------------ | :-------------: 
+| gender                          | Female: 2994 Male: 2115 Other:1
+| age                             | Crianças: 698 Adultos: 4412 
+| hypertension                    | Não hipertensos: 4612 hipertensos: 498
+| smoking_status                  | never smoked: 1892 Unknown: 1544 formerly smoked: 885 smokes: 789
+| work_type                       | Private: 2925 Self-employed: 819 children: 687 Govt_job: 657 Never_worked: 22
+| Residence_type                  | Urban: 2596 Rural: 2514
+| heart_disease                   | Não tem doença do coração: 4834 Tem doença do coração: 276
+| stroke                          | Não teve AVC: 4861 Teve AVC: 249
+>
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
 > * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
 
