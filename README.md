@@ -28,46 +28,102 @@
 > Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas:
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
-> * Quais os parâmetros relacionados à possibilidade de se ter um AVC? Pesquisar artigos.
-> * Quais os possíveis tratamentos preventivos para evitar um AVC? Exercícios? Baixo IMC? Taxa de glicose?
-> * O gênero possui alguma relação com a probabilidade de se ter um AVC? 
-> * O fator idade possui relação com a probabilidade de se ter um AVC durante a vida?
-> * O fator “fumante” possui relação com a probabilidade de se ter um AVC durante a vida?
-> * A vida na cidade gera mais estresse que a vida no campo?
-> * O estresse aumenta a probabilidade de se ter um AVC durante a vida?
-> * Pessoas casadas têm maior ou menor probabilidade de ter um AVC durante a vida?
-> * O tipo de trabalho possui influência sobre a probabilidade de ter um AVC durante a vida? Quais trabalhos possuem algum risco à saúde?
-> * O etilismo possui alguma relação com a probabilidade de se ter AVC durante a vida?
-> * O alto índice de colesterol possui alguma relação com a probabilidade de se ter AVC durante a vida?
 >
 
-# Bases de Dados
->
->  As bases de dados utilizadas no projeto provêm dos orgãos e sites listados abaixo que disponibilizam bases de dados públicas para consumo:
-> 
-> 1. Kaggle - Comunidade online de cientistas de dados e profissionais de aprendizado de máquina.
-> 2. DATASUS - Departamento de informática do Sistema Único de Saúde do Brasil.
-> 3. OMS  - Organização Mundial de Saúde
-> 4. Pubmed - Motor de busca de livre acesso à base de dados MEDLINE de citações e resumos de artigos de investigação em biomedicina.
-> 5. IBGE - Instituto Brasileiro de Geografia e Estatística.
-> 6. Lilacs - Mais importante e abrangente índice da literatura científica e técnica da América Latina e Caribe. 
->
 # Metodologia
 >  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
 interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem de máquina e análise estatística**. 
 >
 >  A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. Para isso, serão testados alguns algoritmos de aprendizagem supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
 >
+
+## Bases de Dados e Evolução
+>  As bases de dados utilizadas no projeto provêm dos orgãos e sites listados abaixo que disponibilizam bases de dados públicas para consumo:
+>  1. Kaggle - Comunidade online de cientistas de dados e profissionais de aprendizado de máquina.
+>  2. John Snow LAB - Empresa Privada que trabalha com Inteligência Artificial para Saúde.
 >
+
+### Bases Estudadas mas Não Adotadas
+
+> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratório John Snow Labs dos EUA que contém dados de 19 mil pacientes do mundo todo e possui 112 variáveis. Foi feito um teste do uso de heparina e AAS em pacientes com AVC e verificou se o paciente continuou com vida ou morreu.
+
+> Conclusão sobre a base:
+> * Objetivo do Banco:
+> 
+>   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada > paciente randomizado, os dados foram extraídos nas variáveis avaliado na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes alta, e aos 6 meses e
+> fornecido como um banco de dados analisável. O objetivo principal deste estudo era fazer com que os dados individuais dos pacientes do International Stroke Trial (IST), um dos > maiores ensaios randomizados já conduzidos em AVC agudo, torna-se disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises 
+> secundárias adicionais. E o objetivo do julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos ou nenhum influenciou o curso clínico de  > um acidente vascular cerebral isquêmico agudo.
+>   
+> * O que descobriu sobre esse banco?
+> 
+>   O conjunto de dados do IST inclui dados de 19435 pacientes com AVC agudo, com acompanhamento completo de 99%. Mais de 26,4% dos pacientes tinham mais de 80 anos no início do 
+> estudo. Os cuidados básicos com o AVC foram limitados e nenhum dos pacientes recebeu terapia trombolítica. Esse conjunto de dados fornece uma fonte de dados primários que 
+> podem ser usados para o planejamento de novos ensaios, para cálculos de tamanho de amostra e para novas análises secundárias.
+>  
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> 
+>   Começamos com a base do laboratório John Snow Labs dos EUA, que foi feita em parceria com diversos hospitais do mundo todo. Nessa base 19.435 pacientes participaram fazendo 
+> acompanhamento médico, e os dados obtidos desse acompanhamento foram atribuídos em 112 questões, distribuídas nas colunas. Esses dados seriam utilizados para complementar a
+> questão primária se é possível predizer se a pessoa terá AVC, entretanto, analisando os dados foi possível verificar que ele responde melhor a pergunta de se os pacientes que
+> foram tratados com heparina e AAS continuaram vivos ou morreram em seis meses. Para iniciar a análise foram feitos tratamentos dessa base como: alteração e renomeação de 
+> colunas, remoção de colunas, intercepção de colunas e media. 
+> 
+>    ALTERAÇÃO E RENOMEAÇÃO DO NOME DA COLUNA 
+> 
+>    Nas categorias "gênero”, “idade”, “pressão” foi reduzido o nome da coluna. 
+>    Na categoria “Age_In_Years” foi renomeado para “Age”. “Systolic_Blood_Pressure_at_Randomization” foi nomeado para “blood_pressure”.
+> 
+>    REMOÇÃO DE COLUNAS:
+> 
+>    Das 112 colunas, que podem ser observadas na categoria raw do repositório,  foram removidas 97 colunas. Ao final obteve-se 25 atributos, como demonstrado abaixo:
+>    * Gender
+>    * Age_In_Years  
+>    
+> * Por que este banco não foi adotado?
+>   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
+> foram:
+>	1) “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
+> 2) “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
+> 3) “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
+> 4)	”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”
+> 5)	“Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”
+6)	 “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”
+
+e ao final do tratamento obteve-se 19 atributos assim como mostra as tabelas a seguir: 
+
+
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+### Bases Estudadas e Adotadas
+
+> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+
+Base de Dados | Endereço na Web | Resumo descritivo
+----- | ----- | -----
+Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+
+> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> * Qual o esquema/dicionário desse banco (o formato é livre)?
+> * O que descobriu sobre esse banco?
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+
+### Integração entre Bases e Análise Exploratória
+
+> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
+
 # Ferramentas
 >
 > As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
 > 
 >* **Jupyter Notebook**
 >* **Linguagem Python**
->* Microsoft Power BI (desktop)
 >* Knime
->* Weka
+>* **Orange**
 >* R
 
 # Cronograma
