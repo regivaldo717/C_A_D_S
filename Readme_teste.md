@@ -76,8 +76,6 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 > Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
-
-gender | Gênero do paciente | char | Male/Female/Other |
 >
 | Coluna                          | Descrição       | Tipo | Conteúdo
 | :------------------------------- | :--------------- |:----------------|:--------------
@@ -86,12 +84,12 @@ gender | Gênero do paciente | char | Male/Female/Other |
 | age                             | Idade do paciente | int | 
 | hypertension                    | Identifica se o paciente é hipertenso ou não  | int | 0: não hipertenso 1: hipertenso
 | heart_disease                   | Identifica se o paciente possui doença do coração ou não  | int | 0: não possui 1: possui
-| ever_married                    | Se o paciente foi casado uma ou mais vezes ou está casado  | int | 0: foi ou é casado, 1: não foi ou não é casado) 
+| ever_married                    | Se o paciente foi casado uma ou mais vezes ou está casado  | int | 0: foi ou é casado, 1: não é casado
 | work_type                       | Tipo do trabalho exercido pelo paciente, caso seja criança, aparece como "children" | char | children/Govt_job/Never_worked/Private
 | Residence_type                  | Tipo de residência, se rural ou urbana  | int | Rural/Urban
 | avg_glucose_level               | Taxa média de glicose no sangue  | float | 
 | bmi                             | Índice de Massa Muscular  | float | 
-| smoking_status                  | Identifica se o paciente fuma, já foi fumante ou não fuma | char | formely smoked/never_smoked/smokes/Unknown
+| smoking_status                  | Identifica se o paciente é fumante ou já fumou | char |formely smoked/never_smoked/smokes/Unknown
 | stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | int | 0: Não teve AVC 1: Teve AVC
 
 > * O que descobriu sobre esse banco?
