@@ -82,21 +82,66 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    Das 112 colunas, que podem ser observadas na categoria raw do repositório,  foram removidas 97 colunas. Ao final obteve-se 25 atributos, como demonstrado abaixo:
 >    * Gender
 >    * Age_In_Years  
+>    * Systolic_Blood_Pressure_at_Randomization
+>    * Stroke_Subtype
+>    * Medium_Dose_Heparin_Given_For_14_Days
+>    * Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot
+>    * Time_In_Days_On_Trial_Treatment
+>    * Non_Trial_Antiplatelet_Drug
+>    * Ischaemic_Stroke
+>    * Haemorrhagic_Stroke 
+>    * Indeterminate_Stroke
+>    * Not_A_Stroke
+>    * Recurrent_Ischaemic_Stroke
+>    * Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke
+>    * Recurrent_Haemorrhagic_Stroke
+>    * Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke
+>    * Cause_of_Death_at_Six_Month_Follow_Up
+>    * Is_Death_Indicator
+>    * Is_Death_Indicator_at_14_Days
+>    * Six_Month_Outcome
+>    * Is_Initial_Stroke_Indicator
+>    * Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator
+>    * Is_Recurrent_Haemorrhagic_Stroke_Indicator
+>    * Is_Any_Stroke_Indicator_Within_14_Days
 >    
 > * Por que este banco não foi adotado?
 >   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
 > foram:
->	1) “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
-> 2) “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
-> 3) “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
-> 4)	”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”
-> 5)	“Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”
-6)	 “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”
-
-e ao final do tratamento obteve-se 19 atributos assim como mostra as tabelas a seguir: 
-
-
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+>   1) “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
+>   2) “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
+>   3) “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
+>   4) ”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”;
+>   5) “Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”;
+>   6) “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”.
+>
+>
+> Ao final do tratamento obteve-se 19 atributos os quais são: 
+>	* Column1
+>    	* age      
+>    	* gender  
+>    	* stroke_subtype 
+>    	* blood_pressure 
+>    	* days_treatment      
+>    	* non_trial_antiplatelet_drug      
+>    	* is_death_indicator
+>    	* is_death_indicator_14days  
+>    	* cause_of_death        
+>    	* is_death_indicator 
+>    	* is_death_indicator_14days 
+>    	* six_month_outcome        
+>    	* is_initial_stroke_indicator     
+>    	* is_any_stroke_indicator_14days 
+>    	* dose_heparin 
+>    	* is_stroke 
+>    	* type_stroke 
+>    	* is_recurrent_stroke_indicator 
+>    	* type_recurrent_stroke 
+>    	* days_to_recurrent_stroke 
+>    	
+>
+>
+> * Análise Exploratória (inicial) sobre esta base.
 
 ### Bases Estudadas e Adotadas
 
@@ -159,6 +204,8 @@ Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre 
 > *ACIDENTE VASCULAR CEREBRAL*. Sociedade Brasileira de Doenças Cerebrovasculares, 2020. Disponível em:  http://www.sbdcv.org.br/publica_avc.asp. Acesso em: 10 abr. 2021.
 >
 > *GLOBAL STROKE ALLIANCE: UNIÃO E FORÇA CONTRA O AVC*. Academia Brasileira de Neurologia, 2020. Disponível em: https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc. Acesso em: 10 abr. 2021.
+> 
+> SANDERCOCK, P. A.G., NIEWADA, M., CZŁONKOWSKA, A. et. al. The International Stroke Trial database.Trials  2011, 12,101 (2011). https://doi.org/10.1186/1745-6215-12-101 - Acesso em 27/04/2021 às 23:50
 
 
 
