@@ -108,17 +108,17 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > * Por que este banco não foi adotado?
 >   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
 > foram:
->   1) “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
->   2) “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
->   3) “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
->   4) ”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”;
->   5) “Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”;
->   6) “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”.
+> 
+>  1. “Trial_Heparin_Allocated”, “Medium_Dose_Heparin_Given_For_14_Days” e “Is_Medium_Dose_Heparin_Given_For_14_Days_in_Pilot” foram mescladas e transformaram-se em “dose_heparin”;
+>  2. “Time_In_Days_On_Trial_Treatment” foi transformado em "Days treatment";
+>  3. “Is_Death_Indicator” e “Is_Death_Indicator_at_14_Days” mantiveram e mesclaram com “Cause_of_Death_at_Six_Month_Follow_Up”;
+>  4. ”Ischaemic_Stroke”, “Haemorrhagic_Stroke”, “Indeterminate_Stroke”, “Not_A_Stroke”, “Recurrent_Ischaemic_Stroke”, foram mesclados em “type_stroke”;
+>  5. “Days_Elapsed_From_Randomization_to_Recurrent_Ischaemic_Stroke”, “Recurrent_Haemorrhagic_Stroke” e “Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke” foram mesclados e foram nomeados como “days_to_recurrent_stroke”;
+>  6. “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”.
 >
->
-> Ao final do tratamento obteve-se 19 atributos os quais são: 
->	* Column1
->    	* age      
+>   	Ao final do tratamento obteve-se 19 atributos os quais são:
+>   	* id
+>    	* age
 >    	* gender  
 >    	* stroke_subtype 
 >    	* blood_pressure 
@@ -131,18 +131,19 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    	* is_death_indicator_14days 
 >    	* six_month_outcome        
 >    	* is_initial_stroke_indicator     
->    	* is_any_stroke_indicator_14days 
+>   	* is_any_stroke_indicator_14days 
 >    	* dose_heparin 
 >    	* is_stroke 
 >    	* type_stroke 
 >    	* is_recurrent_stroke_indicator 
 >    	* type_recurrent_stroke 
 >    	* days_to_recurrent_stroke 
->    	
->
->
+>   		
 > * Análise Exploratória (inicial) sobre esta base.
-
+> 
+> 	Testando a identação:
+> 	* x
+>	* y
 ### Bases Estudadas e Adotadas
 
 > Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
