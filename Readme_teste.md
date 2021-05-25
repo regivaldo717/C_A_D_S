@@ -77,30 +77,22 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
 
-
 gender | Gênero do paciente | char | Male/Female/Other |
 >
 | Coluna                          | Descrição       | Tipo | Conteúdo
 | :------------------------------ | :-------------: |:----------------|:--------------
 | Id                              | Identificador único do paciente | int | 
 | gender                          | Gênero do paciente | char | Male/Female/Other
-| Márcia Jacobina Andrade Martins | 225269        | Computação (IC)
-| Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
->
-
-id: Identificador único do paciente
-gender: Gênero do paciente (Male/Female/Other)
-age: idade do paciente
-hypertension: Se o paciente é hipertenso ou não (0: não hipertenso, 1: hipertenso)
-heart_disease: Se paciente possui doença do coração ou não (0: não possui, 1: possui)
-ever_married: Se o paciente casou-se uma ou mais vezes (0: foi ou é casado, 1: não foi casado)
-work_type: Tipo do trabalho exercido pelo paciente, por esse campo é possível identificar se é uma criança (children/Govt_jov/Never_worked/Private)
-Residence_type: Tipo de residência, se rural ou urbana (Rural/Urban)
-avg_glucose_level: taxa média de glicose no sangue
-bmi: índice de massa muscular
-smoking_status: Se o paciente fuma, já foi fumante ou não fuma (formely smoked/never_smoked/smokes/Unknown)
-stroke: 1 se o paciente teve um AVC e 0 se nunca teve um AVC OBS: "Unknown" na variável smoking_status significa que não se tem essa informação do paciente
-
+| age                             | Idade do paciente | int | 
+| hypertension                    | Identifica se o paciente é hipertenso ou não  | int | 0: não hipertenso 1: hipertenso
+| heart_disease                   | Identifica se o paciente possui doença do coração ou não  | int | 0: não possui 1: possui
+| ever_married                    | Se o paciente foi casado uma ou mais vezes ou está casado  | int | 0: foi ou é casado, 1: não foi ou não é casado) 
+| work_type                       | Tipo do trabalho exercido pelo paciente, caso seja criança, aparece como "children" | char | children/Govt_job/Never_worked/Private
+| Residence_type                  | Tipo de residência, se rural ou urbana  | int | Rural/Urban
+| avg_glucose_level               | Taxa média de glicose no sangue  | float | 
+| bmi                             | Tipo de residência, se rural ou urbana  | int | Rural/Urban
+| smoking_status                  | Se o paciente fuma, já foi fumante ou não fuma | char | formely smoked/never_smoked/smokes/Unknown
+| stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | 0: Não teve AVC 1: Teve AVC
 
 > * O que descobriu sobre esse banco?
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
