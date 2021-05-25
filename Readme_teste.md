@@ -199,9 +199,12 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 ### Integração entre Bases e Análise Exploratória
 
 > Embora tenhamos trabalhado com duas bases de dados, optamos por apenas uma delas para a continuidade do projeto. Não foi possível integrá-las porque os dados eram individualizados por pacientes e os objetivos finais eram diferentes.
+> 
 > Na base estudada e adotada, o objetivo era prever se o paciente tem predisposição para o AVC. 
+> 
 > Na base estudada, mas não adotada, o objetivo era prever se o uso da heparina para pacientes que tiveram o AVC levaria a uma melhora do paciente em relação a não ter um infarto recorrente e, consequentemente, não morrer.
-> Sendo assim, não havia sentido nessa integração.
+> 
+> Desse modo, não foi possível uma integração entre as bases analisadas.
 > 
 # Ferramentas
 >
