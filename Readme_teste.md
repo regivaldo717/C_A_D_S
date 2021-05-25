@@ -142,7 +142,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >    ![Visão Geral da Base](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Geral_Base.png)
 >    
 >    Vários gráficos foram apresentados e feita uma análise geral da base:
->  
+>
 >	* O total da base de dados é de 5110 registros.
 >  	* Em relação ao gênero, 41,4% é do gênero masculino e 58,6% é do gênero feminino. Existe um outlier que não tem o gênero identificado e será removido na etapa de tratamento
 >  de dados. 
