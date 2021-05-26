@@ -236,7 +236,8 @@ Is_recurrent_stroke_indicator | 0
 Type_recurrent_stroke | 16868
 Days_to_recurrent_stroke | 0
 >
->
+> * Análise dados faltantes *cause_of_death*
+> 
 >    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é
 >    possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes,
 >    confirmando que o tratamento com heparina não interfere na redução do número de mortes.
