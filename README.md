@@ -218,11 +218,9 @@ Days_to_recurrent_stroke | 0
 >    estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. Isso pode ser visto na análise do Scatter Plot do "Age x Blood Pressure",
 >    colorido pela causa da morte. Embora haja 15 mil dados nulos para *cause_of_death*, para o conjunto de dados dos pacientes que morreram, existem apenas 32 dados nulos para
 >    esse campo.  
->
->    ![Missing cause of death] (https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)   
+>>   
+>    ![Missing cause death](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)
 >    
->   
-
 ### Bases Estudadas e Adotadas
 
 > A base de dados adotada foi a do site Kaggle sobre a  do AVC.
