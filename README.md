@@ -160,16 +160,16 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > * Por que este banco não foi adotado?
 >   
 >   Este banco não foi adotado pelos seguintes motivos:
->   1. O propósito inicial dos dados desse banco era complementar a pergunta sobre a predição de AVC;
->   2. A variabilidade de possibilidade poderia nos desnortear da nossa questão principal do projeto, e não nos traria um resultado significativo;
->   3. Precisaria de mais tempo para a realização do tratamento dos dados, por ter aproximadamente 112 colunas;
->   4. A base responderia melhor a questão do próprio artigo que seria se o tratamento de Heparina e AAS em pacientes com AVC seria eficaz ou não e se o tratamento redu
+>   * O propósito inicial dos dados desse banco era complementar a pergunta sobre a predição de AVC;
+>   * A variabilidade de possibilidade poderia nos desnortear da nossa questão principal do projeto, e não nos traria um resultado significativo;
+>   * Precisaria de mais tempo para a realização do tratamento dos dados, por ter aproximadamente 112 colunas;
+>   * A base responderia melhor a questão do próprio artigo que seria se o tratamento de Heparina e AAS em pacientes com AVC seria eficaz ou não e se o tratamento redu
 > ziria o número de mortes por AVC;
->   5. Nessa base, todos já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. 
+>   * Nessa base, todos já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. 
 > 
 >  * Análise Exploratória (inicial) sobre esta base.
 > 
-> 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder a questão do próprio artigo.
+> 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder à questão do próprio artigo.
 > 	
 > 	Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, apenas 332 mortes foram por AVC. 
 > 	
