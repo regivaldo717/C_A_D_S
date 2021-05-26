@@ -59,7 +59,8 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >   paciente randomizado, os dados foram extraídos das variáveis avaliadas na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes da alta, e aos 6
 >   meses, quando foi finalizado o estudo e liberado o banco de dados para análise. 
 >   
->   O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do International Stroke Trial (IST), um dos maiores ensaios randomizados já conduzidos >   em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do
+>   O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do International Stroke Trial (IST), um dos maiores ensaios randomizados já conduzidos
+>   em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do
 >   julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos ou nenhum influenciou o curso clínico de um acidente vascular cerebral isquêmico
 >   agudo.
 >   
@@ -209,7 +210,7 @@ Type_stroke | 438
 Is_recurrent_stroke_indicator | 0
 Type_recurrent_stroke | 16868
 Days_to_recurrent_stroke | 0
-
+>
 >    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é
 >    possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes,
 >    confirmando que o tratamento com heparina não interfere na redução do número de mortes.
@@ -218,7 +219,7 @@ Days_to_recurrent_stroke | 0
 >    estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. Isso pode ser visto na análise do Scatter Plot do "Age x Blood Pressure",
 >    colorido pela causa da morte. Embora haja 15 mil dados nulos para *cause_of_death*, para o conjunto de dados dos pacientes que morreram, existem apenas 32 dados nulos para
 >    esse campo.  
->>   
+>   
 >    ![Missing cause death](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)
 >    
 ### Bases Estudadas e Adotadas
