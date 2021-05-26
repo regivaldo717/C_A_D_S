@@ -15,7 +15,7 @@
 | Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 # Descrição Resumida do Projeto
-> O Projeto tem o objetivo de identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020)
+> O Projeto tem o objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020)
 > 
 > Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020)
 > 
@@ -223,14 +223,19 @@ Days_to_recurrent_stroke | 0
 >    
 ### Bases Estudadas e Adotadas
 
-> A base de dados adotada foi a do site Kaggle sobre a  do AVC.
+> A base de dados adotada foi a do site Kaggle sobre a predisposição ao AVC.
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction-dataset | Este conjunto de dados é usado para prever se um paciente tem probabilidade de desenvolver AVC com base nos parâmetros de entrada como sexo, idade, várias doenças e tabagismo. Cada linha dos dados fornece informações relevantes sobre o paciente.
 
 > Abaixo serão respondidas questões sobre a base de dados adotada, permitindo uma melhor compreensão dos dados.
-> 
+>
+> * Objetivo
+>
+>    Este conjunto de dados tem como objetivo ser usado para prever se um paciente tem probabilidade de desenvolver AVC com base nos parâmetros de entrada como sexo, idade, 
+>    várias doenças e tabagismo. Cada linha dos dados fornece informações relevantes sobre o paciente.
+>    
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
 > 
 >
