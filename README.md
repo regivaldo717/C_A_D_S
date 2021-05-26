@@ -203,11 +203,11 @@ Days_to_recurrent_stroke | 0
 
 >    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes, confirmando que o tratamento com heparina não interfere na redução do número de mortes.
 >    
->    Vale ressaltar que alguns dados faltantes se justificam por dependerem de um acontecimento para serem preenchidos, como, por exemplo,  o *Type_recurrent_stroke* que pode estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. 
+>    Vale ressaltar que alguns dados faltantes se justificam por dependerem de um acontecimento para serem preenchidos, como, por exemplo,  o *Type_recurrent_stroke* que pode estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. Isso pode ser visto na análise do Scatter Plot do "Age x Blood Pressure", colorido pela causa da morte. Embora haja 15 mil dados nulos para *cause_of_death*, para o conjunto de dados dos pacientes que morreram, existem apenas 32 dados nulos para esse campo.  
+>    ![Missing_cause_of_death] (https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)   
 >    
->    Também foram classificados os dados faltantes relacionados à “type recurrent stroke” como MCAR e “cause of death” como MAR, pois a observação que está faltando não tem nada a ver com os valores faltantes, mas sim com os valores das variáveis ​​observadas. Isso é visto na faixa de idade dos 20 à 60 anos, onde faltam dados para cause of death.
->
->	
+>   
+
 ### Bases Estudadas e Adotadas
 
 > A base de dados adotada foi a do site Kaggle sobre a  do AVC.
