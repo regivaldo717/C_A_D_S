@@ -53,9 +53,10 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > Conclusão sobre a base:
 > * Objetivo do Banco:
 > 
->   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada > paciente randomizado, os dados foram extraídos nas variáveis avaliado na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes alta, e aos 6 meses e
-> fornecido como um banco de dados analisável. O objetivo principal deste estudo era fazer com que os dados individuais dos pacientes do International Stroke Trial (IST), um dos > maiores ensaios randomizados já conduzidos em AVC agudo, torna-se disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises 
-> secundárias adicionais. E o objetivo do julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos ou nenhum influenciou o curso clínico de  > um acidente vascular cerebral isquêmico agudo.
+>   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada > paciente randomizado, os dados foram extraídos das variáveis avaliadas na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes da alta, e aos 6 meses, > quando foi finalizado o estudo e liberado o banco de dados para análise. O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do 
+> International Stroke Trial (IST), um dos maiores ensaios randomizados já conduzidos em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de
+> ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos
+> ou nenhum influenciou o curso clínico de um acidente vascular cerebral isquêmico agudo.
 >   
 > * O que descobriu sobre esse banco?
 > 
@@ -116,9 +117,7 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    * "Days_Elapsed_From_Randomization_to_Recurrent_Haemorrhagic_Stroke",
 >    * "Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator",
 >    * "Is_Recurrent_Haemorrhagic_Stroke_Indicator
-
->
-> * Por que este banco não foi adotado?
+> 
 >   Destes 25 atributos foi feita uma intercepção de colunas de indicadores que não estavam bem construídos com outras algumas outras colunas com dados mais claros das quais
 > foram:
 > 
@@ -151,13 +150,22 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    	* is_recurrent_stroke_indicator 
 >    	* type_recurrent_stroke 
 >    	* days_to_recurrent_stroke 
->   		
+>
+> * Por que este banco não foi adotado?
+>   Esse banco não foi adotado, porque a pergunta do projeto é relacionada a predisposição do paciente para ter ou não AVC durante sua vida. Nessa base, todas já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. A outra base de dados adotada responde melhor à questão levantada no projeto que vem a ser:
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
+> 
 > * Análise Exploratória (inicial) sobre esta base.
 > 
 > 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder a questão do próprio artigo.
 > 	
-> 	Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, 332 mortes foram por AVC. Sendo assim, do total do número de mortos, apenas 651 morreram de AVC e eles morreram em até 14 dias depois pela doença. Já os 2.238 restantes morreram em até 6 meses por outras causas.
-> 	Pelos resultados obtidos pode-se perceber que metade dessa amostra fez tratamento com heparina e a outra metade não fez. Além disso, das 1.501 pessoas que fizeram tratamento, 22,11% morreu de AVC e, das 1.388 que não fizeram só 22,98% morreram de AVC, mostrando que em ambos os conjuntos o percentil de AVC foi semelhante. Ademais, 22,5% da amostra total de fato morreu pelo AVC sendo o restante por diversas causas. Isso pode mostrar que as causas de mortes estão mais correlacionadas a outras doenças do que ao próprio AVC, e que o tratamento com heparina não tenha alguma implicancia na redução do número de mortos.
+> 	Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, apenas 332 mortes foram por AVC. 
+> 	
+> 	Do total de mortos, 2889, 870 pessoas morreram nos primeiros 14 dias e o restante, 2019, em até 6 meses. Do total geral de mortos, 651 morreram de AVC, ou seja, 22,53% dos pacientes que morreram, foram de AVC, os demais tiveram outras causas de morte.
+> 	
+> 	Pelos resultados obtidos pode-se perceber que metade dessa amostra fez tratamento com heparina e a outra metade não fez. Além disso, das 1.501 pessoas que fizeram tratamento, 22,11% morreu de AVC e, das 1.388 que não fizeram só 22,98% morreram de AVC, mostrando que em ambos os conjuntos o percentil de AVC foi semelhante. Ademais, 22,5% da amostra total de fato morreu pelo AVC sendo o restante por diversas causas. Isso pode mostrar que as causas de mortes estão mais correlacionadas a outras doenças do que ao próprio AVC, e que o tratamento com heparina não tenha alguma implicação na redução do número de mortos.
+> 	
 > 	Porém, fazendo uma análise em “feature statistic” do Orange 3.0 e no próprio notebook foi possível notar que em “type recurrent stroke” - ischaemic estão faltando 16.868 dados (93%), em “cause of death” - pneumonia estão faltando 15.071 dados (83%) e em “type stroke” - ischaemic estão faltando 438 dados (2%), assim como mostra a tabela abaixo:
 
 Categoria | Dados Faltantes 
@@ -182,27 +190,168 @@ Is_recurrent_stroke_indicator | 0
 Type_recurrent_stroke | 16868
 Days_to_recurrent_stroke | 0
 
->    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico e isso relaciona-se a causa de algumas mortes, confirmando que o tratamento com heparina não interfere na redução do número de mortes, assim classificando-o os faltantes relacionados à “type recurrent stroke” como MCAR e “cause of death” como MAR, pois a observação que está faltando não tem nada a ver com os valores faltantes, mas sim com os valores das variáveis ​​observadas. Isso é visto na faixa de idade dos 20 à 60 anos, onde faltam dados para cause of death.
-
+>    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes, confirmando que o tratamento com heparina não interfere na redução do número de mortes.
+>    
+>    Vale ressaltar que alguns dados faltantes se justificam por dependerem de um acontecimento para serem preenchidos, como, por exemplo,  o *Type_recurrent_stroke* que pode estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. 
+>    
+>    Também foram classificados os dados faltantes relacionados à “type recurrent stroke” como MCAR e “cause of death” como MAR, pois a observação que está faltando não tem nada a ver com os valores faltantes, mas sim com os valores das variáveis ​​observadas. Isso é visto na faixa de idade dos 20 à 60 anos, onde faltam dados para cause of death.
+>
 >	
 ### Bases Estudadas e Adotadas
 
-> Para cada base, coloque uma mini-tabela no modelo a seguir e depois detalhamento sobre como ela foi analisada/usada, conforme exemplo a seguir.
+> A base de dados adotada foi a do site Kaggle sobre a  do AVC.
 
 Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
-Título da Base | http://base1.org/ | Breve resumo (duas ou três linhas) sobre a base.
+Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction-dataset | Este conjunto de dados é usado para prever se um paciente tem probabilidade de desenvolver AVC com base nos parâmetros de entrada como sexo, idade, várias doenças e tabagismo. Cada linha dos dados fornece informações relevantes sobre o paciente.
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
+> Abaixo serão respondidas questões sobre a base de dados adotada, permitindo uma melhor compreensão dos dados.
+> 
 > * Qual o esquema/dicionário desse banco (o formato é livre)?
-> * O que descobriu sobre esse banco?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
-> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+> 
+>
+| Coluna                          | Descrição       | Tipo | Conteúdo
+| :------------------------------- | :--------------- |:----------------|:--------------
+| Id                              | Identificador único do paciente | int | 
+| gender                          | Gênero do paciente | char | Male/Female/Other
+| age                             | Idade do paciente | int | 
+| hypertension                    | Identifica se o paciente é hipertenso ou não  | int | 0: não hipertenso 1: hipertenso
+| heart_disease                   | Identifica se o paciente possui doença do coração ou não  | int | 0: não possui 1: possui
+| ever_married                    | Se o paciente foi casado uma ou mais vezes ou está casado  | int | 0: foi ou é casado, 1: não é casado
+| work_type                       | Tipo do trabalho exercido pelo paciente, caso seja criança, aparece como "children" | char | children/Govt_job/Never_worked/Private
+| Residence_type                  | Tipo de residência, se rural ou urbana  | int | Rural/Urban
+| avg_glucose_level               | Taxa média de glicose no sangue  | float | 
+| bmi                             | Índice de Massa Muscular  | float | 
+| smoking_status                  | Identifica se o paciente é fumante ou já fumou | char |formely smoked/never_smoked/smokes/Unknown
+| stroke                          | Identifica se o paciente teve um AVC ou se nunca teve um AVC | int | 0: Não teve AVC 1: Teve AVC
 
+> * O que descobriu sobre esse banco?
+> 
+>   Existem 5110 pacientes nesta base e 12 atributos desses pacientes.
+>   
+>   Analisando as estatísticas, percebe-se que existem 209 dados missing na columa bmi (indicador de massa corporal). A média da idade é em torno de 43 anos, a maioria não é 
+>   hipertenso (média próxima de 0), a maioria não tem doença do coração (média próxima de 0), a média do nível de glicose fica em torno de 106, o percentual da massa muscular é
+>   de 28.8 e poucos pacientes tiveram AVC, pois a média é próxima de 0.
+>  
+>   Em relação às variáveis categóricas, a maior parte dos pacientes são do sexo feminino, já foram casados e o tipo de trabalho que exercem é privado. A maior parte deles,
+>   também, nunca fumou. Aproximadamente, metade dos pacientes possuem residência urbana.
+>  
+>   Variáveis categóricas da base são: *gender, ever_married, work_type, residence_type, smoking_status*.
+>  
+>   Abaixo são listadas variáveis numéricas e categóricas da base com seus quantitativos:
+>
+| Coluna                          | Quantitativos      
+| :------------------------------ | :------------- 
+| gender                          | Female: 2994 Male: 2115 Other:1
+| age                             | Crianças: 698 Adultos: 4412 
+| hypertension                    | Não hipertensos: 4612 hipertensos: 498
+| smoking_status                  | never smoked: 1892 Unknown: 1544 formerly smoked: 885 smokes: 789
+| work_type                       | Private: 2925 Self-employed: 819 children: 687 Govt_job: 657 Never_worked: 22
+| Residence_type                  | Urban: 2596 Rural: 2514
+| ever_married                    | No: 3353 Yes: 1757
+| heart_disease                   | Não tem doença do coração: 4834 Tem doença do coração: 276
+| stroke                          | Não teve AVC: 4861 Teve AVC: 249
+>
+> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> 
+>   Foi modificado o nome da coluna *Residence_type* para *residence_type*, para que todas ficassem padronizadas com letra minúscula. Os dados "missing" da variável bmi (índice 
+>   de massa corporal) foram substituídos pela média do gênero em questão. 
+>  
+>   Embora haja dados "Unknown" na variável *smoking_status*, não foi feita nenhuma substituição, pois a quantidade de dados "Unknown" é um percentual grande da base, 1544
+>   registros. Outra alteração efetuada foi a remoção de um registro em que a variável *gender* está como "Other". 
+>   
+>   Após as transformações efetuadas, a base resultante ficou com 5109 pacientes para serem analisados.
+>  
+> * Apresente aqui uma Análise Exploratória (inicial) sobre esta base.
+>
+>   Toda a análise exploratória foi realizada usando a linguagem python no jupyter notebook do google colab. 
+>  
+>   Inicialmente foram extraídas as estatísticas descritivas e feita uma análise preliminar do conteúdo da base.
+>   Após entendimento, tratamento e limpeza da base, foi verificada a correlação entre as variáveis utilizando Pearson e Spearman.
+>   E, finalmente, foi analisada a base apenas com os pacientes que tiveram AVC para um melhor entendimento do perfil desses pacientes.
+>  
+>   **ANÁLISE BASE TODOS PACIENTES**
+>   
+>    ![Visão Geral da Base](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Geral_Base.png)
+>    
+>    Vários gráficos foram apresentados e feita uma análise geral da base:
+>
+>	* O total da base de dados é de 5110 registros.
+>  	* Em relação ao gênero, 41,4% é do gênero masculino e 58,6% é do gênero feminino. Existe um outlier que não tem o gênero identificado e será removido na etapa de tratamento
+>  de dados. 
+>  	* A partir do bmi, idade e das outras features, tentou-se inferir o gênero, mas não houve um indicativo do sexo, optando-se por removê-lo.
+>  	* Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem 498 hipertensos.
+>  	* A distribuição das idades não é uma distribuição normal. Percebe-se que a concentração da idade dos pacientes fica na faixa etária entre 40 e 60 anos.
+>  	* Existe uma grande quantidade de pacientes que nunca fumaram (1892), dados desconhecidos (1544) e fumantes e ex-fumantes que totalizam 1674. Os dados desconhecidos não serão
+>  	 preenchidos e como o volume é muito alto, também não poderão ser removidos.
+>  	* Em torno de 65% dos pacientes são ou foram casados contra 35% dos pacientes solteiros.
+>  	* A maior parte dos pacientes possuem o nível de glicose abaixo de 120.
+>  	* Existem 698 pacientes que são crianças (idade até 16 anos). Em relação aos adultos, 2925 trabalham em empregos privados, 819 são autônomos, 657 trabalham para o 	governo e apenas 22 nunca trabalharam.
+>  	* O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+>  	* Apenas 5,4% possuem doença do coração.
+>  	* O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui esse índice entre 25 e 35.
+>  	* E, finalmente, o percentual de pessoas predispostas ao AVC mostra-se baixo entre os pacientes, apenas 4,9%.
+>
+>    **ANÁLISE DAS CORRELAÇÕES**
+>
+>    ![Correlação Pearson](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Corr_Pearson.PNG)
+>    ![Correlação Spearman](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Corr_Spearman.PNG)
+>    
+>    Com base na correlação de Pearson e Spearman, foi encontrada uma correlação moderada entre as variáveis *age* e *ever_married*.
+>    
+>    Algumas correlações fracas foram encontradas: 
+>   * *age x stroke*
+>   * *age x bmi*
+>   * *age x heart_disease*
+>   * *age x hypertension* 
+>   * *bmi x ever_married*
+>
+>    Percebe-se que **não há uma correlação forte** entre a **variável target *stroke* e outros atributos** numéricos do conjunto de dados.
+>
+>    Na sequência, foi realizada uma análise da "Distribuição AVC baseado no índice massa corporal e nível de glicose" e, também, da "Distribuição AVC baseado no índice 
+>    massa corporal e idade". Conclui-se que para as pessoas que tiveram AVC, o nível médio de glicose no sangue é superior a 150, tendo uma tendência, nesses casos, para uma
+>    massa corporal mais elevada. Embora não seja um indicativo tão forte.
+>
+>    ![Distribuição AVC](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_AVC.png)
+>    
+>    Na análise da massa corporal com a idade, verificou-se que existe uma variação nesse índice, porém há uma tendência a uma massa corporal mais elevada. Além disso, 
+>    o que pode ser destacado é que a faixa etária de quem teve o AVC é predominantement acima 40 anos, com algum poucos outliers.
+>
+>    ![Distribuição Idade](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Distribuicao_Idade.PNG)
+>   
+>    **ANÁLISE BASE PACIENTES QUE TIVERAM AVC**
+>
+>    ![Visão Base AVC ](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Visao_Base_AVC.png)
+>    
+>    Análise dos gráficos pacientes que tiveram AVC:
+>
+> 	* O total da base de dados é de 249 registros, ou seja, 249 pacientes tiveram AVC no conjunto de 5110 pacientes.
+> 	* Em relação ao gênero, 43,4% é do gênero masculino e 56,6% é do gênero feminino. Ou seja, percebe-se que não há uma correlação forte do gênero em relação a quem teve o AVC 
+> 	* e o percentual dos gêneros se aproxima ao da base original.
+> 	* Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem apenas 66 hipertensos.
+> 	* A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 e 80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
+> 	* 90 pacientes nunca fumaram e 70 são ex-fumantes. Apenas 42 fumam e 47 não tem essa informação.
+> 	* Em torno de 88% dos pacientes são ou foram casados contra 11% dos pacientes solteiros. Ou seja, a maior parte dos pacientes que sofreram AVC eram casados.
+> 	* A maior parte dos pacientes possuem o nível de glicose abaixo de 120, embora tenham alguns que sofreram o AVC com um nível de glicose mais elevado, na entre 160 e 220, 
+> 	em torno de 84 pacientes.
+> 	* Foi identificado apenas 2 pacientes crianças que tiveram AVC. Em relação aos adultos, a maior parte trabalha em empregos privados, 149 pacientes, 65 são autônomos e 33 
+> 	trabalham no governo.
+> 	* O tipo de residência é bem equilibrado, ficando em torno de 50% rural e 50% urbana.
+> 	* 18% possuem doença do coração, esse percentual é bem superior ao observado na base origina.
+> 	* O índice de massa corporal possui uma distribuição assimétrica à direita ou positiva, sendo que a maior parte dos pacientes possui "bmi" entre 25 e 35. É a mesma tendência encontrada na base completa.
+>
+>
 ### Integração entre Bases e Análise Exploratória
 
-> Descreva etapas de integração de fontes de dados e apresente a seguir uma análise exploratória que envolva ambas.
-
+>
+> Embora tenhamos trabalhado com duas bases de dados, optamos por apenas uma delas para a continuidade do projeto. Não foi possível integrá-las porque os dados eram individualizados por pacientes e os objetivos finais eram diferentes.
+> 
+> Na base estudada e adotada, o objetivo era prever se o paciente tem predisposição para o AVC. 
+> 
+> Na base estudada, mas não adotada, o objetivo era prever se o uso da heparina para pacientes que tiveram o AVC levaria a uma melhora do paciente em relação a não ter um infarto recorrente e, consequentemente, não morrer.
+> 
+> Desse modo, não foi possível uma integração entre as bases analisadas.
+> 
 # Ferramentas
 >
 > As ferramentas destacadas em negrito serão utilizadas para entrega do projeto, já as outras mencionadas serão exploradas e seu uso será decidido durante o projeto:
