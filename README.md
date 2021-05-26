@@ -55,10 +55,13 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >  
 > * Objetivo do Banco:
 > 
->   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada > paciente randomizado, os dados foram extraídos das variáveis avaliadas na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes da alta, e aos 6 meses, > quando foi finalizado o estudo e liberado o banco de dados para análise. O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do 
-> International Stroke Trial (IST), um dos maiores ensaios randomizados já conduzidos em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de
-> ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos
-> ou nenhum influenciou o curso clínico de um acidente vascular cerebral isquêmico agudo.
+>   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada
+>   paciente randomizado, os dados foram extraídos das variáveis avaliadas na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes da alta, e aos 6
+>   meses, quando foi finalizado o estudo e liberado o banco de dados para análise. 
+>   
+>   O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do International Stroke Trial (IST), um dos maiores ensaios randomizados já conduzidos >   em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do
+>   julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos ou nenhum influenciou o curso clínico de um acidente vascular cerebral isquêmico
+>   agudo.
 >   
 > * O que descobriu sobre esse banco?
 > 
@@ -131,7 +134,7 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >  6. “Is_Recurrent_Ischaemic_or_Unknown_Stroke_Indicator” e “Is_Recurrent_Haemorrhagic_Stroke_Indicator” foram mesclados e renomeados como “is_recurrent_stroke_indicator”.
 >
 >   	Ao final do tratamento obteve-se 19 atributos os quais são:
->   	* id
+>    	* id
 >    	* age
 >    	* gender  
 >    	* stroke_subtype 
@@ -145,7 +148,7 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    	* is_death_indicator_14days 
 >    	* six_month_outcome        
 >    	* is_initial_stroke_indicator     
->   	* is_any_stroke_indicator_14days 
+>    	* is_any_stroke_indicator_14days 
 >    	* dose_heparin 
 >    	* is_stroke 
 >    	* type_stroke 
@@ -154,11 +157,16 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >    	* days_to_recurrent_stroke 
 >
 > * Por que este banco não foi adotado?
->   Esse banco não foi adotado, porque a pergunta do projeto é relacionada a predisposição do paciente para ter ou não AVC durante sua vida. Nessa base, todas já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. A outra base de dados adotada responde melhor à questão levantada no projeto que vem a ser:
-> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
-> * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
+>   
+>   Este banco não foi adotado pelos seguintes motivos:
+> 1. O propósito inicial dos dados desse banco era complementar a pergunta sobre a predição de AVC;
+> 2. A variabilidade de possibilidade poderia nos desnortear da nossa questão principal do projeto, e não nos traria um resultado significativo;
+> 3. Precisaria de mais tempo para a realização do tratamento dos dados, por ter aproximadamente 112 colunas;
+> 4. A base responderia melhor a questão do próprio artigo que seria se o tratamento de Heparina e AAS em pacientes com AVC seria eficaz ou não e se o tratamento redu
+> ziria o número de mortes por AVC;
+> 5. Nessa base, todos já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. 
 > 
-> * Análise Exploratória (inicial) sobre esta base.
+>  * Análise Exploratória (inicial) sobre esta base.
 > 
 > 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder a questão do próprio artigo.
 > 	
