@@ -169,15 +169,24 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > 
 >  * Análise Exploratória (inicial) sobre esta base.
 > 
-> 	Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder à questão do próprio artigo.
+> 	  Com a análise exploratória em Jupyter Notebook e Orange 3.0 desses dados foram estudadas algumas relações do uso da heparina com número de mortos para responder à questão
+> 	  do próprio artigo.
 > 	
-> 	Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, apenas 332 mortes foram por AVC. 
+> 	  Do total de participantes desse estudo a quantidade total de pessoas mortas foram 2.889, sendo que dentre estas 1.388 morreram sem fazer nenhum tratamento com heparina e 
+> 	  as outras e 1.501 pessoas restantes fizeram tratamento com heparina. Dos 1.388 mortos que não fizeram tratamento, 319 morreram de AVC e o restante foi relacionado a 
+> 	  diversas causas. Das 1.501 pessoas que fizeram tratamento com heparina e morreram, apenas 332 mortes foram por AVC. 
 > 	
-> 	Do total de mortos, 2889, 870 pessoas morreram nos primeiros 14 dias e o restante, 2019, em até 6 meses. Do total geral de mortos, 651 morreram de AVC, ou seja, 22,53% dos pacientes que morreram, foram de AVC, os demais tiveram outras causas de morte.
+> 	  Do total de mortos, 2889, 870 pessoas morreram nos primeiros 14 dias e o restante, 2019, em até 6 meses. Do total geral de mortos, 651 morreram de AVC, ou seja, 22,53% 
+> 	  dos pacientes que morreram, foram de AVC, os demais tiveram outras causas de morte.
 > 	
-> 	Pelos resultados obtidos pode-se perceber que metade dessa amostra fez tratamento com heparina e a outra metade não fez. Além disso, das 1.501 pessoas que fizeram tratamento, 22,11% morreu de AVC e, das 1.388 que não fizeram só 22,98% morreram de AVC, mostrando que em ambos os conjuntos o percentil de AVC foi semelhante. Ademais, 22,5% da amostra total de fato morreu pelo AVC sendo o restante por diversas causas. Isso pode mostrar que as causas de mortes estão mais correlacionadas a outras doenças do que ao próprio AVC, e que o tratamento com heparina não tenha alguma implicação na redução do número de mortos.
+> 	  Pelos resultados obtidos pode-se perceber que metade dessa amostra fez tratamento com heparina e a outra metade não fez. Além disso, das 1.501 pessoas que fizeram
+> 	  tratamento, 22,11% morreu de AVC e, das 1.388 que não fizeram só 22,98% morreram de AVC, mostrando que em ambos os conjuntos o percentil de AVC foi semelhante. Ademais,
+> 	  22,5% da amostra total de fato morreu pelo AVC sendo o restante por diversas causas. Isso pode mostrar que as causas de mortes estão mais correlacionadas a outras 
+> 	  doenças do que ao próprio AVC, e que o tratamento com heparina não tenha alguma implicação na redução do número de mortos.
 > 	
-> 	Porém, fazendo uma análise em “feature statistic” do Orange 3.0 e no próprio notebook foi possível notar que em “type recurrent stroke” - ischaemic estão faltando 16.868 dados (93%), em “cause of death” - pneumonia estão faltando 15.071 dados (83%) e em “type stroke” - ischaemic estão faltando 438 dados (2%), assim como mostra a tabela abaixo:
+> 	  Porém, fazendo uma análise em “feature statistic” do Orange 3.0 e no próprio notebook foi possível notar que em “type recurrent stroke” - ischaemic estão faltando 16.868
+> 	  dados (93%), em “cause of death” - pneumonia estão faltando 15.071 dados (83%) e em “type stroke” - ischaemic estão faltando 438 dados (2%), assim como mostra a tabela
+> 	  abaixo:
 
 Categoria | Dados Faltantes 
 ----- | ----- 
@@ -201,10 +210,16 @@ Is_recurrent_stroke_indicator | 0
 Type_recurrent_stroke | 16868
 Days_to_recurrent_stroke | 0
 
->    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes, confirmando que o tratamento com heparina não interfere na redução do número de mortes.
+>    Para classificar esses dados faltantes foi plotado um Scatter Plot no Orange 3.0 “Dose Heparin” x “Days to Recurrent Stroke” com a coloração “Cause of Death” e nele é
+>    possível interpretar que independente da dose de heparina por volta de 20 à 60 dias há a recorrência de AVC isquêmico. Isso relaciona-se a causa de algumas mortes,
+>    confirmando que o tratamento com heparina não interfere na redução do número de mortes.
 >    
->    Vale ressaltar que alguns dados faltantes se justificam por dependerem de um acontecimento para serem preenchidos, como, por exemplo,  o *Type_recurrent_stroke* que pode estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. Isso pode ser visto na análise do Scatter Plot do "Age x Blood Pressure", colorido pela causa da morte. Embora haja 15 mil dados nulos para *cause_of_death*, para o conjunto de dados dos pacientes que morreram, existem apenas 32 dados nulos para esse campo.  
->    ![Missing_cause_of_death] (https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)   
+>    Vale ressaltar que alguns dados faltantes se justificam por dependerem de um acontecimento para serem preenchidos, como, por exemplo,  o *Type_recurrent_stroke* que pode
+>    estar nulo, em função de não ter havido um AVC recorrente *Is_recurrent_stroke_indicator*. Isso pode ser visto na análise do Scatter Plot do "Age x Blood Pressure",
+>    colorido pela causa da morte. Embora haja 15 mil dados nulos para *cause_of_death*, para o conjunto de dados dos pacientes que morreram, existem apenas 32 dados nulos para
+>    esse campo.  
+>
+>    ![Missing cause of death] (https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Missing_cause_of_death.PNG)   
 >    
 >   
 
