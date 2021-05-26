@@ -63,7 +63,32 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >   em AVC agudo, ficassem disponíveis para uso público, para facilitar o planejamento de ensaios futuros e para permitir análises secundárias adicionais. E o objetivo do
 >   julgamento do estudo era estabelecer se a administração precoce de aspirina, heparina, ambos ou nenhum influenciou o curso clínico de um acidente vascular cerebral isquêmico
 >   agudo.
->   
+>
+> * Qual o esquema/dicionário desse banco (o formato é livre)?
+> 
+>
+| Coluna                          | Descrição       | Tipo | Conteúdo
+| :------------------------------- | :--------------- |:----------------|:--------------
+| gender                          | Gênero do paciente | char | Male/Female 
+| age                             | Idade do paciente | int | 
+| blood_pressure                  | Pressão sanguínea | int | 
+| stroke_subtype                  | Subtipo do infarto  | char | partial anterior circulation syndrome/lacunar syndrome/posterior circulation syndrome/other/total anterior circulation syndrome
+| days_treatment                  | Quanto tempo levou fazendo o tratamento  | int | 
+| non_trial_antiplatelet_drug     | Uso de outro antiplaquetário antes do estudo | char | yes/no
+| cause_of_death                  | Causa de morte | char | ex: vascular/pneumonia/ischaemic stroke/coronary heart disease...
+| is_death_indicator              | Houve morte?  | char | True/False
+| is_death_indicator_14days       | Houve morte dentro dos 14 dias? | char | True/False
+| is_any_stroke_indicator_14days  | Se houve algum AVC nos 14 dias subsequentes que foi a causa da morte |char | True/False
+| six_month_outcome               | Resultado após seis meses | char | ''/dependent/recovered/not recovered/dead
+| is_initial_stroke_indicator     | Se o infarto inicial foi a causa direta da morte| char | True/False
+| dose_heparin                    | Dose de heparina aplicada |int | 0 / 5000 / 12500
+| is_stroke                       | O motivo da internação inicial foi realmente infarto? | char | True/False
+| type_stroke                     | Tipo do infarto  | char | ischaemic/haemorrhagic/indeterminate
+| is_recurrent_stroke_indicator   | Se o infarto recorrente foi a causa direta da morte| char | True/False
+| type_recurrent_stroke           | Tipo do infarto recorrente |char | ''/unknown/ischaemic/haemorrhagic
+| days_to_recurrent_stroke        | Dias decorridos do início do tratamento até o infarto recorrente | int |
+>
+>
 > * O que descobriu sobre esse banco?
 > 
 >   O conjunto de dados do IST inclui dados de 19435 pacientes com AVC agudo, com acompanhamento completo de 99%. Mais de 26,4% dos pacientes tinham mais de 80 anos no início do 
