@@ -51,7 +51,8 @@ Base de Dados | Endereço na Web | Resumo descritivo
 ----- | ----- | -----
 International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratório John Snow Labs dos EUA que contém dados de 19 mil pacientes do mundo todo e possui 112 variáveis. Foi feito um teste do uso de heparina e AAS em pacientes com AVC e verificou se o paciente continuou com vida ou morreu.
 
-> Conclusão sobre a base:
+>  Abaixo serão respondidas questões sobre a base de dados adotada, permitindo uma melhor compreensão dos dados.
+>  
 > * Objetivo do Banco:
 > 
 >   Este estudo é um grande ensaio prospectivo, randomizado controlado, com dados de linha de base 100% completos e mais de 99% dos dados de acompanhamento completos. Para cada > paciente randomizado, os dados foram extraídos das variáveis avaliadas na randomização; o desfecho inicial foi de 14 dias após a randomização ou antes da alta, e aos 6 meses, > quando foi finalizado o estudo e liberado o banco de dados para análise. O objetivo principal deste estudo foi fazer com que os dados individuais dos pacientes do 
