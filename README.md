@@ -39,7 +39,8 @@ interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem
 ## Bases de Dados e Evolução
 >  As bases de dados utilizadas no projeto provêm dos orgãos e sites listados abaixo que disponibilizam bases de dados públicas para consumo:
 >  1. Kaggle - Comunidade online de cientistas de dados e profissionais de aprendizado de máquina.
->  2. John Snow LAB - Empresa Privada que trabalha com Inteligência Artificial para Saúde.
+>  2. John Snow LAB - Empresa Privada Americana que trabalha com Inteligência Artificial voltada para Saúde.
+>  
 >
 
 ### Bases Estudadas mas Não Adotadas
