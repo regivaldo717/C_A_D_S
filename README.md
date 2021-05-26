@@ -398,20 +398,4 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >
 > *GLOBAL STROKE ALLIANCE: UNIÃO E FORÇA CONTRA O AVC*. Academia Brasileira de Neurologia, 2020. Disponível em: https://www.abneuro.org.br/post/global-stroke-alliance-uni%C3%A3o-e-for%C3%A7a-contra-o-avc. Acesso em: 10 abr. 2021.
 > 
-> SANDERCOCK, P. A.G., NIEWADA, M., CZŁONKOWSKA, A. et. al. The International Stroke Trial database.Trials  2011, 12,101 (2011). https://doi.org/10.1186/1745-6215-12-101 - Acesso em 27/04/2021 às 23:50
-
-
-
-Instruções básicas arquivos:
-data “ pasta com dados utilizadas neste trabalho”
-	external{Stroke_avc.xlsx} “tabela usada para predição do avc”
-		{Stroke_avc.csv}  “ mesma tabela em formato .csv”
-	interim  { dados intermediários }
-	processed{ dados após só primeiros tratamentos}
-	raw
-notebooks “ códigos desenvolvidos ao longo do projeto
-src
-	readme.md { este arquivo}
-assets
-
-
+> SANDERCOCK, P. A.G., NIEWADA, M., CZŁONKOWSKA, A. et. al. The International Stroke Trial database.Trials  2011, 12,101 (2011). https://doi.org/10.1186/1745-6215-12-101 - Acesso em 27 abr. 2021.
