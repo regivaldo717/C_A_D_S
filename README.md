@@ -71,11 +71,12 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 >  
 > * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
 > 
->   Começamos com a base do laboratório John Snow Labs dos EUA, que foi feita em parceria com diversos hospitais do mundo todo. Nessa base 19.435 pacientes participaram fazendo 
-> acompanhamento médico, e os dados obtidos desse acompanhamento foram atribuídos em 112 questões, distribuídas nas colunas. Esses dados seriam utilizados para complementar a
-> questão primária se é possível predizer se a pessoa terá AVC, entretanto, analisando os dados foi possível verificar que ele responde melhor a pergunta de se os pacientes que
-> foram tratados com heparina e AAS continuaram vivos ou morreram em seis meses. Para iniciar a análise foram feitos tratamentos dessa base como: alteração e renomeação de 
-> colunas, remoção de colunas, intercepção de colunas e media. 
+>   Começamos com a base do laboratório John Snow Labs dos EUA, que foi feita em parceria com diversos hospitais do mundo todo. Nessa base 19.435 pacientes participaram fazendo
+>   acompanhamento médico, e os dados obtidos desse acompanhamento foram atribuídos em 112 questões, distribuídas nas colunas. 
+>   
+>   Esses dados seriam utilizados para complementar a questão primária se é possível predizer se a pessoa terá AVC, entretanto, analisando os dados foi possível verificar que
+>   ele responde melhor a pergunta se os pacientes que foram tratados com heparina e AAS continuaram vivos ou morreram em seis meses. Para iniciar a análise foram feitos
+>   tratamentos dessa base como: alteração e renomeação de colunas, remoção de colunas, intercepção de colunas e media. 
 > 
 >    ALTERAÇÃO E RENOMEAÇÃO DO NOME DA COLUNA 
 > 
@@ -159,12 +160,12 @@ International Stroke Trial | https://www.johnsnowlabs.com/ |  Base do laboratór
 > * Por que este banco não foi adotado?
 >   
 >   Este banco não foi adotado pelos seguintes motivos:
-> 1. O propósito inicial dos dados desse banco era complementar a pergunta sobre a predição de AVC;
-> 2. A variabilidade de possibilidade poderia nos desnortear da nossa questão principal do projeto, e não nos traria um resultado significativo;
-> 3. Precisaria de mais tempo para a realização do tratamento dos dados, por ter aproximadamente 112 colunas;
-> 4. A base responderia melhor a questão do próprio artigo que seria se o tratamento de Heparina e AAS em pacientes com AVC seria eficaz ou não e se o tratamento redu
+>   1. O propósito inicial dos dados desse banco era complementar a pergunta sobre a predição de AVC;
+>   2. A variabilidade de possibilidade poderia nos desnortear da nossa questão principal do projeto, e não nos traria um resultado significativo;
+>   3. Precisaria de mais tempo para a realização do tratamento dos dados, por ter aproximadamente 112 colunas;
+>   4. A base responderia melhor a questão do próprio artigo que seria se o tratamento de Heparina e AAS em pacientes com AVC seria eficaz ou não e se o tratamento redu
 > ziria o número de mortes por AVC;
-> 5. Nessa base, todos já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. 
+>   5. Nessa base, todos já tinham tido AVC e o que estava sendo analisado era efeito positivo ou não do uso de heparina e/ou aspirina no paciente. 
 > 
 >  * Análise Exploratória (inicial) sobre esta base.
 > 
