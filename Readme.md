@@ -24,7 +24,7 @@
 # Vídeos do Projeto
 
 ## Vídeo da Proposta
-> É possível assistir ao vídeo da proposta acessando: https://drive.google.com/file/d/1jhNYPVPnujG1aPY06JCsdSWi8SkRWGq9/view?usp=sharing
+> É possível assistir ao vídeo da proposta acessando: [Vídeo Proposta Projeto Predição Casos AVC](https://drive.google.com/file/d/1jhNYPVPnujG1aPY06JCsdSWi8SkRWGq9/view?usp=sharing).
 > 
 ## TODO Vídeo da Apresentação Final
 > Link para vídeo da apresentação final do projeto (máximo 8 minutos). *TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO*.
@@ -60,9 +60,14 @@
 
 # Metodologia
 >  A metodologia adotada será o Knowledge Database Discovery (KDD) que envolve as seguintes etapas: seleção de dados, pré-processamento, transformação, mineração e 
-interpretação/avaliação. A técnica que iremos explorar é de **aprendizagem de máquina e análise estatística**. 
+interpretação/avaliação. 
 >
->  A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. Para isso, serão testados alguns algoritmos de aprendizagem supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
+> ![Metodologia KDD](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Kdd_metodologia.PNG)
+> 
+> A técnica que iremos explorar é de **aprendizagem de máquina e análise estatística**. 
+> 
+> A ideia é prever os casos de Acidente Vascular Cerebral (AVC) baseado em características da população examinada. Para isso, serão testados alguns algoritmos de aprendizagem
+> supervisionada como regressão, árvore de decisão, classificadores bayesianos etc. e será escolhido aquele com melhor acurácia e performance para detecção do AVC.
 >
 
 ## Bases de Dados e Evolução
@@ -415,7 +420,8 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 > 	* Em relação ao gênero, 43,4% é do gênero masculino e 56,6% é do gênero feminino. Ou seja, percebe-se que não há uma correlação forte do gênero em relação a quem teve o AVC 
 > 	* e o percentual dos gêneros se aproxima ao da base original.
 > 	* Sobre a hipertensão, a maioria dos pacientes não são hipertensos. Existem apenas 66 hipertensos.
-> 	* A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 e 80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
+> 	* A distribuição das idades não é uma distribuição normal. Percebe-se que a faixa etária dos pacientes que tiveram AVC está acima de 40 anos, com uma concentração entre 60 e
+> 	80 anos. O mesmo resultado encontrado nos gráficos analisados anteriormente.
 > 	* 90 pacientes nunca fumaram e 70 são ex-fumantes. Apenas 42 fumam e 47 não tem essa informação.
 > 	* Em torno de 88% dos pacientes são ou foram casados contra 11% dos pacientes solteiros. Ou seja, a maior parte dos pacientes que sofreram AVC eram casados.
 > 	* A maior parte dos pacientes possuem o nível de glicose abaixo de 120, embora tenham alguns que sofreram o AVC com um nível de glicose mais elevado, na entre 160 e 220, 
@@ -458,9 +464,14 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >*   *hypertension* 
 >*   *avg_glucose_level*
 
->As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor >mais elevado nas pessoas com predisposição ao AVC e foi, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise >gráfica. Foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e esse resultado será descrito no decorrer do relatório.
+>As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor
+>mais elevado nas pessoas com predisposição ao AVC e foi, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise
+>gráfica. Foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e esse resultado será descrito no decorrer do relatório.
 >
->Foram aplicadas 3 técnicas diferentes sobre os dados, o **subdivisão dos dados em treino e teste**, o **validação cruzada com *folds* estratificados** e o **sobreamostragem e >busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC. >Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise >da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
+>Foram aplicadas 3 técnicas diferentes sobre os dados, o **subdivisão dos dados em treino e teste**, o **validação cruzada com *folds* estratificados** e o **sobreamostragem e
+>busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC.
+>Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise
+>da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 >
 >**Matriz de Confusão**
 
@@ -484,16 +495,23 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >
 >**Curva ROC**
 >
->A Curva ROC permite evidenciar os valores para os quais existe maior otimização da sensibilidade em função da especificidade que corresponde ao ponto em que se encontra mais >próxima do canto superior esquerdo do diagrama, uma vez que o o índice de positivos verdadeiro é 1 e o de falsos positivos é zero. Quanto mais perto a curva chega da diagonal >de 45 graus do espaço ROC, menos preciso é o teste.
+>A Curva ROC permite evidenciar os valores para os quais existe maior otimização da sensibilidade em função da especificidade que corresponde ao ponto em que se encontra mais
+>próxima do canto superior esquerdo do diagrama, uma vez que o o índice de positivos verdadeiro é 1 e o de falsos positivos é zero. Quanto mais perto a curva chega da diagonal
+>de 45 graus do espaço ROC, menos preciso é o teste.
 >
->A sensibilidade é o percentual das predições positivas corretas em relação a todas as positivas reais. Enquanto que especificidade é o percentual das predições negativas >corretas em relação a todas as negativas reais.
+>A sensibilidade é o percentual das predições positivas corretas em relação a todas as positivas reais. Enquanto que especificidade é o percentual das predições negativas
+>corretas em relação a todas as negativas reais.
 
 >**Curva Precision-Recall**
 >
->A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e *Recall*(sensibilidade). A Precisão representa a taxa de verdadeiros positivos (TP/(TP+FP)) e o >Recall o valor preditivo positivo (TP/(TP+FN)) para um classificador usando diferentes limites de probabilidade. É indicada para bases de dados desbalanceadas. Quanto mais >perto a curva está do canto superior esquerdo, melhor é a relação entre precisão e recall.
+>A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e *Recall*(sensibilidade). A Precisão representa a taxa de verdadeiros positivos (TP/(TP+FP)) e o
+>Recall o valor preditivo positivo (TP/(TP+FN)) para um classificador usando diferentes limites de probabilidade. É indicada para bases de dados desbalanceadas. Quanto mais
+>perto a curva está do canto superior esquerdo, melhor é a relação entre precisão e recall.
 >
->Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica >avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo visto no notebook python, nesse link: 
->![Notebook Projeto Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb). Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
+>Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica
+>avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo visto no notebook python, nesse link: 
+>![Notebook Projeto Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb). Para o train_test_split, serão apresentados Regressão Logística e o Naive
+>Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
 
 >Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
 ~~~python
@@ -509,7 +527,8 @@ print ("Quantidade de pacientes NÃO propensos ao AVC = ", y.count()-y.sum())
 
 ## Técnica Avaliação: **subdivisão dados treino e teste**
 
->O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para >qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
+>O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para
+>qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
 ~~~python
  #Subdivisão em dados de treino (75%) e teste (25%)
  X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
@@ -613,15 +632,24 @@ y_pred = plotagem_matriz_confusao ("K Neighbors", kn, X_test, y_test,
 
 ## Comparação entre os modelos (*validação cruzada com *folds* estratificados*)
 
->Evoluiu-se, assim, para a aplicação da técnica de validação cruzada (*cross validation*), onde os dados foram subdivididos em vários folds e foram separados os dados de teste e >treino.
+>Evoluiu-se, assim, para a aplicação da técnica de validação cruzada (*cross validation*), onde os dados foram subdivididos em vários folds e foram separados os dados de teste e
+>e treino.
 >
->Inicialmente, os dados foram divididos em cinco folds e foi utilizada a função *cross_val_score*. Entretanto, percebeu-se que essa forma de divisão é muito direta (sequencial) >e seria melhor misturar as informações, foi utilizando, assim, a função *KFold* com a opção *shuffle* configurada para true que randomiza a escolha dos dados.
+>Inicialmente, os dados foram divididos em cinco folds e foi utilizada a função *cross_val_score*. Entretanto, percebeu-se que essa forma de divisão é muito direta (sequencial)
+>e seria melhor misturar as informações, foi utilizando, assim, a função *KFold* com a opção *shuffle* configurada para true que randomiza a escolha dos dados.
 >
->Porém, uma forma melhor de subdividir esse conjunto é proporcionalizar os cinco folds, técnica conhecida como **StratifiedKFold** onde os folds preservam a proporção de >amostras de cada classe gerando, assim, dados estratificados. Para o caso em questão onde temos um grande desbalanceamento da base de dados (95% pacientes não tiveram AVC X 5% >pacientes que tiveram AVC), essa técnica mostra-se bastante adequada.
+>Porém, uma forma melhor de subdividir esse conjunto é proporcionalizar os cinco folds, técnica conhecida como **StratifiedKFold** onde os folds preservam a proporção de
+>amostras de cada classe gerando, assim, dados estratificados. Para o caso em questão onde temos um grande desbalanceamento da base de dados (95% pacientes não tiveram AVC X 5%
+>pacientes que tiveram AVC), essa técnica mostra-se bastante adequada.
 
->Observa-se que não houve uma mudança substancial em relação à acurácia dos modelos alcançada com a técnica anterior. Para os algoritmos Regressão Logística, Random Forest, SVM >e K-Neighbors, a acurácia ficou em torno de 93% com uma especificidade de 0 ou quase 0 e com a sensibilidade de 1, porém conforme já foi comentado, **descobrir os pacientes >propensos ao AVC tem uma relevância maior para o problema do que descobrir os não propensos**. O algoritmo NaiveBayes teve uma melhor performance geral, com uma acurácia de >0,88%, uma especificidade de 0,38 e uma sensibilidade de 0,92. Verificando a matriz de confusão, o algoritmo acertou 30 pacientes com predisposição ao AVC em relação aos 80. >Mas ainda é um acerto de apenas 38%. 
+>Observa-se que não houve uma mudança substancial em relação à acurácia dos modelos alcançada com a técnica anterior. Para os algoritmos Regressão Logística, Random Forest, SVM
+>e K-Neighbors, a acurácia ficou em torno de 93% com uma especificidade de 0 ou quase 0 e com a sensibilidade de 1, porém conforme já foi comentado, **descobrir os pacientes
+>propensos ao AVC tem uma relevância maior para o problema do que descobrir os não propensos**. O algoritmo NaiveBayes teve uma melhor performance geral, com uma acurácia de
+>0,88%, uma especificidade de 0,38 e uma sensibilidade de 0,92. Verificando a matriz de confusão, o algoritmo acertou 30 pacientes com predisposição ao AVC em relação aos 80.
+>Mas ainda é um acerto de apenas 38%. 
 
->Como ainda há um resultado de acurácia elevado, com predição incorreta dos propensos ao AVC, existe a possibilidade de overfitting. Devemos, assim, continuar a busca por um >resultado melhor aplicando novas técnicas e ajustes aos nossos modelos.
+>Como ainda há um resultado de acurácia elevado, com predição incorreta dos propensos ao AVC, existe a possibilidade de overfitting. Devemos, assim, continuar a busca por um
+>resultado melhor aplicando novas técnicas e ajustes aos nossos modelos.
 
 ## Técnica Avaliação: **sobreamostragem e busca dos melhores hiperparâmetros**
 
