@@ -222,7 +222,7 @@ def modelo_com_smote(X, y, classificador, param_grid, smote):
 ~~~
 
 ### Regressão Logística
-O treinamento do modelo utilizando a técnica de sobreamostragem com folds estratificados pode ser visto no código abaixo:
+O treinamento do modelo de Regressão Logística utilizando o *smote* e busca dos melhores hiperparâmetros, pode ser visto no código abaixo:
 ~~~python
 # Regressão Logística
 classificador = LogisticRegression(random_state=42)
@@ -231,13 +231,40 @@ modelo = modelo_com_smote (X, y, classificador, param_grid, smote=True)
 y_pred = plotagem_matriz_confusao ("Regressao Logística", modelo, X_test, y_test, 
                                    folds, compara=True)
 ~~~
-E a plotagem da matriz de confusão, nesse trecho:
+E a plotagem da matriz de confusão e das curvas ROC e Precision-Recall, neste trecho:
 ~~~python
 # Visualização da matriz de confusão e métricas do modelo
 y_pred = plotagem_matriz_confusao ("K Neighbors", kn, X_test, y_test, 
                                    folds, compara=False)
+# Visualização das Curvas ROC e Precision Recall de ambas as classes
+roc_auc, ap = plotagem_curvas ("Regressao Logística", modelo, X_test, y_test, folds, 0)
+roc_auc2, ap2 = plotagem_curvas ("Regressao Logística", modelo, X_test, y_test, folds, 1)
+# Computa métricas do modelo
+computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, ap2)
 ~~~
+![Regressao Logística Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Lr_smote_matriz.PNG)
+![Regressão Logística Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Lr_smote_curva.PNG)
 
 ### Random Forest
-
-
+O treinamento do modelo de Random Forest utilizando o *smote* e busca dos melhores hiperparâmetros, pode ser visto no código abaixo:
+~~~python
+# Regressão Logística
+classificador = LogisticRegression(random_state=42)
+param_grid = {'classifier__C':[0.001, 0.01, 0.1, 1, 10, 100, 1000]}
+modelo = modelo_com_smote (X, y, classificador, param_grid, smote=True)
+y_pred = plotagem_matriz_confusao ("Regressao Logística", modelo, X_test, y_test, 
+                                   folds, compara=True)
+~~~
+E a plotagem da matriz de confusão e das curvas ROC e Precision-Recall, neste trecho:
+~~~python
+# Visualização da matriz de confusão e métricas do modelo
+y_pred = plotagem_matriz_confusao ("K Neighbors", kn, X_test, y_test, 
+                                   folds, compara=False)
+# Visualização das Curvas ROC e Precision Recall de ambas as classes
+roc_auc, ap = plotagem_curvas ("Regressao Logística", modelo, X_test, y_test, folds, 0)
+roc_auc2, ap2 = plotagem_curvas ("Regressao Logística", modelo, X_test, y_test, folds, 1)
+# Computa métricas do modelo
+computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, ap2)
+~~~
+![RandomForest Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Rf_smote_matriz.PNG)
+![RandomForest Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Rf_smote_curvas.PNG)
