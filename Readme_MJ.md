@@ -17,9 +17,9 @@ As variáveis features adotadas tendo por base a análise de correlação entre 
 *   *hypertension* 
 *   *avg_glucose_level*
 
-As variáveis *bmi*, *hypertension* tem correlação fraca com *age* e existe a possibilidade de ocorrer **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e será, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Entretanto, será realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não.
+As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e será, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Entretanto, foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e foi constatado que a ocorrência de um overfitting por excesso de variáveis, não ocorreu. Desse modo, as quatro variáveis foram mantidas.
 
-Serão aplicadas 3 técnicas diferentes sobre os dados, o **train_test_split**, o **Stratified kfold** e o **oversampling**, com o intuito de aumentar a amostra para análise, em conjunto com a busca dos melhores hiperparâmetros. Será, também, efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e será escolhido o que tiver a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
+Foram aplicadas 3 técnicas diferentes sobre os dados, o **train_test_split**, o **Stratified kfold** e o **oversampling** em conjunto com a busca dos melhores parâmetros que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 
 **Matriz de Confusão**
 
@@ -60,6 +60,7 @@ O **train-test split** é uma técnica para avaliar a performance de um algoritm
  #Subdivisão em dados de treino (75%) e teste (25%)
  X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 ~~~~
+### Regressão Logística
 O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
 ~~~python
 # Regressão Linear Logística usando o pacote linear_regression do sklearn
@@ -78,6 +79,27 @@ roc_auc2, ap2 = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 
 ~~~
 ![Regressao Logistica Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_matriz.PNG)
 ![Regressao Logistica Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_curvas.PNG)
+
+
+### Naive Bayes
+O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
+~~~python
+# Naive Bayes usando o pacote GaussianNBClassifier do sklearn
+nb = GaussianNB ()
+nb.fit (X_train, y_train)
+print ("Acurácia = ", nb.score (X_test, y_test))
+~~~
+E a plotagem da matriz de confusão e das curvas ROC e Precision-Recall, nesse trecho:
+~~~python
+# Visualização da matriz de confusão e métricas do modelo
+y_pred = plotagem_matriz_confusao ("Naive Bayes", nb, X_test, y_test, 
+                                   0, compara=False)
+# Visualização das Curvas ROC e Precision Recall para ambas as classes
+roc_auc, ap = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 0)
+roc_auc2, ap2 = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 1)
+~~~
+![Naive Bayes Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naive_bayes_train_matriz.PNG)
+![Naive Bayes Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naibe_bayes_train_curvas.PNG)
 
 > Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 >
