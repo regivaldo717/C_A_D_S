@@ -1,4 +1,4 @@
-# TODO Análises Realizadas
+# Análises Realizadas
 ## Estratégia
 Os modelos identificados para a previsão do AVC são de **aprendizado de máquina supervisionado**, já que estamos tentando prever uma variável dependente (*target*), a partir de uma lista de variáveis independentes (*features*). A variável target é a que irá identificar a propensão dos pacientes ao AVC, *stroke* ou *not stroke*.
 
