@@ -283,7 +283,7 @@ Sobre a **curva ROC**, os melhores resultados são dos algoritmos Random Forest 
 
 A **matriz de confusão** reforça o resultado das métricas acima, mostrando que os algoritmos Regressão Logística, SVC e Naive Bayes tiveram um Verdadeiro Negativo entre 59 e 61. O Random Forest teve o melhor Verdadeiro Positivo 1066 de 1198, seguido do KNeighbors e da Regressão Logística.
 
-**O desempenho geral do Random Forest é superior** a todos os algoritmos, entretanto pensando na importância da especificidade, **a recomendação é que o algoritmo de Regressão Logística deva ser utilizado, devido ao equilíbrio encontrado entre a sensibilidade e especificidade** e de possuir uma acurácia e demais métricas de boa aceitação.
+**O desempenho geral do Random Forest é superior** a todos os algoritmos, entretanto pensando na importância da especificidade, **a recomendação é que se utilize o algoritmo de Regressão Logística para a predição do AVC, devido ao equilíbrio encontrado entre a sensibilidade e especificidade** e de possuir uma acurácia e demais métricas de boa aceitação.
 
 
 
