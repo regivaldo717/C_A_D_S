@@ -53,6 +53,19 @@ A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e 
 
 Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo pode ser visto no jupyter notebook, nesse link: xxx. Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
 
+Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
+~~~python
+# Identificando as variáveis features e a variável target
+#X = df3[['age','bmi','avg_glucose_level','hypertension','gender','heart_disease','work_type']]
+X = df3[['age', 'bmi', 'avg_glucose_level', 'hypertension']]
+y = df3['stroke']
+
+# O número de pacientes propensos ao AVC na base original totaliza 249, o que identifica essa classe como
+# minoritária, já que o total de pessoas que não tiveram o AVC é de 4860
+print ("Quantidade de pacientes propensos ao AVC = ", y.sum())
+print ("Quantidade de pacientes NÃO propensos ao AVC = ", y.count()-y.sum())
+~~~
+
 ## Técnica Avaliação: **subdivisão dados treino e teste**
 
 O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
@@ -167,15 +180,47 @@ Porém, uma forma melhor de subdividir esse conjunto é proporcionalizar os cinc
 
 Observa-se que não houve uma mudança substancial em relação à acurácia dos modelos alcançada com a técnica anterior. Para os algoritmos Regressão Logística, Random Forest, SVM e K-Neighbors, a acurácia ficou em torno de 93% com uma especificidade de 0 ou quase 0 e com a sensibilidade de 1, porém conforme já foi comentado, **descobrir os pacientes propensos ao AVC tem uma relevância maior para o problema do que descobrir os não propensos**. O algoritmo NaiveBayes teve uma melhor performance geral, com uma acurácia de 0,88%, uma especificidade de 0,38 e uma sensibilidade de 0,92. Verificando a matriz de confusão, o algoritmo acertou 30 pacientes com predisposição ao AVC em relação aos 80. Mas ainda é um acerto de apenas 38%. 
 
-Como ainda há um resultado de acurácia elevado, com predição incorreta dos propensos ao AVC, existe a possibilidade de overfitting.
+Como ainda há um resultado de acurácia elevado, com predição incorreta dos propensos ao AVC, existe a possibilidade de overfitting. Devemos, assim, continuar a busca por um resultado melhor aplicando novas técnicas e ajustes aos nossos modelos.
 
-Devemos, assim, buscar por um resultado melhor aplicando novas técnicas e ajustes nos nossos modelos.
-
-##Técnica Avaliação: **sobreamostragem e busca dos melhores hiperparâmetros**
+## Técnica Avaliação: **sobreamostragem e busca dos melhores hiperparâmetros**
 
 Após as avaliações anteriores, percebe-se que existe uma dificuldade com essa base de dados, nossas classes são desequilibradas. Uma abordagem para lidar com conjuntos de dados desequilibrados é sobreamostrar a classe minoritária. A abordagem mais simples envolve a duplicação de exemplos na classe minoritária, embora esses exemplos não adicionem nenhuma informação nova ao modelo. Em vez disso, novos exemplos podem ser sintetizados a partir dos exemplos existentes. Este é um tipo de aumento de dados para a classe minoritária e é referido como **Synthetic Minority Oversampling Technique**, or **SMOTE**, para abreviar.
 
 Além disso, será utilizada uma função para a busca dos melhores hiperparâmetros a serem utilizados nos algoritmos.
+
+Segue abaixo o código da função que aplica a sobreamostragem e o uso do grid search nos modelos:
+~~~python
+# Modelo utilizando o SMOTE (se parâmetro setado for True) ou 
+# sem o SMOTE (se parâmetro setado for False)
+
+def modelo_com_smote(X, y, classificador, param_grid, smote):
+    X_train, X_test, y_train, y_test = train_test_split(X,
+                                                        y,
+                                                        test_size=0.3,
+                                                        stratify=y,
+                                                        random_state=42)
+    if smote == True:
+        pipeline = imbpipeline(steps = [['smote', SMOTE(random_state=42)],
+                                       ['scaler', MinMaxScaler()],
+                                       ['classifier', classificador]])
+    else:
+        smote = SMOTE(random_state = 42)
+        X_train, y_train = smote.fit_resample(X_train, y_train)
+        pipeline = Pipeline(steps = [['scaler', MinMaxScaler()],
+                                     ['classifier', classificador]])
+    folds = StratifiedKFold(n_splits=5,
+                            shuffle=True,
+                            random_state=42)
+    score='f1'
+    grid_search = GridSearchCV(estimator=pipeline,
+                               refit=True,
+                               param_grid=param_grid,
+                               scoring=score,
+                               cv=folds,
+                               n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    return (grid_search)   
+~~~
 
 ### Regressão Logística
 
