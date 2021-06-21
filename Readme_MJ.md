@@ -285,6 +285,19 @@ A **matriz de confusão** reforça o resultado das métricas acima, mostrando qu
 
 **O desempenho geral do Random Forest é superior** a todos os algoritmos, entretanto pensando na importância da especificidade, **a recomendação é que se utilize o algoritmo de Regressão Logística para a predição do AVC, devido ao equilíbrio encontrado entre a sensibilidade e especificidade** e de possuir uma acurácia e demais métricas de boa aceitação.
 
+## Conclusão
+
+O objetivo do projeto é identificar padrões nos dados dos pacientes para efetuar uma predição dos que possuem predisposição para o AVC.
+
+Foi efetuada uma análise exploratória dos dados dos pacientes, verificada as correlações entre os dados, identificada as variáveis independentes e a variável target. Após a fase inicial de exploração e análise gráfica, elencou-se alguns possíveis algoritmos para esse aprendizado de máquina supervisionado. Algumas técnicas foram aplicadas para avaliação dos algoritmos e, no final, a sobreamostragem junto com a busca dos melhores hiperparâmetros mostrou-se mais eficaz.
+
+A grande questão é a resposta que se quer buscar para esse problema. É mais relevante identificar os pacientes não propensos ao AVC ou os que são propensos? Chegou-se a conclusão que é mais importante identificar as pessoas propensas ao AVC, já que elas poderão mudar seus hábitos alimentares e de vida para evitar que se concretize essa predição. Desse modo, as métricas com maior relevância para análise foram a sensibilidade e especificidade, em conjunto com a acurácia. A matriz de confusão e a curvas ROC e Precision-Recall também foram avaliadas. 
+
+O Random Forest foi o algoritmo com um melhor desempenho em quase todas as métricas. Entretanto, devido à importância da especificidade no contexto da predição analisada, não foi o escolhido.
+
+No conjunto geral, o **algoritmo de Regressão Logística mostrou-se mais adequado** pelo equilíbrio apresentado entre as métricas de sensibilidade, especificidade e acurácia. 
+
+
 
 
 
