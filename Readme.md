@@ -37,7 +37,7 @@
 ## TODO Slides da Apresentação Final
 > Link para slides da apresentação final do projeto.
 
-# TODO Introdução e Referenciais de Teóricos
+# TODO Introdução e Referenciais Teóricos
 > Contextualização do projeto
 >
 > Caracterização do problema
@@ -468,10 +468,10 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >mais elevado nas pessoas com predisposição ao AVC e foi, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise
 >gráfica. Foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e esse resultado será descrito no decorrer do relatório.
 >
->Foram aplicadas 3 técnicas diferentes sobre os dados, o **subdivisão dos dados em treino e teste**, o **validação cruzada com *folds* estratificados** e o **sobreamostragem e
->busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC.
->Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise
->da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
+>Foram aplicadas três técnicas diferentes sobre os dados, a **subdivisão dos dados em treino e teste**, a **validação cruzada com *folds* estratificados** e a **sobreamostragem
+>e busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao
+>AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e foi escolhido o que teve a melhor performance com base na
+>análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 >
 >**Matriz de Confusão**
 
