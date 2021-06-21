@@ -61,15 +61,14 @@ O **train-test split** é uma técnica para avaliar a performance de um algoritm
  X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 ~~~~
 O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
-~~~~python
+~~~python
 # Regressão Linear Logística usando o pacote linear_regression do sklearn
 lreg= LogisticRegression(solver='liblinear',multi_class='ovr')
 lreg.fit(X_train,y_train)
 print ("Acurácia = ", lreg.score (X_test, y_test))
 ~~~
-
 E a plotagem da matriz de confusão e das curvas ROC e Precision-Recall, nesse trecho:
-~~~~python
+~~~python
 # Visualização da matriz de confusão e métricas do modelo
 y_pred = plotagem_matriz_confusao ("Regressão Logística", lreg, X_test, y_test, 
                                    0, compara=False)
@@ -77,9 +76,8 @@ y_pred = plotagem_matriz_confusao ("Regressão Logística", lreg, X_test, y_test
 roc_auc, ap = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0, 0)
 roc_auc2, ap2 = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0, 1)
 ~~~
-
-![Regressao Logistica Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_matriz.PNG)
-![Regressao Logistica Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_curvas.PNG)
+![Regressao Logistica Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_matriz.PNG)
+![Regressao Logistica Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_curvas.PNG)
 
 > Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 >
