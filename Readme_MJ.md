@@ -297,8 +297,7 @@ O Random Forest foi o algoritmo com um melhor desempenho em quase todas as métr
 
 No conjunto geral, o **algoritmo de Regressão Logística mostrou-se mais adequado** pelo equilíbrio apresentado entre as métricas de sensibilidade, especificidade e acurácia. 
 
-
-
+Link para o notebook: 
 
 
 
