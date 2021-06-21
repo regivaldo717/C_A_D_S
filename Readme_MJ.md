@@ -19,7 +19,7 @@ As variáveis features adotadas tendo por base a análise de correlação entre 
 
 As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e foi, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e esse resultado será descrito no decorrer do relatório.
 
-Foram aplicadas 3 técnicas diferentes sobre os dados, o **train_test_split**, o **Stratified kfold** e o **oversampling** em conjunto com a busca dos melhores parâmetros que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
+Foram aplicadas 3 técnicas diferentes sobre os dados, o **subdivisão dos dados em treino e teste**, o **validação cruzada com *folds* estratificados** e o **sobreamostragem e busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 
 **Matriz de Confusão**
 
@@ -53,7 +53,7 @@ A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e 
 
 Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo pode ser visto no jupyter notebook, nesse link: xxx. Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
 
-## Técnica Avaliação: **train_test_split**
+## Técnica Avaliação: **subdivisão dados treino e teste**
 
 O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
 ~~~python
@@ -101,7 +101,7 @@ roc_auc2, ap2 = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 1)
 ![Naive Bayes Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naive_bayes_train_matriz.PNG)
 ![Naive Bayes Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naive_bayes_train_curvas.PNG)
 
-## Comparação entre os modelos (train_test_split)
+## Comparação entre os modelos (*subdivisão dados treino e teste*)
 
 Inicialmente, foram separados os dados de teste e treino usando a função **train_test_split**, com 25% dos dados para teste e 75% para treino e esses dados foram utilizados em todos os algoritmos de ML identificados.
 
@@ -109,7 +109,7 @@ Após algumas rodadas de teste gradativo com as features para verificar a ocorr�
 
 Além disso, deve-ser ficar atento ao objetivo que se deseja alcançar. A acurácia nos mostra quantos acertos os modelos tiveram, mas quantos desses acertos foram de pessoas com propensão ao AVC? Consideramos que **identificar pessoas predispostas ao AVC é mais importante do que ter uma acurácia elevada naquelas não propensas ao AVC.**
 
-Desse modo, novas métricas devem ser avaliadas, como a sensibilidade e especificidade. Observe na matriz de confusão que os verdadeiros negativos (True Negative) que identificam as pessoas predispostas ao AVC está zero ou insigificante em quase todos os algoritmos, com excessão do Naive Bayes que detectou 29 pacientes como verdadeiros negativos. Ou seja, os algoritmos erraram na previsão dos casos de AVC, a maioria gerou uma especificidade 0 ou bem baixa, embora a sensibilidade tenha sido quase 1 (preveram corretamente a quantidade de pacientes não propensos ao AVC). 
+Desse modo, novas métricas devem ser avaliadas, como a sensibilidade e especificidade. Observe na matriz de confusão que os verdadeiros negativos (True Negative) que identificam as pessoas predispostas ao AVC está zero ou insigificante em quase todos os algoritmos, com excessão do Naive Bayes que detectou 29 pacientes como verdadeiros negativos que, ainda assim, é baixo correspondendo a 36% dos que tiveram AVC. Ou seja, os algoritmos erraram na previsão dos casos de AVC, a maioria gerou uma especificidade 0 ou bem baixa, embora a sensibilidade tenha sido quase 1 (preveram corretamente a quantidade de pacientes não propensos ao AVC). 
 
 Além disso, a curva ROC de todos os modelos evidencia o resultado encontrado entre a especificidade e sensibilidade, o equilíbrio entre a sensibilidade e especificidade pode ser melhorado (AUC entre 0,68 e 0,84) e buscado uma curva mais próxima do canto superior direito. Embora tenha sido apresentado a curva ROC para ambas as classes consideradas como positivas no momento, o AUC será sempre similar, já que a curva trabalha com a sensibilidade e especificidade e essas métricas envolvem sempre as duas classes. 
 
@@ -117,14 +117,58 @@ Sobre a curva Precision-Recall, os valores da precisão média (AP) que signific
 
 Isso nos mostrou que deveríamos continuar evoluindo na aplicação de novas técnicas de avaliação dos algoritmos.
 
+## Técnica Avaliação: **validação cruzada com *folds* estratificados**
 
-> Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
->
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+A validação cruzada  - **cross validation** - é uma técnica para avaliar a capacidade de generalização de um modelo, a partir de um conjunto de dados. Esta técnica é amplamente empregada em problemas onde o objetivo da modelagem é a predição. Permite a subdivisão dos dados em vários folds separando os dados em dados de teste e de treino.
+
+O **StratifiedKFold cross validation** é uma extensão da validação cruzada KFold e especificamente utilizada para problemas de classificação.  Separa o conjunto de dados em dados de treino e de teste, subdividindo em *folds* estratificados. Ou seja, os *folds* são definidos preservando a proporção de amostras de cada classe.
 
 ~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
+# Gerando os folds com o Stratified KFold cross validator
+folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+~~~~
+### Support Vector Machine (SVM)
+O treinamento do modelo de SVM pode ser visto no código abaixo:
+~~~python
+# Avaliação do modelo SVM usando o cross_val_score
+svm = SVC(gamma='auto')
+cross_val_score(svm, X, y,cv=folds)
 ~~~
+E a plotagem da matriz de confusão, nesse trecho:
+~~~python
+# Visualização da matriz de confusão e parâmetros de performance
+y_pred = plotagem_matriz_confusao ("SVM", svm, X_test, y_test, 
+                                   folds, compara=False)
+~~~
+![SVM Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_matriz.PNG)
+
+### K Neighbors
+O treinamento do modelo de KNeighbors pode ser visto no código abaixo:
+~~~python
+# Avaliação do modelo KNeighbors usando o cross_val_score
+kn = KNeighborsClassifier(n_neighbors=20, n_jobs=-1)
+cross_val_score(kn, X, y,cv=folds)
+~~~
+E a plotagem da matriz de confusão, nesse trecho:
+~~~python
+# Visualização da matriz de confusão e métricas do modelo
+y_pred = plotagem_matriz_confusao ("K Neighbors", kn, X_test, y_test, 
+                                   folds, compara=False)
+~~~
+![KNeighbors Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Kn_cross_matriz.PNG)
+
+## Comparação entre os modelos (*validação cruzada com *folds* estratificados*)
+
+Evoluiu-se, assim, para a aplicação da técnica de validação cruzada (*cross validation*), onde os dados foram subdivididos em vários folds e foram separados os dados de teste e treino.
+
+Inicialmente, os dados foram divididos em cinco folds e foi utilizada a função *cross_val_score*. Entretanto, percebeu-se que essa forma de divisão é muito direta (sequencial) e seria melhor misturar as informações, foi utilizando, assim, a função *KFold* com a opção *shuffle* configurada para true que randomiza a escolha dos dados.
+
+Porém, uma forma melhor de subdividir esse conjunto é proporcionalizar os cinco folds, técnica conhecida como **StratifiedKFold** onde os folds preservam a proporção de amostras de cada classe gerando, assim, dados estratificados. Para o caso em questão onde temos um grande desbalanceamento da base de dados (95% pacientes não tiveram AVC X 5% pacientes que tiveram AVC), essa técnica mostra-se bastante adequada.
+
+Observa-se que não houve uma mudança substancial em relação à acurácia dos modelos alcançada com a técnica anterior. Para os algoritmos Regressão Logística, Random Forest, SVM e K-Neighbors, a acurácia ficou em torno de 93% com uma especificidade de 0 ou quase 0 e com a sensibilidade de 1, porém conforme já foi comentado, **descobrir os pacientes propensos ao AVC tem uma relevância maior para o problema do que descobrir os não propensos**. O algoritmo NaiveBayes teve uma melhor performance geral, com uma acurácia de 0,88%, uma especificidade de 0,38 e uma sensibilidade de 0,92. Verificando a matriz de confusão, o algoritmo acertou 30 pacientes com predisposição ao AVC em relação aos 80. Mas ainda é um acerto de apenas 38%. 
+
+Como ainda há um resultado de acurácia elevado, com predição incorreta dos propensos ao AVC, existe a possibilidade de overfitting.
+
+Devemos, assim, buscar por um resultado melhor aplicando novas técnicas e ajustes nos nossos modelos.
+
+
