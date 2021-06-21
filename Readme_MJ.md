@@ -171,4 +171,14 @@ Como ainda há um resultado de acurácia elevado, com predição incorreta dos p
 
 Devemos, assim, buscar por um resultado melhor aplicando novas técnicas e ajustes nos nossos modelos.
 
+##Técnica Avaliação: **sobreamostragem e busca dos melhores hiperparâmetros**
+
+Após as avaliações anteriores, percebe-se que existe uma dificuldade com essa base de dados, nossas classes são desequilibradas. Uma abordagem para lidar com conjuntos de dados desequilibrados é sobreamostrar a classe minoritária. A abordagem mais simples envolve a duplicação de exemplos na classe minoritária, embora esses exemplos não adicionem nenhuma informação nova ao modelo. Em vez disso, novos exemplos podem ser sintetizados a partir dos exemplos existentes. Este é um tipo de aumento de dados para a classe minoritária e é referido como **Synthetic Minority Oversampling Technique**, or **SMOTE**, para abreviar.
+
+Além disso, será utilizada uma função para a busca dos melhores hiperparâmetros a serem utilizados nos algoritmos.
+
+### Regressão Logística
+
+### Random Forest
+
 
