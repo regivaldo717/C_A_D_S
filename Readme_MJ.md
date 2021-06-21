@@ -78,6 +78,8 @@ roc_auc, ap = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0,
 roc_auc2, ap2 = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0, 1)
 ~~~
 
+![Regressao Logistica Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_matriz.PNG)
+![Regressao Logistica Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_curvas.PNG)
 
 > Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 >
