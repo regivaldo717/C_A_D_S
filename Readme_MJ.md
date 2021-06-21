@@ -275,17 +275,11 @@ Foi utilizada a técnica de sobreamostragem (SMOTE) e a busca dos melhores hiper
 ![Metricas Modelo](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Metricas_modelos.PNG)
 ![Matriz_confusao](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Matriz_confusao.PNG)
 
-A **acurácia** dos modelos ficou entre 67% e 86%. O modelo de melhor acurácia foi o *RandomForest* (86%). Porém a acurácia não é a única métrica a ser analisada, visto que é relevante para o problema ser acertivo na identificação do grupo de pacientes propensos ao AVC.
+A **acurácia** dos modelos ficou entre 67% e 86%. O modelo de melhor acurácia foi o *RandomForest* (86%). Porém a acurácia não é a única métrica a ser analisada, visto que é relevante para o problema ser acertivo na identificação do grupo de pacientes propensos ao AVC. O **F1_Score** que é uma média harmônica entre precisão e recall teve um resultado entre 0,79 e 0,92 para a classe majoritária (Not Stroke), um resultado muito bom. Porém, para a classe minoritária (Stroke), o resultado ficou entre 0,22 e 0,26, que é um valor baixo.
 
-O **F1_Score** que é uma média harmônica entre precisão e recall teve um resultado entre 0,79 e 0,92 para a classe majoritária (Not Stroke), um resultado muito bom. Porém, para a classe minoritária (Stroke), o resultado ficou entre 0,22 e 0,26, que é um valor baixo.
+A **Precisão** para a classe dos não propensos ao AVC é bem elevada, entre 0,96 e 0,98, mostrando que os acertos para esta previsão é muito bom em todos os algoritmos. E, para a classe minoritária é muita baixa, entre 0,13 e 0,20. O **Recall** expressa a sensibilidade (na classe majoritária) e especificidade (na classe minoritária).  Observa-se que a melhor relação entre sensibilidade e especificidade foi a do algoritmo de Regressão Logística (0,73 e 0,74), seguido do Naive Bayes (0,68 e 0,74). O Random Forest teve uma sensibilidade elevada, mas uma especificidade mais baixa (0,89 e 0,4).
 
-A **Precisão** para a classe dos não propensos ao AVC é bem elevada, entre 0,96 e 0,98, mostrando que os acertos para esta previsão é muito bom em todos os algoritmos. E, para a classe minoritária é muita baixa, entre 0,13 e 0,20.
-
-O **Recall** expressa a sensibilidade (na classe majoritária) e especificidade (na classe minoritária).  Observa-se que a melhor relação entre sensibilidade e especificidade foi a do algoritmo de Regressão Logística (0,73 e 0,74), seguido do Naive Bayes (0,68 e 0,74). O Random Forest teve uma sensibilidade elevada, mas uma especificidade mais baixa (0,89 e 0,4).
-
-Sobre a **curva ROC**, os melhores resultados são dos algoritmos Random Forest (0,96) e K-Neighbors (0,94). Os outros três algoritmos possuem um AUC entre 0,81 e 0,82. Observa-se que o AUC é similar para a classe majoritária e minoritária, isso porque a sensibilidade/especificidade de ambas as classes são envolvidas no cálculo da área sob a curva.
-
-Em se tratando da **curva Precision-Recall**, o valor do AP (Average Precision) para a classe majoritária é bom em todos os algoritmos, entre 0,98 e 1. Mas o da classe minoritária é substancialmente elevado no Random Forest (0,75), quando comparado aos demais algoritmos. 
+Sobre a **curva ROC**, os melhores resultados são dos algoritmos Random Forest (0,96) e K-Neighbors (0,94). Os outros três algoritmos possuem um AUC entre 0,81 e 0,82. Observa-se que o AUC é similar para a classe majoritária e minoritária, isso porque a sensibilidade/especificidade de ambas as classes são envolvidas no cálculo da área sob a curva. Em se tratando da **curva Precision-Recall**, o valor do AP (Average Precision) para a classe majoritária é bom em todos os algoritmos, entre 0,98 e 1. Mas o da classe minoritária é substancialmente elevado no Random Forest (0,75), quando comparado aos demais algoritmos. 
 
 A **matriz de confusão** reforça o resultado das métricas acima, mostrando que os algoritmos Regressão Logística, SVC e Naive Bayes tiveram um Verdadeiro Negativo entre 59 e 61. O Random Forest teve o melhor Verdadeiro Positivo 1066 de 1198, seguido do KNeighbors e da Regressão Logística.
 
