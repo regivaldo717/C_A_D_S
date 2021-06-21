@@ -51,6 +51,8 @@ A sensibilidade é o percentual das predições positivas corretas em relação 
 
 A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e *Recall*(sensibilidade). A Precisão representa a taxa de verdadeiros positivos (TP/(TP+FP)) e o Recall o valor preditivo positivo (TP/(TP+FN)) para um classificador usando diferentes limites de probabilidade. É indicada para bases de dados desbalanceadas. Quanto mais perto a curva está do canto superior esquerdo, melhor é a relação entre precisão e recall.
 
+Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo pode ser visto no jupyter notebook, nesse link: xxx. Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
+
 ## Técnica Avaliação: **train_test_split**
 
 O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
@@ -58,6 +60,24 @@ O **train-test split** é uma técnica para avaliar a performance de um algoritm
  #Subdivisão em dados de treino (75%) e teste (25%)
  X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 ~~~~
+O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
+~~~~python
+# Regressão Linear Logística usando o pacote linear_regression do sklearn
+lreg= LogisticRegression(solver='liblinear',multi_class='ovr')
+lreg.fit(X_train,y_train)
+print ("Acurácia = ", lreg.score (X_test, y_test))
+~~~
+
+E a plotagem da matriz de confusão e das curvas ROC e Precision-Recall, nesse trecho:
+~~~~python
+# Visualização da matriz de confusão e métricas do modelo
+y_pred = plotagem_matriz_confusao ("Regressão Logística", lreg, X_test, y_test, 
+                                   0, compara=False)
+# Visualização das Curvas ROC e Precision Recall para ambas as classes
+roc_auc, ap = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0, 0)
+roc_auc2, ap2 = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 0, 1)
+~~~
+
 
 > Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 >
