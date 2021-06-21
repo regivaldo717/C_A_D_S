@@ -17,7 +17,7 @@ As variáveis features adotadas tendo por base a análise de correlação entre 
 *   *hypertension* 
 *   *avg_glucose_level*
 
-As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e será, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Entretanto, foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e foi constatado que a ocorrência de um overfitting por excesso de variáveis, não ocorreu. Desse modo, as quatro variáveis foram mantidas.
+As variáveis *bmi*, *hypertension* tem correlação com *age*, que embora seja fraca, pode levar à ocorrência do **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e foi, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Entretanto, foi realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não e não ocorreu o overfitting por excesso de variáveis. Desse modo, as quatro variáveis foram mantidas.
 
 Foram aplicadas 3 técnicas diferentes sobre os dados, o **train_test_split**, o **Stratified kfold** e o **oversampling** em conjunto com a busca dos melhores parâmetros que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e escolhido o que teve a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 
@@ -82,7 +82,7 @@ roc_auc2, ap2 = plotagem_curvas ("Regressão Logística", lreg, X_test, y_test, 
 
 
 ### Naive Bayes
-O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
+O treinamento e teste do modelo Naive Bayes pode ser visto no código abaixo:
 ~~~python
 # Naive Bayes usando o pacote GaussianNBClassifier do sklearn
 nb = GaussianNB ()
@@ -99,7 +99,24 @@ roc_auc, ap = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 0)
 roc_auc2, ap2 = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 1)
 ~~~
 ![Naive Bayes Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naive_bayes_train_matriz.PNG)
-![Naive Bayes Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naibe_bayes_train_curvas.PNG)
+![Naive Bayes Curvas](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Naive_bayes_train_curvas.PNG)
+
+## Comparação entre os modelos (train_test_split)
+
+Inicialmente, foram separados os dados de teste e treino usando a função **train_test_split**, com 25% dos dados para teste e 75% para treino e esses dados foram utilizados em todos os algoritmos de ML identificados.
+
+Após algumas rodadas de teste gradativo com as features para verificar a ocorrência de **overfitting**, confirmou-se que as melhores features são as sinalizadas na conclusão da análise exploratória dos dados: *age*, *bmi*, *avg_glucose_level* e *hypertension*. Entretanto como o resultado geral foi de uma acurácia de 93%, com exceção do Naive Bayes com 88%, existe a possibilidade de overfitting nos modelos encontrados.
+
+Além disso, deve-ser ficar atento ao objetivo que se deseja alcançar. A acurácia nos mostra quantos acertos os modelos tiveram, mas quantos desses acertos foram de pessoas com propensão ao AVC? Consideramos que **identificar pessoas predispostas ao AVC é mais importante do que ter uma acurácia elevada naquelas não propensas ao AVC.**
+
+Desse modo, novas métricas devem ser avaliadas, como a sensibilidade e especificidade. Observe na matriz de confusão que os verdadeiros negativos (True Negative) que identificam as pessoas predispostas ao AVC está zero ou insigificante em todos os algoritmos. Ou seja, os algoritmos erraram na previsão dos casos de AVC, gerando um especificidade de 0 ou quase 0, embora a sensibilidade tenha sido 1 (preveram corretamente a quantidade de pacientes não propensos ao AVC). Isso significa que os algoritmos não aprenderam corretamente e previram que todos os pacientes não são propensos ao AVC. 
+
+Além disso, a curva ROC de todos os modelos evidencia o resultado encontrado entre a especificidade e sensibilidade, o equilíbrio entre a sensibilidade e especificidade pode ser melhorado (AUC entre 0,68 e 0,84) e buscado uma curva mais próxima do canto superior direito. Embora tenha sido apresentado a curva ROC para ambas as classes consideradas como positivas no momento, o AUC será sempre similar, já que a curva trabalha com a sensibilidade e especificidade e essas métricas envolvem sempre as duas classes. 
+
+Sobre a curva Precision-Recall, os valores da precisão média (AP) que significa a média ponderada das precisões alcançadas em cada limite, usando como peso o aumento do recall do limite anterior, foram elevados para a classe "Not Stroke" com um AP em torno de 0,97. Porém, verificando essa curva para a classe "Stroke" o AP fica bem baixo, entre 0,10 e 0,26. É um valor abaixo de 0,5. o que evidencia que o equilíbrio entre precisão e recall não é bom e que os dados estão desbalanceados. Quanto mais perto de 1, mais perfeito será o modelo.
+
+Isso nos mostrou que deveríamos continuar evoluindo e aplicar novas técnicas de avaliação dos algoritmos.
+
 
 > Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
 >
