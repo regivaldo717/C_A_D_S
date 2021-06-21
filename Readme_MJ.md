@@ -275,7 +275,7 @@ Foi utilizada a técnica de sobreamostragem (SMOTE) e a busca dos melhores hiper
 ![Metricas Modelo](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Metricas_modelos.PNG)
 ![Matriz_confusao](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Matriz_confusao.PNG)
 
-A **acurácia** dos modelos ficou em torno de 67% e 86%. O modelo de melhor acurácia foi o *RandomForest* (86%). Porém a acurácia não é a única métrica a ser analisada, visto que é relevante para o problema ser acertivo na identificação do grupo de pacientes propensos ao AVC.
+A **acurácia** dos modelos ficou entre 67% e 86%. O modelo de melhor acurácia foi o *RandomForest* (86%). Porém a acurácia não é a única métrica a ser analisada, visto que é relevante para o problema ser acertivo na identificação do grupo de pacientes propensos ao AVC.
 
 O **F1_Score** que é uma média harmônica entre precisão e recall teve um resultado entre 0,79 e 0,92 para a classe majoritária (Not Stroke), um resultado muito bom. Porém, para a classe minoritária (Stroke), o resultado ficou entre 0,22 e 0,26, que é um valor baixo.
 
