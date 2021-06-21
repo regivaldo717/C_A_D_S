@@ -140,7 +140,7 @@ O **StratifiedKFold cross validation** é uma extensão da validação cruzada K
 folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 ~~~~
 ### Support Vector Machine (SVM)
-O treinamento do modelo de SVM pode ser visto no código abaixo:
+O treinamento do modelo utilizando o *cross_val_score* com folds estratificados pode ser visto no código abaixo:
 ~~~python
 # Avaliação do modelo SVM usando o cross_val_score
 svm = SVC(gamma='auto')
@@ -155,7 +155,7 @@ y_pred = plotagem_matriz_confusao ("SVM", svm, X_test, y_test,
 ![SVM Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/SVM_cross_matriz.PNG)
 
 ### K Neighbors
-O treinamento do modelo de KNeighbors pode ser visto no código abaixo:
+O treinamento do modelo utilizando o *cross_val_score* com folds estratificados pode ser visto no código abaixo:
 ~~~python
 # Avaliação do modelo KNeighbors usando o cross_val_score
 kn = KNeighborsClassifier(n_neighbors=20, n_jobs=-1)
@@ -222,6 +222,21 @@ def modelo_com_smote(X, y, classificador, param_grid, smote):
 ~~~
 
 ### Regressão Logística
+O treinamento do modelo utilizando a técnica de sobreamostragem com folds estratificados pode ser visto no código abaixo:
+~~~python
+# Regressão Logística
+classificador = LogisticRegression(random_state=42)
+param_grid = {'classifier__C':[0.001, 0.01, 0.1, 1, 10, 100, 1000]}
+modelo = modelo_com_smote (X, y, classificador, param_grid, smote=True)
+y_pred = plotagem_matriz_confusao ("Regressao Logística", modelo, X_test, y_test, 
+                                   folds, compara=True)
+~~~
+E a plotagem da matriz de confusão, nesse trecho:
+~~~python
+# Visualização da matriz de confusão e métricas do modelo
+y_pred = plotagem_matriz_confusao ("K Neighbors", kn, X_test, y_test, 
+                                   folds, compara=False)
+~~~
 
 ### Random Forest
 
