@@ -56,7 +56,6 @@ Foram avaliados cinco algoritmos e será apresentada uma comparação entre todo
 Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
 ~~~python
 # Identificando as variáveis features e a variável target
-#X = df3[['age','bmi','avg_glucose_level','hypertension','gender','heart_disease','work_type']]
 X = df3[['age', 'bmi', 'avg_glucose_level', 'hypertension']]
 y = df3['stroke']
 
