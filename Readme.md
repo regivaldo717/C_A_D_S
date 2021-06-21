@@ -440,10 +440,30 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 
 
 # TODO Análises Realizadas
-> Descrição detalhada das análises realizadas.
->
->
->
+##Estratégia
+Os modelos identificados para a previsão do AVC são de **aprendizado de máquina supervisionado**, já que estamos tentando prever uma variável dependente (*target*), a partir de uma lista de variáveis independentes (*features*). A variável target é a que irá identificar a propensão dos pacientes ao AVC, *stroke* ou *not stroke*.
+
+Desse modo, foram avaliados 5 modelos de aprendizado de máquina supervisionado:
+
+*   Regressão Logística
+*   Support Vector Machine (SVM)
+*   Random Forest
+*   K Neighbors
+*   Naive Bayes
+ 
+As variáveis features adotadas tendo por base a análise de correlação entre elas e da correlação com a variável target "stroke" foram:
+
+*   *age* 
+*   *bmi*
+*   *hypertension* 
+*   *avg_glucose_level*
+
+As variáveis *bmi*, *hypertension* tem correlação fraca com *age* e existe a possibilidade de ocorrer **overfitting**.  Sobre a glicose no sangue, percebe-se um valor mais elevado nas pessoas com predisposição ao AVC e será, também, utilizada como feature. A hipertensão, também, foi identificada como relacionada com o AVC, a partir da análise gráfica. Entretanto, será realizado um teste progressivo com as features indicadas para verificar a necessidade de mantê-las ou não.
+
+Serão aplicadas 3 técnicas diferentes sobre os dados, o **train_test_split**, o **Stratified kfold** e o **oversampling** com o intuito de aumentar a amostra para análise. Será, também, efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e será escolhido o que tiver a melhor performance com base na análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
+
+
+
 >Relate aqui também a evolução do projeto: possíveis problemas enfrentados e possíveis mudanças de trajetória. Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
 >
 >
