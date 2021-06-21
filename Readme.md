@@ -32,7 +32,7 @@
 # Slides do Projeto
 
 ## Slides da Proposta
-> É possível visualizar a a apresentação da proposta do projeto acessando: [Proposta Projeto](docs/Uma Abordagem Preditiva para Potenciais Casos de Acidente.pdf)
+> É possível visualizar a a apresentação da proposta do projeto acessando: [Proposta Projeto Predição Casos AVC](/docs/Uma_Abordagem_Preditiva_Potenciais_Casos_AVC.pdf).
 
 ## TODO Slides da Apresentação Final
 > Link para slides da apresentação final do projeto.
@@ -492,7 +492,8 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >
 >A curva Precision-Recall mostra o equilíbrio (*trade-off*) entre *Precisão* e *Recall*(sensibilidade). A Precisão representa a taxa de verdadeiros positivos (TP/(TP+FP)) e o >Recall o valor preditivo positivo (TP/(TP+FN)) para um classificador usando diferentes limites de probabilidade. É indicada para bases de dados desbalanceadas. Quanto mais >perto a curva está do canto superior esquerdo, melhor é a relação entre precisão e recall.
 >
->Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica >avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo visto no notebook python, nesse link: ![Link Notebook Projeto >Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb). Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a >validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
+>Foram avaliados cinco algoritmos e será apresentada uma comparação entre todos eles para cada técnica aplicada. Porém, para sintetizar mais o relatório, para cada técnica >avaliada serão apresentados os resultados com imagens apenas de dois dos cinco avaliados. O resultado completo visto no notebook python, nesse link: 
+>![Notebook Projeto Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb). Para o train_test_split, serão apresentados Regressão Logística e o Naive Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
 
 >Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
 ~~~python
@@ -562,9 +563,9 @@ roc_auc2, ap2 = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 1)
 >
 >Além disso, deve-ser ficar atento ao objetivo que se deseja alcançar. A acurácia nos mostra quantos acertos os modelos tiveram, mas quantos desses acertos foram de pessoas com >propensão ao AVC? Consideramos que **identificar pessoas predispostas ao AVC é mais importante do que ter uma acurácia elevada naquelas não propensas ao AVC.**
 >
->Desse modo, novas métricas devem ser avaliadas, como a sensibilidade e especificidade. Observe na matriz de confusão que os verdadeiros negativos (True Negative) que >identificam as pessoas predispostas ao AVC está zero ou insigificante em quase todos os algoritmos, com excessão do Naive Bayes que detectou 29 pacientes como verdadeiros >negativos que, ainda assim, é baixo correspondendo a 36% dos que tiveram AVC. Ou seja, os algoritmos erraram na previsão dos casos de AVC, a maioria gerou uma especificidade 0 >ou bem baixa, embora a sensibilidade tenha sido quase 1 (preveram corretamente a quantidade de pacientes não propensos ao AVC). >>
+>Desse modo, novas métricas devem ser avaliadas, como a sensibilidade e especificidade. Observe na matriz de confusão que os verdadeiros negativos (True Negative) que >identificam as pessoas predispostas ao AVC está zero ou insigificante em quase todos os algoritmos, com excessão do Naive Bayes que detectou 29 pacientes como verdadeiros >negativos que, ainda assim, é baixo correspondendo a 36% dos que tiveram AVC. Ou seja, os algoritmos erraram na previsão dos casos de AVC, a maioria gerou uma especificidade 0 >ou bem baixa, embora a sensibilidade tenha sido quase 1 (preveram corretamente a quantidade de pacientes não propensos ao AVC). 
 >
->Além disso, a curva ROC de todos os modelos evidencia o resultado encontrado entre a especificidade e sensibilidade, o equilíbrio entre a sensibilidade e especificidade pode >ser melhorado (AUC entre 0,68 e 0,84) e buscado uma curva mais próxima do canto superior direito. Embora tenha sido apresentado a curva ROC para ambas as classes consideradas >como positivas no momento, o AUC será sempre similar, já que a curva trabalha com a sensibilidade e especificidade e essas métricas envolvem sempre as duas classes. >
+>Além disso, a curva ROC de todos os modelos evidencia o resultado encontrado entre a especificidade e sensibilidade, o equilíbrio entre a sensibilidade e especificidade pode >ser melhorado (AUC entre 0,68 e 0,84) e buscado uma curva mais próxima do canto superior direito. Embora tenha sido apresentado a curva ROC para ambas as classes consideradas >como positivas no momento, o AUC será sempre similar, já que a curva trabalha com a sensibilidade e especificidade e essas métricas envolvem sempre as duas classes. 
 >
 >Sobre a curva Precision-Recall, os valores da precisão média (AP) que significa a média ponderada das precisões alcançadas em cada limite, usando como peso o aumento do recall >do limite anterior, foram elevados para a classe "Not Stroke" com um AP em torno de 0,97. Porém, verificando essa curva para a classe "Stroke" o AP fica bem baixo, entre 0,10 e >0,26. É um valor abaixo de 0,5. o que evidencia que o equilíbrio entre precisão e recall não é bom e que os dados estão desbalanceados. Quanto mais perto de 1, mais perfeito >será o modelo.
 >
@@ -572,7 +573,7 @@ roc_auc2, ap2 = plotagem_curvas ("Naive Bayes", nb, X_test, y_test, 0, 1)
 
 ## Técnica Avaliação: **validação cruzada com *folds* estratificados**
 
->A validação cruzada  - **cross validation** - é uma técnica para avaliar a capacidade de generalização de um modelo, a partir de um conjunto de dados. Esta técnica é amplamente >empregada em problemas onde o objetivo da modelagem é a predição. Permite a subdivisão dos dados em vários folds separando os dados em dados de teste e de treino.>
+>A validação cruzada  - **cross validation** - é uma técnica para avaliar a capacidade de generalização de um modelo, a partir de um conjunto de dados. Esta técnica é amplamente >empregada em problemas onde o objetivo da modelagem é a predição. Permite a subdivisão dos dados em vários folds separando os dados em dados de teste e de treino.
 >
 >O **StratifiedKFold cross validation** é uma extensão da validação cruzada KFold e especificamente utilizada para problemas de classificação.  Separa o conjunto de dados em >dados de treino e de teste, subdividindo em *folds* estratificados. Ou seja, os *folds* são definidos preservando a proporção de amostras de cada classe.
 >
