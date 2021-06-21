@@ -140,7 +140,7 @@ E a plotagem da matriz de confusão, nesse trecho:
 y_pred = plotagem_matriz_confusao ("SVM", svm, X_test, y_test, 
                                    folds, compara=False)
 ~~~
-![SVM Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/Reg_Log_train_matriz.PNG)
+![SVM Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/SVM_cross_matriz.PNG)
 
 ### K Neighbors
 O treinamento do modelo de KNeighbors pode ser visto no código abaixo:
