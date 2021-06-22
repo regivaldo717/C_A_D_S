@@ -17,8 +17,9 @@
 # Descrição Resumida do Projeto
 > 
 > O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso, detectou-se
-> padrões nos dados dos pacientes e, a partir desses padrões, foram analisados modelos estatísticos e comparados seus desempenhos. Por fim, apresentou-se o mais adequado para 
-> a predição com base no que obteve o melhor desempenho e na questão do problema que se deseja responder: identificar pacientes propensos ao AVC.
+> padrões nos dados dos pacientes e, a partir desses padrões, foram analisados modelos estatísticos e comparados seus desempenhos. Por fim, foi apresentado o algoritmo mais
+> adequado para a predição do AVC com base no que obteve o melhor desempenho e que melhor responde à questão que se deseja responder: identificar os pacientes propensos ao
+> AVC.
 > 
 # Vídeos do Projeto
 
@@ -53,7 +54,6 @@
 >  É possível notar, no trabalho realizado por (XIANFANG, et al., 2017), a avaliação por meio da utilização de classificadores no objetivo de identificar indivíduos com diabetes coonsiderando nove características clínicas não invasivas de fácil obtenção. Para tal classificação o autor utilizou o software WEKA para identificação do melhor algoritmo de classificação.  
 >  
 > Vale salientar, segundo (SITAR-TĂUT, et al,. 2009) a importância da utilização de ferramentas colaboradoras como é o exemplo das ferramentas de mineração de dados. O autor tenta prever de forma não invasiva, como prever doênças cardioovasculares considerando fatores de risco. 
-
 >
 > Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
 > foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
@@ -868,8 +868,6 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 > PEI, Dongmei et al. Accurate and rapid screening model for potential diabetes mellitus. BMC medical informatics and decision making, v. 19, n. 1, p. 1-8, 2019.
 > 
 > Acidente Vascular Cerebral. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/doencas-sintomas/avc> Acesso em: 11 abr 2021.
-> 
-> SANDERCOCK, Peter AG; NIEWADA, Maciej; CZŁONKOWSKA, Anna. The international stroke trial database. Trials, v. 12, n. 1, p. 1-7, 2011.
 > 
 > SITAR-TĂUT, A. et al. Using machine learning algorithms in cardiovascular disease risk evaluation. Age, v. 1, n. 4, p. 4, 2009.
 >
