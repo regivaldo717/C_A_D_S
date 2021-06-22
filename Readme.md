@@ -860,6 +860,8 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 > 
 > KIM, Joosup et al. Global stroke statistics 2019. International Journal of Stroke, v. 15, n. 8, p. 819-838, 2020.
 > 
+> XIANFANG, Wang et al. Predicting the types of ion channel-targeted conotoxins based on avc-svm model. BioMed research international, v. 2017, 2017.
+> 
 > Acidente Vascular Cerebral. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/doencas-sintomas/avc> Acesso em: 11 abr 2021.
 > 
 > SANDERCOCK, Peter AG; NIEWADA, Maciej; CZŁONKOWSKA, Anna. The international stroke trial database. Trials, v. 12, n. 1, p. 1-7, 2011.
