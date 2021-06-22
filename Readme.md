@@ -60,7 +60,7 @@
 > utilizando a biblioteca cientítica, o *scikit-learn*, e, por fim, foi identificado algoritmo mais adequado para predizer o AVC, a partir da análise das métricas e do problema
 > a ser respondido.
 > 
-> Trabalhos relacionados
+> Foram utilizados os artigos com trabalhos relacionados com a predição do AVC como o [GLOBAL AVC], assim como relacionados com a predição de outras doenças, como a diabetes [DIABETES]. 
 >
 > Results: The results indicate that decision tree classifier J48 has the best performance (accuracy = 0.9503, precision
 = 0.950, recall = 0.950, F-measure = 0.948, and AUC = 0.964). The decision tree structure shows that age is the most
