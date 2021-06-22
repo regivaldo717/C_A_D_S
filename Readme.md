@@ -45,13 +45,16 @@
 > Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020).
 >  
 > Suas causas são complexas e suas chances de acometimento podem ser aumentadas quando o indivíduo possui um ou mais fatores de risco relacionados à doença como: alto nível de
-> glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
-> saúde como sedentarismo, tabagismo e etilismo. 
+> glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à saúde como sedentarismo, tabagismo e etilismo. 
 >
 > Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do
 > exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar
 > previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
->
+> É possível notar, no trabalho realizado por (XIANFANG, et al., 2017), a avaliação por meio da utilização de classificadores no objetivo de identificar indivíduos com diabetes coonsiderando nove características clínicas não invasivas de fácil obtenção. Para tal classificação o autooor utilizou o software WEKA para identificaçãoo doo melhoro algorítimo de classificação.  
+> 
+> Vale salientar, segundo (SITAR-TĂUT, et al,. 2009) a importância da utilização de ferramentas colaboradoras como é o exemplo das ferramentas de mineração de dados. O autor tenta prever de forma não invasiva, como prever doênças cardioovasculares considerando fatores de risco.
+
+
 > Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
 > foram avaliados cinco classificadores, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
 > dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
@@ -871,8 +874,6 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 > SITAR-TĂUT, A. et al. Using machine learning algorithms in cardiovascular disease risk evaluation. Age, v. 1, n. 4, p. 4, 2009.
 >
 > Hankey GJ. Stroke. Lancet. 2017 Feb 11;389(10069):641-654. doi: 10.1016/S0140-6736(16)30962-X. Epub 2016 Sep 13. PMID: 27637676.
->
-> Fisher M, Moores L, Alsharif MN, Paganini-Hill A. Definition and Implications of the Preventable Stroke. JAMA Neurol. 2016 Feb;73(2):186-9. doi: 10.1001/jamaneurol.2015.3587. PMID: 26641201; PMCID: PMC4767801.
 >
 > Thrift AG, Thayabaran Nathan T, Howard G, Howard VJ, Rothwell PM, Feigin VL, Norrving B, Donnan GA, Cadilhac DA. Global stroke statistics. Int J Stroke. 2017 Jan;12(1):13-32. doi: 10.1177/1747493016676285. Epub 2016 Oct 28. PMID: 27794138.
 >
