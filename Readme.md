@@ -48,9 +48,12 @@
 > glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
 > saúde como sedentarismo, tabagismo e etilismo. 
 >
-> Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do
-> exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar
-> previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
+> Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do  exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
+> 
+>  É possível notar, no trabalho realizado por (XIANFANG, et al., 2017), a avaliação por meio da utilização de classificadores no objetivo de identificar indivíduos com diabetes coonsiderando nove características clínicas não invasivas de fácil obtenção. Para tal classificação o autor utilizou o software WEKA para identificação do melhor algoritmo de classificação.  
+>  
+> Vale salientar, segundo (SITAR-TĂUT, et al,. 2009) a importância da utilização de ferramentas colaboradoras como é o exemplo das ferramentas de mineração de dados. O autor tenta prever de forma não invasiva, como prever doênças cardioovasculares considerando fatores de risco. 
+
 >
 > Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
 > foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
