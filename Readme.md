@@ -16,9 +16,9 @@
 >
 # Descrição Resumida do Projeto
 > 
-> O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso foi realizada uma
-> análise exploratória dos dados e identificada as características dos pacientes que influenciavam a predisposição ao AVC. Foram escolhidos cinco modelos para serem avaliados e
-> o que teve um melhor desempenho, baseado na análise das métricas, foi o escolhido para ser aplicado na descoberta precoce do AVC.
+> O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso, detectou-se
+> padrões nos dados dos pacientes e, a partir desses padrões, foram analisados modelos estatísticos e comparados seus desempenhos. Por fim, apresentou-se o mais adequado para 
+> a predição com base no que obteve o melhor desempenho e na questão do problema que se deseja responder: identificar pacientes propensos ao AVC.
 > 
 # Vídeos do Projeto
 
@@ -39,40 +39,42 @@
 # Introdução e Referenciais Teóricos
 
 > Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 
-> 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020).
+> 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020).
 > 
 > Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke
-> Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020).
+> Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020).
 >  
 > Suas causas são complexas e suas chances de acometimento podem ser aumentadas quando o indivíduo possui um ou mais fatores de risco relacionados à doença como: alto nível de
 > glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
 > saúde como sedentarismo, tabagismo e etilismo. 
 >
-> 90% dos Acidentes Vasculares Cerebrais - AVC - são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros.(HOSPITAL ALBERT EINSTEIN, 2021)
-> Diante do exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas.
-> Detectar previamente o AVC pode evitar mué um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
+> Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do
+> exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar
+> previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
 >
 > Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
 > foram avaliados cinco classificadores, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
 > dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
-> hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foiuma base pública disponível no site do Kaggle e nos fornecedu dados de 5110 pacientes. 
+> hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foi uma base pública disponível no site do Kaggle e nos forneceu dados de 5110 pacientes. 
 > A mineração de dados foi efetuada no linguagem Python com algumas explorações realizadas no Orange. Os algoritmos para predizer o AVC foram treinados na linguagem Python
-> utilizando a biblioteca cientítica, o *scikit-learn*, e, por fim, foi identificado o melhor algoritmo para predizer o AVC, a partir da análise das métricas e do problema a 
-> ser respondido.
+> utilizando a biblioteca cientítica, o *scikit-learn*, e, por fim, foi identificado algoritmo mais adequado para predizer o AVC, a partir da análise das métricas e do problema
+> a ser respondido.
 > 
-
-OK Caracterização do problema
-OK Motivação
-OK Relevância
-OKIndicação (bastante resumida) da análise proposta
+> Foram utilizados os artigos com trabalhos relacionados com a predição do AVC como o [GLOBAL AVC], assim como relacionados com a predição de outras doenças, como a diabetes [DIABETES]. 
 >
-> Trabalhos relacionados
->
->
-> Indicação (bastante resumida) dos resultados alcançados
+> Results: The results indicate that decision tree classifier J48 has the best performance (accuracy = 0.9503, precision
+= 0.950, recall = 0.950, F-measure = 0.948, and AUC = 0.964). The decision tree structure shows that age is the most
+significant feature, followed by family history of diabetes, work stress, BMI, salty food preference, physical activity,
+hypertension, gender, and history of cardiovascular disease or stroke.
+Conclusions: Our study shows that decision tree analyses can be applied to screen individuals for early diabetes
+risk without the need for invasive tests. This procedure will be particularly useful in developing regions with high
+epidemiological risk and poor socioeconomic status, and enable clinical practitioners to rapidly screen patients for
+increased risk of diabetes. The key features in the tree structure could further facilitate diabetes prevention through
+targeted community interventions, which can potentially improve early diabetes diagnosis and reduce burdens on
+the healthcare system.
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas:
+> Perguntas de pesquisa que o projeto busca responder:
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo não terá um Acidente Vascular Cerebral (AVC) durante a vida?
 >
@@ -853,8 +855,18 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 
 # Referências
 > Acidente Vascular Cerebral Isquêmico. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/guia-doencas-sintomas/info/#4> Acesso em: 11 abr 2021.
->
+> 
+> THRIFT, Amanda G. et al. Global stroke statistics. International Journal of Stroke, v. 12, n. 1, p. 13-32, 2017.
+> 
+> KIM, Joosup et al. Global stroke statistics 2019. International Journal of Stroke, v. 15, n. 8, p. 819-838, 2020.
+> 
+> XIANFANG, Wang et al. Predicting the types of ion channel-targeted conotoxins based on avc-svm model. BioMed research international, v. 2017, 2017.
+> 
 > Acidente Vascular Cerebral. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/doencas-sintomas/avc> Acesso em: 11 abr 2021.
+> 
+> SANDERCOCK, Peter AG; NIEWADA, Maciej; CZŁONKOWSKA, Anna. The international stroke trial database. Trials, v. 12, n. 1, p. 1-7, 2011.
+> 
+> SITAR-TĂUT, A. et al. Using machine learning algorithms in cardiovascular disease risk evaluation. Age, v. 1, n. 4, p. 4, 2009.
 >
 > Hankey GJ. Stroke. Lancet. 2017 Feb 11;389(10069):641-654. doi: 10.1016/S0140-6736(16)30962-X. Epub 2016 Sep 13. PMID: 27637676.
 >
