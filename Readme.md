@@ -15,12 +15,11 @@
 | Regivaldo Sousa Ferreira        | 225153        | Computação (FEEC)
 >
 # Descrição Resumida do Projeto
-> O Projeto tem o objetivo identificar um modelo preciso que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020)
 > 
-> Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020)
+> O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso foi realizada uma
+> análise exploratória dos dados e identificada as características dos pacientes que influenciavam a predisposição ao AVC. Foram escolhidos cinco modelos para serem avaliados e
+> o que teve um melhor desempenho, baseado na análise das métricas, foi o escolhido para ser aplicado na descoberta precoce do AVC.
 > 
-> Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
->
 # Vídeos do Projeto
 
 ## Vídeo da Proposta
@@ -37,18 +36,38 @@
 ## TODO Slides da Apresentação Final
 > Link para slides da apresentação final do projeto.
 
-# TODO Introdução e Referenciais Teóricos
-> Contextualização do projeto
+# Introdução e Referenciais Teóricos
+
+> Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 
+> 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho. (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020).
+> 
+> Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke
+> Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida. (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020).
+>  
+> Suas causas são complexas e suas chances de acometimento podem ser aumentadas quando o indivíduo possui um ou mais fatores de risco relacionados à doença como: alto nível de
+> glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
+> saúde como sedentarismo, tabagismo e etilismo. 
 >
-> Caracterização do problema
+> 90% dos Acidentes Vasculares Cerebrais - AVC - são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros.(HOSPITAL ALBERT EINSTEIN, 2021)
+> Diante do exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas.
+> Detectar previamente o AVC pode evitar mué um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
 >
-> Motivação
->
-> Relevância
+> Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
+> foram avaliados cinco classificadores, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
+> dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
+> hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foiuma base pública disponível no site do Kaggle e nos fornecedu dados de 5110 pacientes. 
+> A mineração de dados foi efetuada no linguagem Python com algumas explorações realizadas no Orange. Os algoritmos para predizer o AVC foram treinados na linguagem Python
+> utilizando a biblioteca cientítica, o *scikit-learn*, e, por fim, foi identificado o melhor algoritmo para predizer o AVC, a partir da análise das métricas e do problema a 
+> ser respondido.
+> 
+
+OK Caracterização do problema
+OK Motivação
+OK Relevância
+OKIndicação (bastante resumida) da análise proposta
 >
 > Trabalhos relacionados
 >
-> Indicação (bastante resumida) da análise proposta
 >
 > Indicação (bastante resumida) dos resultados alcançados
 
