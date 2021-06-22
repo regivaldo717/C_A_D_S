@@ -45,18 +45,15 @@
 > Organization) acredita que 1 a cada 6 pessoas terá um AVC ao longo de sua vida (SOCIEDADE BRASILEIRA DE DOENÇAS CEREBROVASCULARES, 2020).
 >  
 > Suas causas são complexas e suas chances de acometimento podem ser aumentadas quando o indivíduo possui um ou mais fatores de risco relacionados à doença como: alto nível de
-> glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à saúde como sedentarismo, tabagismo e etilismo. 
+> glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
+> saúde como sedentarismo, tabagismo e etilismo. 
 >
 > Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do
 > exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar
 > previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
-> É possível notar, no trabalho realizado por (XIANFANG, et al., 2017), a avaliação por meio da utilização de classificadores no objetivo de identificar indivíduos com diabetes coonsiderando nove características clínicas não invasivas de fácil obtenção. Para tal classificação o autooor utilizou o software WEKA para identificaçãoo doo melhoro algorítimo de classificação.  
-> 
-> Vale salientar, segundo (SITAR-TĂUT, et al,. 2009) a importância da utilização de ferramentas colaboradoras como é o exemplo das ferramentas de mineração de dados. O autor tenta prever de forma não invasiva, como prever doênças cardioovasculares considerando fatores de risco.
-
-
+>
 > Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
-> foram avaliados cinco classificadores, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
+> foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
 > dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
 > hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foi uma base pública disponível no site do Kaggle e nos forneceu dados de 5110 pacientes. 
 > A mineração de dados foi efetuada no linguagem Python com algumas explorações realizadas no Orange. Os algoritmos para predizer o AVC foram treinados na linguagem Python
@@ -64,18 +61,18 @@
 > a ser respondido.
 > 
 > Foram utilizados os artigos com trabalhos relacionados com a predição do AVC como o [GLOBAL AVC], assim como relacionados com a predição de outras doenças, como é possível encontrar no trabalho sobre diabetes realizado por (Dongmei, et al., 2019). 
->
-> Results: The results indicate that decision tree classifier J48 has the best performance (accuracy = 0.9503, precision
-= 0.950, recall = 0.950, F-measure = 0.948, and AUC = 0.964). The decision tree structure shows that age is the most
-significant feature, followed by family history of diabetes, work stress, BMI, salty food preference, physical activity,
-hypertension, gender, and history of cardiovascular disease or stroke.
-Conclusions: Our study shows that decision tree analyses can be applied to screen individuals for early diabetes
-risk without the need for invasive tests. This procedure will be particularly useful in developing regions with high
-epidemiological risk and poor socioeconomic status, and enable clinical practitioners to rapidly screen patients for
-increased risk of diabetes. The key features in the tree structure could further facilitate diabetes prevention through
-targeted community interventions, which can potentially improve early diabetes diagnosis and reduce burdens on
-the healthcare system.
 
+>A grande questão é a resposta que se quer buscar para esse problema. É mais relevante identificar os pacientes não propensos ao AVC ou os que são propensos? Chegou-se a
+>conclusão que é mais importante identificar as pessoas propensas ao AVC, já que elas poderão mudar seus hábitos alimentares e de vida para evitar que se concretize essa
+>predição. Desse modo, as métricas com maior relevância para análise foram a sensibilidade e especificidade, em conjunto com a acurácia. A matriz de confusão e a curvas ROC e
+>Precision-Recall também foram avaliadas. 
+
+> Os resultados indicaram que o algoritmo com um melhor desempenho em quase todas as métricas foi o Random Forest (acurácia=0,86, precisão=0,98, sensibilidade=0,89,
+> especificidade=0,4, roc_auc=0,96, f1-score=0,92) e as variáveis preditivas utilizadas foram idade, índice de massa corporal, hipertensão e média de glicose no sangue.
+> Entretanto, entende-se que é mais relevante identificar os pacientes propensos ao AVC do que os não propensos. Desse modo, o algoritmo de Regressão Logística mostrou-se mais
+> adequado, por possuir um maior equilíbrio entre sensibilidade, especificidade e acurácia (acurácia=0,73, precisão=0,98, sensibilidade=0,73, especificidade=0,74, roc_auc=0,82,
+> f1-score=0,84).
+> 
 # Perguntas de Pesquisa
 > Perguntas de pesquisa que o projeto busca responder:
 > * É possível, através da análise de parâmetros de comorbidades, prever se o indivíduo terá um Acidente Vascular Cerebral (AVC) durante a vida?
@@ -824,7 +821,7 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 >O Random Forest foi o algoritmo com um melhor desempenho em quase todas as métricas. Entretanto, devido à importância da especificidade no contexto da predição analisada, não
 >foi o escolhido.
 >
->No conjunto geral, o **algoritmo de Regressão Logística mostrou-se mais adequado** pelo equilíbrio apresentado entre as métricas de sensibilidade, especificidade e acurácia. 
+>No conjunto geral, o **algoritmo de Regressão Logística mostrou-se mais adequado** pelo equilíbrio apresentado entre as métricas de sensibilidade, especificidade, acurácia. 
 >
 >![Link Notebook Projeto Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb)
 
@@ -874,6 +871,8 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 > SITAR-TĂUT, A. et al. Using machine learning algorithms in cardiovascular disease risk evaluation. Age, v. 1, n. 4, p. 4, 2009.
 >
 > Hankey GJ. Stroke. Lancet. 2017 Feb 11;389(10069):641-654. doi: 10.1016/S0140-6736(16)30962-X. Epub 2016 Sep 13. PMID: 27637676.
+>
+> Fisher M, Moores L, Alsharif MN, Paganini-Hill A. Definition and Implications of the Preventable Stroke. JAMA Neurol. 2016 Feb;73(2):186-9. doi: 10.1001/jamaneurol.2015.3587. PMID: 26641201; PMCID: PMC4767801.
 >
 > Thrift AG, Thayabaran Nathan T, Howard G, Howard VJ, Rothwell PM, Feigin VL, Norrving B, Donnan GA, Cadilhac DA. Global stroke statistics. Int J Stroke. 2017 Jan;12(1):13-32. doi: 10.1177/1747493016676285. Epub 2016 Oct 28. PMID: 27794138.
 >
