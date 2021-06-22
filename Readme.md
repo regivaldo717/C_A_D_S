@@ -862,6 +862,8 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 > 
 > XIANFANG, Wang et al. Predicting the types of ion channel-targeted conotoxins based on avc-svm model. BioMed research international, v. 2017, 2017.
 > 
+> PEI, Dongmei et al. Accurate and rapid screening model for potential diabetes mellitus. BMC medical informatics and decision making, v. 19, n. 1, p. 1-8, 2019.
+> 
 > Acidente Vascular Cerebral. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/doencas-sintomas/avc> Acesso em: 11 abr 2021.
 > 
 > SANDERCOCK, Peter AG; NIEWADA, Maciej; CZŁONKOWSKA, Anna. The international stroke trial database. Trials, v. 12, n. 1, p. 1-7, 2011.
