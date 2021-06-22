@@ -855,8 +855,16 @@ computa_metricas ("LogisticRegression", y_test, y_pred, roc_auc, roc_auc2, ap, a
 
 # Referências
 > Acidente Vascular Cerebral Isquêmico. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/guia-doencas-sintomas/info/#4> Acesso em: 11 abr 2021.
->
+> 
+> THRIFT, Amanda G. et al. Global stroke statistics. International Journal of Stroke, v. 12, n. 1, p. 13-32, 2017.
+> 
+> KIM, Joosup et al. Global stroke statistics 2019. International Journal of Stroke, v. 15, n. 8, p. 819-838, 2020.
+> 
 > Acidente Vascular Cerebral. Hospital Albert Einstein. Disponível em: <https://www.einstein.br/doencas-sintomas/avc> Acesso em: 11 abr 2021.
+> 
+> SANDERCOCK, Peter AG; NIEWADA, Maciej; CZŁONKOWSKA, Anna. The international stroke trial database. Trials, v. 12, n. 1, p. 1-7, 2011.
+> 
+> SITAR-TĂUT, A. et al. Using machine learning algorithms in cardiovascular disease risk evaluation. Age, v. 1, n. 4, p. 4, 2009.
 >
 > Hankey GJ. Stroke. Lancet. 2017 Feb 11;389(10069):641-654. doi: 10.1016/S0140-6736(16)30962-X. Epub 2016 Sep 13. PMID: 27637676.
 >
