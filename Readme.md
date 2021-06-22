@@ -16,10 +16,9 @@
 >
 # Descrição Resumida do Projeto
 > 
-> O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso, detectou-se
+> O Projeto tem o objetivo de identificar um modelo de aprendizado de máquina que permita a detecção preventiva do Acidente Vascular Cerebral (AVC). Para isso, buscou-se 
 > padrões nos dados dos pacientes e, a partir desses padrões, foram analisados modelos estatísticos e comparados seus desempenhos. Por fim, foi apresentado o algoritmo mais
-> adequado para a predição do AVC com base no que obteve o melhor desempenho e que melhor responde à questão que se deseja responder: identificar os pacientes propensos ao
-> AVC.
+> adequado para a predição do AVC.
 > 
 # Vídeos do Projeto
 
@@ -39,7 +38,7 @@
 
 # Introdução e Referenciais Teóricos
 
-> Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil . Causa seis milhões de óbitos por ano, deste total, 
+> Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil. Causa seis milhões de óbitos por ano, deste total, 
 > 50% das pessoas ficam dependentes de outra para atividades do dia a dia e 70% não conseguem retornar mais ao trabalho (ACADEMIA BRASILEIRA DE NEUROLOGIA, 2020).
 > 
 > Apesar da incidência ser maior em pessoas acima dos 60 anos, ultimamente, vem crescendo em pacientes com menos de 55 anos e a Organização Mundial de AVC (World Stroke
@@ -49,27 +48,17 @@
 > glicose no sangue, alta taxa de colesterol e triglicérides e doenças cardiovasculares, como hipertensão arterial e arritmias cardíacas, além de hábitos de vida prejudiciais à
 > saúde como sedentarismo, tabagismo e etilismo. 
 >
-> Noventa por cento dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros (HOSPITAL ALBERT EINSTEIN, 2021). Diante do  exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderão ser evitadas. Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
+> De acordo com (HOSPITAL ALBERT EINSTEIN, 2021), 90% dos casos de AVC são causados por fatores modificáveis, como hipertensão, obesidades, tabagismos entre outros . Diante do  exposto, fazer a previsão ou o diagnóstico precoce do Acidente Vascular Cerebral (AVC) é crucial, pois muitas mortes ou vidas incapacitadas poderiam ser evitadas. Detectar previamente o AVC é um desafio que tem mobilizado a ciência, já que as consequências da doença geram um enorme impacto econômico e social.
 > 
->  É possível notar, no trabalho realizado por (XIANFANG, et al., 2017), a avaliação por meio da utilização de classificadores no objetivo de identificar indivíduos com diabetes coonsiderando nove características clínicas não invasivas de fácil obtenção. Para tal classificação o autor utilizou o software WEKA para identificação do melhor algoritmo de classificação.  
->  
-> Vale salientar, segundo (SITAR-TĂUT, et al,. 2009) a importância da utilização de ferramentas colaboradoras como é o exemplo das ferramentas de mineração de dados. O autor tenta prever de forma não invasiva, como prever doênças cardioovasculares considerando fatores de risco. 
+> Em função da importância de um diagnóstico precoce, existem pesquisas que buscam encontrar formas de prever a doença. Isso é notado no trabalho de (SITAR-TĂUT, et al,. 2009) que sugere a utilização de ferramentas colaboradoras como as de mineração de dados e tenta prever de forma não invasiva doenças cardioovasculares considerando fatores de risco. Também é possível observar, no trabalho realizado por (Dongmei, et al., 2019), a busca por classificadores com o objetivo de identificar precocemente indivíduos com diabetes. 
 >
-> Este projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
+> Nosso projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
 > foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
 > dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
 > hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foi uma base pública disponível no site do Kaggle e nos forneceu dados de 5110 pacientes. 
 > A mineração de dados foi efetuada no linguagem Python com algumas explorações realizadas no Orange. Os algoritmos para predizer o AVC foram treinados na linguagem Python
-> utilizando a biblioteca cientítica, o *scikit-learn*, e, por fim, foi identificado algoritmo mais adequado para predizer o AVC, a partir da análise das métricas e do problema
-> a ser respondido.
+> utilizando a biblioteca científica *scikit-learn* e, por fim, foi identificado o algoritmo mais adequado para predizer o AVC, a partir da análise das métricas e da questão a ser respondida.
 > 
-> Foram utilizados os artigos com trabalhos relacionados com a predição do AVC como o [GLOBAL AVC], assim como relacionados com a predição de outras doenças, como é possível encontrar no trabalho sobre diabetes realizado por (Dongmei, et al., 2019). 
-
->A grande questão é a resposta que se quer buscar para esse problema. É mais relevante identificar os pacientes não propensos ao AVC ou os que são propensos? Chegou-se a
->conclusão que é mais importante identificar as pessoas propensas ao AVC, já que elas poderão mudar seus hábitos alimentares e de vida para evitar que se concretize essa
->predição. Desse modo, as métricas com maior relevância para análise foram a sensibilidade e especificidade, em conjunto com a acurácia. A matriz de confusão e a curvas ROC e
->Precision-Recall também foram avaliadas. 
-
 > Os resultados indicaram que o algoritmo com um melhor desempenho em quase todas as métricas foi o Random Forest (acurácia=0,86, precisão=0,98, sensibilidade=0,89,
 > especificidade=0,4, roc_auc=0,96, f1-score=0,92) e as variáveis preditivas utilizadas foram idade, índice de massa corporal, hipertensão e média de glicose no sangue.
 > Entretanto, entende-se que é mais relevante identificar os pacientes propensos ao AVC do que os não propensos. Desse modo, o algoritmo de Regressão Logística mostrou-se mais
