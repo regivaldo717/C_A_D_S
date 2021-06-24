@@ -470,7 +470,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >*   K Neighbors
 >*   Naive Bayes
 > 
->As variáveis features adotadas tendo por base a análise de correlação entre elas e da correlação com a variável target "stroke" foram:
+>As variáveis features adotadas tendo por base a análise de correlação foram:
 >
 >*   *age* 
 >*   *bmi*
@@ -483,7 +483,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >
 >Foram aplicadas três técnicas diferentes sobre os dados, a **subdivisão dos dados em treino e teste**, a **validação cruzada com *folds* estratificados** e a **sobreamostragem
 >e busca dos melhores hiperparâmetros**  que serão descritas mais abaixo. O objetivo foi encontrar um modelo que melhor conseguisse prever a predisposição de um paciente ao
->AVC. Para isso, foi efetuada uma comparação entre os modelos baseada no resultado de diversas métricas de avaliação e foi escolhido o que teve a melhor performance com base na
+>AVC. Para isso, foi efetuada uma comparação entre os modelos baseada em diversas métricas de avaliação e foi escolhido o que teve a melhor performance com base na
 >análise da matriz de confusão, das métricas de avaliação e das curvas ROC e Precision Recall.
 >
 >**Matriz de Confusão**
