@@ -25,17 +25,17 @@
 ## Vídeo da Proposta
 > É possível assistir ao vídeo da proposta acessando: [Vídeo Proposta Projeto Predição Casos AVC](https://drive.google.com/file/d/1jhNYPVPnujG1aPY06JCsdSWi8SkRWGq9/view?usp=sharing).
 > 
-## TODO Vídeo da Apresentação Final
-> Link para vídeo da apresentação final do projeto (máximo 8 minutos). *TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO*.
+## Vídeo da Apresentação Final
+> Para assistir ao vídeo da Apresentação Final do Projeto, acesse: [Vídeo Apresentacao_Final_Projeto_Predicao_AVC] (https://drive.google.com/file/d/1ea6DpKmja7LBOw3kqBzlOeaKxAUzQko2/view)
 
 # Slides do Projeto
 
 ## Slides da Proposta
 > É possível visualizar a a apresentação da proposta do projeto acessando: [Proposta Projeto Predição Casos AVC](/docs/Uma_Abordagem_Preditiva_Potenciais_Casos_AVC.pdf).
 
-## TODO Slides da Apresentação Final
-> Link para slides da apresentação final do projeto.
-
+## Slides da Apresentação Final
+> Para visualizar a Apresentação Final do projeto, acesse: [Apresentacao_Final]
+> 
 # Introdução e Referenciais Teóricos
 
 > Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil. Causa seis milhões de óbitos por ano, deste total, 
