@@ -26,7 +26,7 @@
 > É possível assistir ao vídeo da proposta acessando: [Vídeo Proposta Projeto Predição Casos AVC](https://drive.google.com/file/d/1jhNYPVPnujG1aPY06JCsdSWi8SkRWGq9/view?usp=sharing).
 > 
 ## Vídeo da Apresentação Final
-> Para assistir ao vídeo da Apresentação Final do Projeto, acesse: [Vídeo Apresentacao_Final_Projeto_Predicao_AVC] (https://drive.google.com/file/d/1ea6DpKmja7LBOw3kqBzlOeaKxAUzQko2/view)
+> Para assistir ao vídeo da Apresentação Final do Projeto, acesse: [Vídeo Apresentacao_Final_Projeto_Predicao_AVC](https://drive.google.com/file/d/1ea6DpKmja7LBOw3kqBzlOeaKxAUzQko2/view)
 
 # Slides do Projeto
 
