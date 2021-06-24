@@ -25,17 +25,17 @@
 ## Vídeo da Proposta
 > É possível assistir ao vídeo da proposta acessando: [Vídeo Proposta Projeto Predição Casos AVC](https://drive.google.com/file/d/1jhNYPVPnujG1aPY06JCsdSWi8SkRWGq9/view?usp=sharing).
 > 
-## TODO Vídeo da Apresentação Final
-> Link para vídeo da apresentação final do projeto (máximo 8 minutos). *TODOS OS MEMBROS DO GRUPO DEVEM APARECER NO VÍDEO*.
+## Vídeo da Apresentação Final
+> Para assistir ao vídeo da Apresentação Final do Projeto, acesse: [Vídeo Apresentacao_Final_Projeto_Predicao_AVC](https://drive.google.com/file/d/1ea6DpKmja7LBOw3kqBzlOeaKxAUzQko2/view)
 
 # Slides do Projeto
 
 ## Slides da Proposta
 > É possível visualizar a a apresentação da proposta do projeto acessando: [Proposta Projeto Predição Casos AVC](/docs/Uma_Abordagem_Preditiva_Potenciais_Casos_AVC.pdf).
 
-## TODO Slides da Apresentação Final
-> Link para slides da apresentação final do projeto.
-
+## Slides da Apresentação Final
+> Para visualizar a Apresentação Final do projeto, acesse: [Apresentacao_Final](/docs/Apresentacao_Projeto_Final_Uma Abordagem Preditiva_AVC.pdf).
+> 
 # Introdução e Referenciais Teóricos
 
 > Segundo a Academia Brasileira de Neurologia, o AVC é a segunda maior causa de morte e a primeira de incapacidade no Brasil. Causa seis milhões de óbitos por ano, deste total, 
@@ -53,7 +53,7 @@
 > Em função da importância de um diagnóstico precoce, existem pesquisas que buscam encontrar formas de prever a doença. Isso é notado no trabalho de (SITAR-TĂUT, et al., 2009) que sugere a utilização de ferramentas de mineração de dados e tenta prever de forma não invasiva doenças cardioovasculares considerando fatores de risco. Também é possível observar, no trabalho realizado por (Dongmei, et al., 2019), a busca por classificadores com o objetivo de identificar precocemente indivíduos com diabetes. Além disso, o artigo de (Fisher, et al., 2016) demonstra a importância de medidas preventivas do AVC, a partir da análise de dados de pacientes que tiveram AVC e que com tratamento precoce poderiam ter sido evitados ou minimizados 
 >
 > Nosso projeto buscou identificar padrões nas características dos pacientes para efetuar uma predição das pessoas que possuem risco de terem AVC durante a sua vida. Neste estudo
-> foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K Neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
+> foram avaliados cinco modelos, *Logistic Regression, SVM, Random Forest, K nearest neighbors e Naive Bayes*, para identificar indivíduos com predisposição ao AVC baseado em
 > dez características, como gênero, idade, doença do coração, hipertensão, nível de glicose no sangue, tipo de trabalho, tipo de residência, índice de massa corporal (IMC),
 > hipertensão, doença do coração, tabagismo e estado civil. A base de dados utilizada foi uma base pública disponível no site do Kaggle e nos forneceu dados de 5110 pacientes. 
 > A mineração de dados foi efetuada no linguagem Python com algumas explorações realizadas no Orange. Os algoritmos para predizer o AVC foram treinados na linguagem Python
@@ -467,7 +467,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >*   Regressão Logística
 >*   Support Vector Machine (SVM)
 >*   Random Forest
->*   K Neighbors
+>*   K nearest neighbors
 >*   Naive Bayes
 > 
 >As variáveis features adotadas tendo por base a análise de correlação foram:
@@ -641,7 +641,7 @@ y_pred = plotagem_matriz_confusao ("SVM", svm, X_test, y_test,
 ~~~
 ![SVM Matriz](https://github.com/regivaldo717/C_A_D_S/blob/main/assets/SVM_cross_matriz.PNG)
 
-### K Neighbors
+### K nearest neighbors
 >O treinamento do modelo utilizando o *cross_val_score* com folds estratificados pode ser visto no código abaixo:
 ~~~python
 # Avaliação do modelo KNeighbors usando o cross_val_score
