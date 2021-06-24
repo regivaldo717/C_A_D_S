@@ -528,7 +528,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 
 ## Aspectos Conceituais Algoritmos
 >
->O algoritmo de **regressão logística** gera um modelo, a partir de um conjunto de observações, que possibilita a predição de valores de uma variável categórica, em geral binária, a
+>O algoritmo de **Regressão Logística** gera um modelo, a partir de um conjunto de observações, que possibilita a predição de valores de uma variável categórica, em geral binária, a
 >partir de uma série de variáveis independentes contínuas e/ou binárias. Muito utilizado na área médica para a predição de doenças, a partir das características dos pacientes.
 
 >O **SVM (Support Vector Machine)** é um algoritmo de aprendizado supervisionado linear, que é utilizado na classificação de um conjunto de pontos onde busca uma linha que separa
