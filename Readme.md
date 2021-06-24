@@ -526,6 +526,29 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >![Notebook Projeto Final](/notebooks/Python/M0826A_Projeto_E3_Final_Marcia_Regivaldo_Amanda.ipynb). Para o train_test_split, serão apresentados Regressão Logística e o Naive
 >Bayes. Para a validação cruzada, o SVM e o K-Neighbors e para a última técnica, a Regressão Logística e o Random Forest.
 
+## Aspectos Conceituais Algoritmos
+>
+>O algoritmo de **regressão logística** gera um modelo, a partir de um conjunto de observações, que possibilita a predição de valores de uma variável categórica, em geral binária, a
+>partir de uma série de variáveis independentes contínuas e/ou binárias. Muito utilizado na área médica para a predição de doenças, a partir das características dos pacientes.
+
+>O **SVM (Support Vector Machine)** é um algoritmo de aprendizado supervisionado linear, que é utilizado na classificação de um conjunto de pontos onde busca uma linha que separa
+>duas classes distintas, o SVM escolhe a reta entre eles chamado de hiperplano quando há mais de duas dimensões. Funciona da seguinte forma, a classificação das classes é
+>colocada inicialmente, definindo assim cada ponto pertencente a cada uma das classes, e em seguida maximiza a margem. Desse modo, primeiro classifica corretamente as classes 
+>e só depois define a distância entre as margens, a partir dessa restrição criada.
+
+>O algoritmo **Random Forest** é um tipo de método *ensemble*, método que gera muitos classificadores e combina o seu resultado. No caso do Random Forest, ele gera várias árvores de
+>decisão, cada um com suas particularidades e combinada o resultado da classificação de todos eles. Os métodos *ensemble* possuem uma característica que os diferencia dos
+>algoritmos de aprendizado de máquina básicos, pois combinam diferentes modelos para se obter um único resultado. São mais robustos e complexos e geram um maior custo
+>computacional.
+>
+>O **KNN (K Nearest Neighbors)** é um classificador onde o aprendizado é baseado na similaridade de um dado (um vetor) do outro (vizinho). Para o treinamento, são utilizados vetores
+>de n dimensões e o número de vizinhos (K) é um hiperparâmetro utilizado pelo modelo. As etapas de um algoritmo KNN são: recebe um dado não classificado e mede a distância do
+>novo dado em relação a cada um dos outros dados que já estão classificados; seleciona as K menores distâncias; verifica a(s) classe(s) dos dados que tiveram as K menores
+>distâncias e contabiliza a quantidade de vezes que cada classe que apareceu; classifica esse novo dado como pertencente à classe que mais apareceu.
+
+>E, por fim, o algoritmo **Naive Bayes** que é um classificador que busca encontrar uma probabilidade a posteriori como “possuir a doença, dado que recebeu um resultado positivo” 
+> e, para isso, multiplica a probabilidade a priori que é de “possuir a doença” pela probabilidade de “receber um resultado positivo, dado que tem a doença”.
+
 >Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
 ~~~python
 # Identificando as variáveis features e a variável target
