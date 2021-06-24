@@ -34,7 +34,7 @@
 > É possível visualizar a a apresentação da proposta do projeto acessando: [Proposta Projeto Predição Casos AVC](/docs/Uma_Abordagem_Preditiva_Potenciais_Casos_AVC.pdf).
 
 ## Slides da Apresentação Final
-> Para visualizar a Apresentação Final do projeto, acesse: [Apresentacao_Final]
+> Para visualizar a Apresentação Final do projeto, acesse: [Apresentacao_Final](/docs/Uma_Abordagem_Preditiva_Potenciais_Casos_AVC.pdf).
 > 
 # Introdução e Referenciais Teóricos
 
