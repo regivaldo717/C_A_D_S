@@ -549,25 +549,18 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >E, por fim, o algoritmo **Naive Bayes** que é um classificador que busca encontrar uma probabilidade a posteriori como “possuir a doença, dado que recebeu um resultado positivo” 
 > e, para isso, multiplica a probabilidade a priori que é de “possuir a doença” pela probabilidade de “receber um resultado positivo, dado que tem a doença”.
 
->Segue abaixo trecho do código que identifica as variáveis independentes (*features*) e dependente (*target*):
+## Técnica Avaliação: **subdivisão dados treino e teste**
+
+>O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para
+>qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
+
 ~~~python
 # Identificando as variáveis features e a variável target
 X = df3[['age', 'bmi', 'avg_glucose_level', 'hypertension']]
 y = df3['stroke']
 
-# O número de pacientes propensos ao AVC na base original totaliza 249, o que identifica essa classe como
-# minoritária, já que o total de pessoas que não tiveram o AVC é de 4860
-print ("Quantidade de pacientes propensos ao AVC = ", y.sum())
-print ("Quantidade de pacientes NÃO propensos ao AVC = ", y.count()-y.sum())
-~~~
-
-## Técnica Avaliação: **subdivisão dados treino e teste**
-
->O **train-test split** é uma técnica para avaliar a performance de um algoritmo de aprendizado de máquina. Pode ser usado para problemas de classificação ou regressão e para
->qualquer algoritmo de aprendizado supervisionado. Divide um conjunto de dados em dois subconjuntos, um de treino e um de teste, conforme código abaixo.
-~~~python
- #Subdivisão em dados de treino (75%) e teste (25%)
- X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
+# Subdivisão em dados de treino (75%) e teste (25%)
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 ~~~~
 ### Regressão Logística
 >O treinamento e teste do modelo de Regressão Logística pode ser visto no código abaixo:
