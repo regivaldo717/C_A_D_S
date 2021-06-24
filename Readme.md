@@ -532,7 +532,7 @@ Stroke Prediction Dataset | https://www.kaggle.com/fedesoriano/stroke-prediction
 >partir de uma série de variáveis independentes contínuas e/ou binárias. Muito utilizado na área médica para a predição de doenças, a partir das características dos pacientes.
 
 >O **SVM (Support Vector Machine)** é um algoritmo de aprendizado supervisionado linear, que é utilizado na classificação de um conjunto de pontos onde busca uma linha que separa
->duas classes distintas, o SVM escolhe a reta entre eles chamado de hiperplano quando há mais de duas dimensões. Funciona da seguinte forma, a classificação das classes é
+>duas classes distintas, o SVM escolhe a reta entre eles chamada de hiperplano quando há mais de duas dimensões. Funciona da seguinte forma, a classificação das classes é
 >colocada inicialmente, definindo assim cada ponto pertencente a cada uma das classes, e em seguida maximiza a margem. Desse modo, primeiro classifica corretamente as classes 
 >e só depois define a distância entre as margens, a partir dessa restrição criada.
 
